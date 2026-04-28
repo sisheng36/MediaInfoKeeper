@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -139,9 +140,80 @@ namespace MediaInfoKeeper.ScheduledTask
                 }
 
                 logger.Info("版本校验通过：允许检查并更新插件。");
-                var url = (apiResult?.assets ?? new List<ApiAssetInfo>())
-                    .FirstOrDefault(asset => asset.name == PluginAssemblyFilename)
-                    ?.browser_download_url;
+                var assets = apiResult?.assets ?? new List<ApiAssetInfo>();
+                string targetAssetName = null;
+
+                if (Environment.OSVersion.Platform == PlatformID.Win32NT)
+                {
+                    if (RuntimeInformation.OSArchitecture == Architecture.X64)
+                    {
+                        targetAssetName = "MediaInfoKeeper.win-x64.dll";
+                    }
+                    else if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
+                    {
+                        targetAssetName = "MediaInfoKeeper.win-arm64.dll";
+                    }
+                }
+                else if (Environment.OSVersion.Platform == PlatformID.Unix)
+                {
+                    if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+                    {
+                        if (RuntimeInformation.OSArchitecture == Architecture.X64)
+                        {
+                            targetAssetName = "MediaInfoKeeper.osx-x64.dll";
+                        }
+                        else if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
+                        {
+                            targetAssetName = "MediaInfoKeeper.osx-arm64.dll";
+                        }
+                    }
+                    else
+                    {
+                        if (RuntimeInformation.OSArchitecture == Architecture.X64)
+                        {
+                            targetAssetName = "MediaInfoKeeper.linux-x64.dll";
+                        }
+                        else if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
+                        {
+                            targetAssetName = "MediaInfoKeeper.linux-arm64.dll";
+                        }
+                    }
+                }
+
+                logger.Info(
+                    "插件更新资源选择：platform={0}, architecture={1}, preferredAsset={2}",
+                    Environment.OSVersion.Platform,
+                    RuntimeInformation.OSArchitecture,
+                    targetAssetName ?? "(fallback-only)");
+
+                var matchedAsset = string.IsNullOrWhiteSpace(targetAssetName)
+                    ? null
+                    : assets.FirstOrDefault(asset => string.Equals(asset.name, targetAssetName, StringComparison.Ordinal));
+                var usedFallbackAsset = false;
+                if (matchedAsset == null)
+                {
+                    matchedAsset = assets.FirstOrDefault(asset => string.Equals(asset.name, PluginAssemblyFilename, StringComparison.Ordinal));
+                    usedFallbackAsset = matchedAsset != null;
+                }
+
+                if (matchedAsset == null)
+                {
+                    throw new Exception($"未找到适用于当前平台/架构的插件资源，preferred={targetAssetName ?? "(none)"}, fallback={PluginAssemblyFilename}");
+                }
+
+                if (usedFallbackAsset)
+                {
+                    logger.Warn(
+                        "插件更新资源选择：未找到精确匹配，回退到默认全量包。preferred={0}, fallback={1}",
+                        targetAssetName ?? "(none)",
+                        PluginAssemblyFilename);
+                }
+                else
+                {
+                    logger.Info("插件更新资源选择：使用精确匹配资源 {0}", matchedAsset.name);
+                }
+
+                var url = matchedAsset.browser_download_url;
                 if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))
                 {
                     throw new Exception("下载地址无效");

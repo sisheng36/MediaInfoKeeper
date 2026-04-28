@@ -268,6 +268,11 @@ namespace MediaInfoKeeper.Patch
                 case PlatformID.Win32NT:
                     return Path.Combine(basePath, "simple.dll");
                 case PlatformID.Unix:
+                    if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+                    {
+                        return Path.Combine(basePath, "libsimple.dylib");
+                    }
+
                     return Path.Combine(basePath, "libsimple");
                 default:
                     return Path.Combine(basePath, "simple.dll");
@@ -597,6 +602,11 @@ namespace MediaInfoKeeper.Patch
                 string.IsNullOrWhiteSpace(resourceName) ||
                 string.IsNullOrWhiteSpace(expectedSha1))
             {
+                logger?.Warn(
+                    "增强搜索 - 未找到适用于当前平台的分词器资源。platform={0}, architecture={1}, resource={2}",
+                    Environment.OSVersion.Platform,
+                    RuntimeInformation.OSArchitecture,
+                    resourceName ?? "(null)");
                 return false;
             }
 
@@ -611,8 +621,7 @@ namespace MediaInfoKeeper.Patch
                     }
                 }
 
-                ExportTokenizer(resourceName);
-                return true;
+                return ExportTokenizer(resourceName);
             }
             catch (Exception e)
             {
@@ -623,14 +632,14 @@ namespace MediaInfoKeeper.Patch
             return false;
         }
 
-        private static void ExportTokenizer(string resourceName)
+        private static bool ExportTokenizer(string resourceName)
         {
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
             {
                 if (stream == null)
                 {
                     logger?.Warn("增强搜索 - 未找到分词器资源: " + resourceName);
-                    return;
+                    return false;
                 }
 
                 using (var fileStream = new FileStream(tokenizerPath, FileMode.Create, FileAccess.Write))
@@ -638,11 +647,14 @@ namespace MediaInfoKeeper.Patch
                     stream.CopyTo(fileStream);
                 }
             }
+
+            return true;
         }
 
         private static string GetTokenizerResourceName()
         {
-            var tokenizerNamespace = Assembly.GetExecutingAssembly().GetName().Name + ".Resources.Tokenizer";
+            var executingAssembly = Assembly.GetExecutingAssembly();
+            var tokenizerNamespace = executingAssembly.GetName().Name + ".Resources.Tokenizer";
             var architecture = RuntimeInformation.OSArchitecture;
             string resourceName;
 
@@ -663,23 +675,57 @@ namespace MediaInfoKeeper.Patch
                     }
                     break;
                 case PlatformID.Unix:
-                    switch (architecture)
+                    if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
                     {
-                        case Architecture.X64:
-                            resourceName = $"{tokenizerNamespace}.linux.x64.libsimple.so";
-                            break;
-                        case Architecture.Arm64:
-                            resourceName = $"{tokenizerNamespace}.linux.arm64.libsimple.so";
-                            break;
-                        default:
-                            resourceName = null;
-                            break;
+                        switch (architecture)
+                        {
+                            case Architecture.X64:
+                                resourceName = $"{tokenizerNamespace}.mac.x64.libsimple.dylib";
+                                break;
+                            case Architecture.Arm64:
+                                resourceName = $"{tokenizerNamespace}.mac.arm64.libsimple.dylib";
+                                break;
+                            default:
+                                resourceName = null;
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        switch (architecture)
+                        {
+                            case Architecture.X64:
+                                resourceName = $"{tokenizerNamespace}.linux.x64.libsimple.so";
+                                break;
+                            case Architecture.Arm64:
+                                resourceName = $"{tokenizerNamespace}.linux.arm64.libsimple.so";
+                                break;
+                            default:
+                                resourceName = null;
+                                break;
+                        }
                     }
                     break;
                 default:
                     resourceName = null;
                     break;
             }
+
+            if (string.IsNullOrWhiteSpace(resourceName))
+            {
+                return null;
+            }
+
+            if (!executingAssembly.GetManifestResourceNames().Contains(resourceName, StringComparer.Ordinal))
+            {
+                logger?.Warn(
+                    "增强搜索 - 当前程序集不包含适用于当前平台的分词器资源。platform={0}, architecture={1}, resource={2}",
+                    Environment.OSVersion.Platform,
+                    architecture,
+                    resourceName);
+                return null;
+            }
+
             return resourceName;
         }
 
@@ -702,6 +748,21 @@ namespace MediaInfoKeeper.Patch
 
             if (Environment.OSVersion.Platform == PlatformID.Unix)
             {
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+                {
+                    if (RuntimeInformation.OSArchitecture == Architecture.X64)
+                    {
+                        return "cb54822a0e3fbc535d9e385bfc83ecabdf81217f";
+                    }
+
+                    if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
+                    {
+                        return "b7216c7240bf748822a3556e1ca20aef133e1252";
+                    }
+
+                    return null;
+                }
+
                 if (RuntimeInformation.OSArchitecture == Architecture.X64)
                 {
                     return "a6188af48c0fef201cb24dbebc65c4cf5b4ddf9b";

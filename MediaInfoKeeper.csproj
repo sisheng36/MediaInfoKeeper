@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net6.0</TargetFrameworks>
     <Description>MediaInfoKeeper Emby plugin</Description>
     <PackageTags>emby;plugin;pms;media;server;</PackageTags>
     <BaseOutputPath>Build\bin\</BaseOutputPath>
@@ -8,7 +8,16 @@
     <FileVersion>1.7.0.7</FileVersion>
     <Version>1.7.0</Version>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <TokenizerBundle Condition="'$(TokenizerBundle)' == ''">full</TokenizerBundle>
   </PropertyGroup>
+  <Target Name="ValidateTokenizerBuildConfiguration" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(TokenizerBundle)' != 'full' and '$(TokenizerBundle)' != 'single-rid'"
+           Text="TokenizerBundle must be either 'full' or 'single-rid'." />
+    <Error Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' == ''"
+           Text="TokenizerRid must be specified when TokenizerBundle is 'single-rid'." />
+    <Error Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' != 'win-x64' and '$(TokenizerRid)' != 'win-arm64' and '$(TokenizerRid)' != 'linux-x64' and '$(TokenizerRid)' != 'linux-arm64' and '$(TokenizerRid)' != 'osx-x64' and '$(TokenizerRid)' != 'osx-arm64'"
+           Text="TokenizerRid must be one of: win-x64, win-arm64, linux-x64, linux-arm64, osx-x64, osx-arm64." />
+  </Target>
   <Target Name="PrepareReleaseTagMetadata" BeforeTargets="GetAssemblyAttributes" Condition="'$(ReleaseTag)' != ''">
     <ItemGroup Condition="'$(ReleaseTag)' != ''">
       <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
@@ -21,10 +30,34 @@
     <None Remove="Resources\\ThumbImage.png" />
     <None Remove="Resources\\mediainfokeeper.js" />
     <None Remove="Resources\\ede.js" />
+    <None Remove="Resources\\Tokenizer\\**\\*.dll" />
+    <None Remove="Resources\\Tokenizer\\**\\*.so" />
+    <None Remove="Resources\\Tokenizer\\**\\*.dylib" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TokenizerBundle)' == 'full'">
     <EmbeddedResource Include="Resources\\Tokenizer\\**\\*.dll" />
     <EmbeddedResource Include="Resources\\Tokenizer\\**\\*.so" />
+    <EmbeddedResource Include="Resources\\Tokenizer\\**\\*.dylib" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' == 'win-x64'">
+    <EmbeddedResource Include="Resources\\Tokenizer\\win\\x64\\simple.dll" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' == 'win-arm64'">
+    <EmbeddedResource Include="Resources\\Tokenizer\\win\\arm64\\simple.dll" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' == 'linux-x64'">
+    <EmbeddedResource Include="Resources\\Tokenizer\\linux\\x64\\libsimple.so" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' == 'linux-arm64'">
+    <EmbeddedResource Include="Resources\\Tokenizer\\linux\\arm64\\libsimple.so" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' == 'osx-x64'">
+    <EmbeddedResource Include="Resources\\Tokenizer\\mac\\x64\\libsimple.dylib" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TokenizerBundle)' == 'single-rid' and '$(TokenizerRid)' == 'osx-arm64'">
+    <EmbeddedResource Include="Resources\\Tokenizer\\mac\\arm64\\libsimple.dylib" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Resources\\ThumbImage.png" />
     <EmbeddedResource Include="Resources\\mediainfokeeper.js" />
     <EmbeddedResource Include="Resources\\ede.js" />
@@ -33,7 +66,8 @@
     <PackageReference Include="MediaBrowser.Server.Core" Version="4.9.1.90" />
     <PackageReference Include="Lib.Harmony" Version="2.4.2" />
     <PackageReference Include="SQLitePCL.pretty.core" Version="1.2.2" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" Condition="'$(TargetFramework)' == 'net8.0'" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.2" Condition="'$(TargetFramework)' == 'net6.0'" />
     <PackageReference Include="System.Memory" Version="4.6.3" />
     <PackageReference Include="TinyPinyin" Version="1.1.0" />
   </ItemGroup>

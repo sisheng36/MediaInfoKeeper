@@ -224,14 +224,48 @@ jobs:
       - name: Install ilrepack tool
         run: dotnet tool install -g dotnet-ilrepack --version 2.0.44
 
-      - name: Build
-        run: >
-          dotnet build MediaInfoKeeper.csproj -c Release --no-restore
-          /p:AssemblyVersion=${{ env.assembly_version }}
-          /p:FileVersion=${{ env.file_version }}
-          /p:Version=${{ env.package_version }}
-          /p:InformationalVersion=${{ env.package_version }}
-          /p:ReleaseTag=${{ env.release_tag }}
+      - name: Build release assets
+        shell: bash
+        run: |
+          mkdir -p Build/release-assets
+
+          build_asset() {
+            local bundle="$1"
+            local rid="$2"
+            local asset_name="$3"
+            local target_framework="$4"
+
+            echo "Building $asset_name (bundle=$bundle rid=${rid:-full} tfm=$target_framework)"
+
+            local args=(
+              "build" "MediaInfoKeeper.csproj"
+              "-c" "Release"
+              "--no-restore"
+              "-t:Rebuild"
+              "-f" "$target_framework"
+              "/p:AssemblyVersion=${{ env.assembly_version }}"
+              "/p:FileVersion=${{ env.file_version }}"
+              "/p:Version=${{ env.package_version }}"
+              "/p:InformationalVersion=${{ env.package_version }}"
+              "/p:ReleaseTag=${{ env.release_tag }}"
+              "/p:TokenizerBundle=$bundle"
+            )
+
+            if [[ -n "$rid" ]]; then
+              args+=("/p:TokenizerRid=$rid")
+            fi
+
+            dotnet "${args[@]}"
+            cp "Build/bin/Release/$target_framework/MediaInfoKeeper.dll" "Build/release-assets/$asset_name"
+          }
+
+          build_asset "single-rid" "win-x64" "MediaInfoKeeper.win-x64.dll" "net8.0"
+          build_asset "single-rid" "win-arm64" "MediaInfoKeeper.win-arm64.dll" "net8.0"
+          build_asset "single-rid" "linux-x64" "MediaInfoKeeper.linux-x64.dll" "net8.0"
+          build_asset "single-rid" "linux-arm64" "MediaInfoKeeper.linux-arm64.dll" "net8.0"
+          build_asset "single-rid" "osx-x64" "MediaInfoKeeper.osx-x64.dll" "net6.0"
+          build_asset "single-rid" "osx-arm64" "MediaInfoKeeper.osx-arm64.dll" "net6.0"
+          build_asset "full" "" "MediaInfoKeeper.dll" "net8.0"
 
       - name: Generate release body from tag history
         id: release_body
@@ -289,7 +323,7 @@ jobs:
           overwrite_files: true
           prerelease: ${{ env.pre_release }}
           generate_release_notes: false
-          files: Build/bin/Release/net8.0/MediaInfoKeeper.dll
+          files: Build/release-assets/*.dll
 
   cleanup_prereleases_after_stable:
     needs: build
