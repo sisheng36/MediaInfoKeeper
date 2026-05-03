@@ -38,6 +38,46 @@ define(['connectionManager', 'globalize', 'loading', 'toast', 'confirm'], functi
         return items;
     }
 
+    function getLibraryItems(options) {
+        const items = (options && options.items) ? options.items.filter(item => !!item) : [];
+        if (!items.length) {
+            return [];
+        }
+
+        const user = options && options.user;
+        const users = options && options.users ? Object.values(options.users) : [];
+        const firstUser = users.length ? users[0] : null;
+        const hasAdminInfo = (user && user.Policy) || (firstUser && firstUser.Policy);
+        const isAdmin = (user && user.Policy && user.Policy.IsAdministrator) ||
+            (firstUser && firstUser.Policy && firstUser.Policy.IsAdministrator);
+
+        if (hasAdminInfo && !isAdmin) {
+            return [];
+        }
+
+        if (!items.every(isLibraryItem)) {
+            return [];
+        }
+
+        return items;
+    }
+
+    function isLibraryItem(item) {
+        if (!item || typeof item !== 'object') {
+            return false;
+        }
+
+        if (Array.isArray(item.Locations) && (item.ItemId || item.Guid || item.Id)) {
+            return true;
+        }
+
+        if (item.Type === 'CollectionFolder') {
+            return true;
+        }
+
+        return !!item.CollectionType && !item.Type && (item.ItemId || item.Guid || item.Id);
+    }
+
     function getCommandName() {
         const locale = (globalize.getCurrentLocale() || '').toLowerCase();
         return locale === 'zh-cn'
@@ -78,6 +118,13 @@ define(['connectionManager', 'globalize', 'loading', 'toast', 'confirm'], functi
         return locale === 'zh-cn'
             ? '删除片头片尾'
             : (['zh-hk', 'zh-tw'].includes(locale) ? '刪除片頭片尾' : 'Delete Intro/Credits');
+    }
+
+    function getCopyLibraryCommandName() {
+        const locale = (globalize.getCurrentLocale() || '').toLowerCase();
+        return locale === 'zh-cn'
+            ? '复制媒体库'
+            : (['zh-hk', 'zh-tw'].includes(locale) ? '複製媒體庫' : 'Duplicate Library');
     }
 
     function getResultMessage(result, action) {
@@ -227,7 +274,8 @@ define(['connectionManager', 'globalize', 'loading', 'toast', 'confirm'], functi
         const isDownloadDanmu = action === 'download_danmu';
         const isSetIntro = action === 'set_intro';
         const isClearIntro = action === 'clear_intro';
-        const commandName = isDelete ? getDeleteCommandName() : (isScanIntro ? getScanIntroCommandName() : (isDownloadDanmu ? getDownloadDanmuCommandName() : (isSetIntro ? getSetIntroCommandName() : (isClearIntro ? getClearIntroCommandName() : getCommandName()))));
+        const isCopyLibrary = action === 'copy_library';
+        const commandName = isDelete ? getDeleteCommandName() : (isScanIntro ? getScanIntroCommandName() : (isDownloadDanmu ? getDownloadDanmuCommandName() : (isSetIntro ? getSetIntroCommandName() : (isClearIntro ? getClearIntroCommandName() : (isCopyLibrary ? getCopyLibraryCommandName() : getCommandName())))));
         const detail = (err && (err.message || err.statusText || err.responseText)) ? ` (${err.message || err.statusText || err.responseText})` : '';
         return commandName + ' failed' + detail;
     }
@@ -242,6 +290,151 @@ define(['connectionManager', 'globalize', 'loading', 'toast', 'confirm'], functi
             dataType: 'json'
         }).then(function (result) {
             return result || {};
+        });
+    }
+
+    function postJsonAllowEmpty(apiClient, endpoint, body) {
+        const url = apiClient.getUrl(endpoint);
+        return apiClient.ajax({
+            type: 'POST',
+            url: url,
+            data: JSON.stringify(body || {}),
+            contentType: 'application/json'
+        }).then(function (result) {
+            return result || {};
+        });
+    }
+
+    function getLocale() {
+        return (globalize.getCurrentLocale() || '').toLowerCase();
+    }
+
+    function translateCopySuccess(name) {
+        const locale = getLocale();
+        if (locale === 'zh-cn') {
+            return `媒体库已创建：${name}`;
+        }
+
+        if (['zh-hk', 'zh-tw'].includes(locale)) {
+            return `媒體庫已建立：${name}`;
+        }
+
+        return `Library created: ${name}`;
+    }
+
+    function translateCopyEmpty() {
+        const locale = getLocale();
+        if (locale === 'zh-cn') {
+            return '请选择一个媒体库';
+        }
+
+        if (['zh-hk', 'zh-tw'].includes(locale)) {
+            return '請選擇一個媒體庫';
+        }
+
+        return 'Please select one library';
+    }
+
+    function translateCopyFailedNoOptions() {
+        const locale = getLocale();
+        if (locale === 'zh-cn') {
+            return '未获取到媒体库配置，无法复制';
+        }
+
+        if (['zh-hk', 'zh-tw'].includes(locale)) {
+            return '未取得媒體庫設定，無法複製';
+        }
+
+        return 'Library settings are unavailable';
+    }
+
+    function buildDuplicateLibraryName(sourceName) {
+        return `${sourceName || 'Library'}_副本`;
+    }
+
+    function getLibraryLookupKey(item) {
+        if (!item) {
+            return '';
+        }
+
+        return item.Guid || item.Id || item.ItemId || '';
+    }
+
+    function getLibraryInfoQueryId(item) {
+        if (!item) {
+            return '';
+        }
+
+        return item.Guid || item.Id || '';
+    }
+
+    function getLibraryDisplayName(item) {
+        if (!item) {
+            return '';
+        }
+
+        return item.Name || item.name || item.ItemId || item.Id || item.Guid || '';
+    }
+
+    function getLibraryLocations(item) {
+        return item && Array.isArray(item.Locations)
+            ? item.Locations.filter(path => typeof path === 'string' && path.trim())
+            : [];
+    }
+
+    function cloneLibraryOptions(library) {
+        if (!library || !library.LibraryOptions) {
+            return null;
+        }
+
+        try {
+            return JSON.parse(JSON.stringify(library.LibraryOptions));
+        } catch (_) {
+            return null;
+        }
+    }
+
+    function mergeLibraryInfo(sourceItems, fetchedItems) {
+        const fetchedLookup = new Map();
+        (fetchedItems || []).forEach(function (item) {
+            const key = getLibraryLookupKey(item);
+            if (key) {
+                fetchedLookup.set(key, item);
+            }
+        });
+
+        return sourceItems.map(function (item) {
+            const fetched = fetchedLookup.get(getLibraryLookupKey(item));
+            return fetched ? Object.assign({}, item, fetched) : item;
+        });
+    }
+
+    function fetchLibraryInfos(items) {
+        const apiClient = connectionManager.currentApiClient();
+        if (!apiClient || !items || !items.length) {
+            return Promise.resolve(items || []);
+        }
+
+        const ids = items
+            .map(getLibraryInfoQueryId)
+            .filter(Boolean);
+
+        if (!ids.length) {
+            return Promise.resolve(items);
+        }
+
+        const query = new URLSearchParams({ Ids: ids.join(',') }).toString();
+        const url = `${apiClient.getUrl('Library/VirtualFolders/Query')}?${query}`;
+
+        return apiClient.ajax({
+            type: 'GET',
+            url: url,
+            dataType: 'json'
+        }).then(function (result) {
+            const fetchedItems = result && Array.isArray(result.Items) ? result.Items : [];
+            return mergeLibraryInfo(items, fetchedItems);
+        }).catch(function () {
+            return items;
         });
     }
 
@@ -599,6 +792,44 @@ define(['connectionManager', 'globalize', 'loading', 'toast', 'confirm'], functi
                     });
                 });
             });
+        },
+
+        copyLibrary: function (items) {
+            const libraries = Array.isArray(items) ? items.filter(isLibraryItem) : [];
+            if (libraries.length !== 1) {
+                toast(translateCopyEmpty());
+                return Promise.resolve();
+            }
+
+            return fetchLibraryInfos(libraries).then(function (resolvedLibraries) {
+                const sourceLibrary = resolvedLibraries[0];
+                const libraryOptions = cloneLibraryOptions(sourceLibrary);
+                const paths = getLibraryLocations(sourceLibrary);
+                const newName = buildDuplicateLibraryName(getLibraryDisplayName(sourceLibrary));
+
+                if (!libraryOptions) {
+                    toast(translateCopyFailedNoOptions());
+                    return;
+                }
+
+                loading.show();
+                const apiClient = connectionManager.currentApiClient();
+                return postJsonAllowEmpty(apiClient, 'Library/VirtualFolders', {
+                    Name: newName,
+                    CollectionType: sourceLibrary.CollectionType || libraryOptions.ContentType,
+                    RefreshLibrary: false,
+                    Paths: paths,
+                    LibraryOptions: libraryOptions
+                }).then(function () {
+                    toast(translateCopySuccess(newName));
+                }).catch(function (err) {
+                    toast(getErrorMessage('copy_library', err));
+                }).finally(function () {
+                    loading.hide();
+                });
+            }).catch(function (err) {
+                toast(getErrorMessage('copy_library', err));
+            });
         }
     };
 
@@ -606,11 +837,17 @@ define(['connectionManager', 'globalize', 'loading', 'toast', 'confirm'], functi
         return {
             getCommands: function (options) {
                 const items = getSupportedItems(options);
-                if (!items.length) {
-                    return [];
+                const libraryItems = getLibraryItems(options);
+                const commands = [];
+
+                if (libraryItems.length === 1) {
+                    commands.push({ name: getCopyLibraryCommandName(), id: 'copy_library', icon: 'content_copy' });
                 }
 
-                const commands = [];
+                if (!items.length) {
+                    return commands;
+                }
+
                 commands.push({ name: getCommandName(), id: 'extract_media_info', icon: '4k' });
                 commands.push({ name: getDeleteCommandName(), id: 'delete_media_info_persist', icon: 'delete_forever' });
 
@@ -631,6 +868,10 @@ define(['connectionManager', 'globalize', 'loading', 'toast', 'confirm'], functi
             executeCommand: function (command, items) {
                 if (!items || !items.length) {
                     return;
+                }
+
+                if (command === 'copy_library') {
+                    return api.copyLibrary(items);
                 }
 
                 const ids = items.map(item => item && item.Id).filter(Boolean);
