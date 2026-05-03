@@ -145,43 +145,8 @@ namespace MediaInfoKeeper.Services.IntroSkip
             var currentEventTime = ConfiguredDateTime.Now;
             var introStart = data.IntroStart;
             var introEnd = data.IntroEnd;
-
-            if (IsIntroMarkerEnabled && e.EventName == ProgressEvent.TimeUpdate && !introEnd.HasValue)
-            {
-                var elapsedTime = (currentEventTime - data.PreviousEventTime).TotalSeconds;
-                var positionTimeDiff = TimeSpan.FromTicks(currentPositionTicks - data.PreviousPositionTicks).TotalSeconds;
-
-                if (Math.Abs(positionTimeDiff) - elapsedTime > 5 &&
-                    currentPositionTicks < data.MaxIntroDurationTicks)
-                {
-                    if (!data.FirstJumpPositionTicks.HasValue &&
-                        TimeSpan.FromTicks(data.PlaybackStartTicks).TotalSeconds < 5 &&
-                        positionTimeDiff > 0)
-                    {
-                        data.FirstJumpPositionTicks = data.PreviousPositionTicks;
-                        if (data.PreviousPositionTicks > data.MinOpeningPlotDurationTicks)
-                        {
-                            data.MaxIntroDurationTicks += data.PreviousPositionTicks;
-                        }
-                    }
-
-                    data.LastJumpPositionTicks = currentPositionTicks;
-                }
-
-                if (currentPositionTicks >= data.MaxIntroDurationTicks &&
-                    data.LastJumpPositionTicks.HasValue)
-                {
-                    var introStartTicks = data.FirstJumpPositionTicks.HasValue &&
-                                          data.FirstJumpPositionTicks.Value > data.MinOpeningPlotDurationTicks
-                        ? data.FirstJumpPositionTicks.Value
-                        : 0;
-
-                    UpdateIntroTask(episode, e.Session, data, introStartTicks, data.LastJumpPositionTicks.Value);
-                }
-
-                data.PreviousPositionTicks = currentPositionTicks;
-                data.PreviousEventTime = currentEventTime;
-            }
+            data.PreviousPositionTicks = currentPositionTicks;
+            data.PreviousEventTime = currentEventTime;
 
             if (e.EventName == ProgressEvent.Pause)
             {
@@ -203,15 +168,23 @@ namespace MediaInfoKeeper.Services.IntroSkip
                 return;
             }
 
-            if (IsIntroMarkerEnabled && e.EventName == ProgressEvent.Unpause && data.LastPauseEventTime.HasValue &&
+            var isValidPauseResume =
+                data.LastPauseEventTime.HasValue &&
                 (currentEventTime - data.LastPauseEventTime.Value).TotalMilliseconds > 200 &&
-                (currentEventTime - data.LastPauseEventTime.Value).TotalMilliseconds < 5000 &&
-                introStart.HasValue && introStart.Value < currentPositionTicks && introEnd.HasValue &&
-                currentPositionTicks < Math.Max(data.MaxIntroDurationTicks, introEnd.Value) &&
-                Math.Abs(TimeSpan.FromTicks(currentPositionTicks - introEnd.Value).TotalMilliseconds) >
-                (data.LastPlaybackRateChangeEventTime.HasValue ? 500 : 0))
+                (currentEventTime - data.LastPauseEventTime.Value).TotalMilliseconds < 5000;
+
+            if (IsIntroMarkerEnabled && e.EventName == ProgressEvent.Unpause &&
+                isValidPauseResume &&
+                currentPositionTicks >= data.MinOpeningPlotDurationTicks &&
+                currentPositionTicks < Math.Max(data.MaxIntroDurationTicks, introEnd ?? data.MaxIntroDurationTicks) &&
+                (!introEnd.HasValue ||
+                 Math.Abs(TimeSpan.FromTicks(currentPositionTicks - introEnd.Value).TotalMilliseconds) >
+                 (data.LastPlaybackRateChangeEventTime.HasValue ? 500 : 0)))
             {
-                UpdateIntroTask(episode, e.Session, data, introStart.Value, currentPositionTicks);
+                var introStartTicks = introStart.HasValue && introStart.Value < currentPositionTicks
+                    ? introStart.Value
+                    : 0;
+                UpdateIntroTask(episode, e.Session, data, introStartTicks, currentPositionTicks);
             }
 
             if (IsCreditsMarkerEnabled && e.EventName == ProgressEvent.Unpause && episode.RunTimeTicks.HasValue &&
