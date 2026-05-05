@@ -399,9 +399,9 @@ namespace MediaInfoKeeper.Patch
 
             if (string.Equals(uri.Host, "api.themoviedb.org", StringComparison.OrdinalIgnoreCase))
             {
-                if (TryParseDomainEndpoint(options.AlternativeTmdbApiUrl, out var altApiHost, out var altApiPort))
+                if (TryParseDomainEndpoint(options.AlternativeTmdbApiUrl, out var altApiScheme, out var altApiHost, out var altApiPort))
                 {
-                    replaced = ReplaceAuthority(replaced, altApiHost, altApiPort);
+                    replaced = ReplaceAuthority(replaced, altApiScheme, altApiHost, altApiPort);
                 }
 
                 if (!string.IsNullOrWhiteSpace(options.AlternativeTmdbApiKey))
@@ -411,9 +411,9 @@ namespace MediaInfoKeeper.Patch
             }
             else if (string.Equals(uri.Host, "image.tmdb.org", StringComparison.OrdinalIgnoreCase))
             {
-                if (TryParseDomainEndpoint(options.AlternativeTmdbImageUrl, out var altImageHost, out var altImagePort))
+                if (TryParseDomainEndpoint(options.AlternativeTmdbImageUrl, out var altImageScheme, out var altImageHost, out var altImagePort))
                 {
-                    replaced = ReplaceAuthority(replaced, altImageHost, altImagePort);
+                    replaced = ReplaceAuthority(replaced, altImageScheme, altImageHost, altImagePort);
                 }
             }
 
@@ -427,8 +427,9 @@ namespace MediaInfoKeeper.Patch
                    !string.IsNullOrWhiteSpace(options.AlternativeTmdbApiKey);
         }
 
-        private static bool TryParseDomainEndpoint(string raw, out string host, out int port)
+        private static bool TryParseDomainEndpoint(string raw, out string scheme, out string host, out int port)
         {
+            scheme = null;
             host = null;
             port = -1;
 
@@ -441,25 +442,28 @@ namespace MediaInfoKeeper.Patch
 
             if (Uri.TryCreate(value, UriKind.Absolute, out var absoluteUri))
             {
+                scheme = absoluteUri.Scheme;
                 host = absoluteUri.Host;
                 port = absoluteUri.IsDefaultPort ? -1 : absoluteUri.Port;
-                return !string.IsNullOrWhiteSpace(host);
+                return !string.IsNullOrWhiteSpace(scheme) && !string.IsNullOrWhiteSpace(host);
             }
 
             if (Uri.TryCreate("https://" + value, UriKind.Absolute, out var domainUri))
             {
+                scheme = domainUri.Scheme;
                 host = domainUri.Host;
                 port = domainUri.IsDefaultPort ? -1 : domainUri.Port;
-                return !string.IsNullOrWhiteSpace(host);
+                return !string.IsNullOrWhiteSpace(scheme) && !string.IsNullOrWhiteSpace(host);
             }
 
             return false;
         }
 
-        private static Uri ReplaceAuthority(Uri source, string host, int port)
+        private static Uri ReplaceAuthority(Uri source, string scheme, string host, int port)
         {
             var builder = new UriBuilder(source)
             {
+                Scheme = scheme,
                 Host = host,
                 Port = port
             };

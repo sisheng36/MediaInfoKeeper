@@ -128,7 +128,7 @@ namespace MediaInfoKeeper.Options
                 nameof(WriteProxyEnvVars),
                 nameof(EnableGzip));
 
-            AddGroup("TMDB 替换","替换 TMDB 请求域名，自建反代可参考这个项目：https://github.com/imaliang/tmdb-proxy",
+            AddGroup("TMDB 替换","替换 TMDB 请求域名，自建反代可参考这个项目：https://github.com/honue/tmdb-proxy",
                 nameof(AlternativeTmdbApiUrl),
                 nameof(AlternativeTmdbImageUrl),
                 nameof(AlternativeTmdbApiKey));
