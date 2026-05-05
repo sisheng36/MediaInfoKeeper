@@ -5,13 +5,16 @@
 
 <p align="center">
   <a href="https://github.com/honue/MediaInfoKeeper/releases">
-    <img src="https://img.shields.io/github/downloads/honue/MediaInfoKeeper/total" />
+    <img src="https://img.shields.io/github/v/release/honue/MediaInfoKeeper?label=MediaInfoKeeper" />
   </a>
   <a href="https://github.com/honue/MediaInfoKeeper/stargazers">
     <img src="https://img.shields.io/github/stars/honue/MediaInfoKeeper" />
   </a>
+  <a href="https://api.github.com/repos/honue/mediainfokeeper/releases/latest">
+    <img src="https://img.shields.io/github/downloads/honue/MediaInfoKeeper/latest/total?label=LatestUsers" />
+  </a>
   <a href="https://github.com/honue/MediaInfoKeeper/releases">
-    <img src="https://img.shields.io/github/v/release/honue/MediaInfoKeeper?label=MediaInfoKeeper" />
+    <img src="https://img.shields.io/github/downloads/honue/MediaInfoKeeper/total?label=Downloads" />
   </a>
   <a href="https://github.com/MediaBrowser/Emby.Releases/releases">
     <img src="https://img.shields.io/github/v/release/MediaBrowser/Emby.Releases?label=Emby" />
@@ -40,7 +43,7 @@
 
 - 版本说明：本仓库最新代码始终以支持 Emby 最新 release 为目标，开发过程中可能出现阶段性兼容问题。
 
-- 当前插件 `latest` 版本适配Emby `4.9.3.0`。
+- 当前插件 `latest` 版本适配Emby `4.9.3.0`，全平台支持。
 
 - 更新限制：插件自动更新任务已按 [版本区间](Version.json) 限制，不会更新到当前 Emby 不支持的插件版本。
 
