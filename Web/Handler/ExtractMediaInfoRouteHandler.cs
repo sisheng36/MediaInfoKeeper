@@ -108,12 +108,6 @@ namespace MediaInfoKeeper.Web.Handler
                     }
                 }
 
-                if (ShouldSkipExtraction(item))
-                {
-                    Plugin.Instance.Logger.Info($"快捷菜单提取媒体信息跳过 已存在MediaInfo: {displayName}");
-                    return false;
-                }
-
                 var deserializeResult = Plugin.MediaSourceInfoStore.ApplyToItem(item);
                 if (item is Video)
                 {
@@ -127,14 +121,7 @@ namespace MediaInfoKeeper.Web.Handler
                 if (deserializeResult == MediaInfoDocument.MediaInfoRestoreResult.Restored ||
                     deserializeResult == MediaInfoDocument.MediaInfoRestoreResult.AlreadyExists)
                 {
-                    if (!ShouldSkipExtraction(item))
-                    {
-                        Plugin.Instance.Logger.Info($"快捷菜单提取媒体信息继续 无主图音乐需补提取: {displayName}");
-                    }
-                    else
-                    {
-                        return true;
-                    }
+                    Plugin.Instance.Logger.Info($"快捷菜单提取媒体信息继续执行刷新: {displayName}");
                 }
 
                 var collectionFolders = Plugin.LibraryManager.GetCollectionFolders(item).Cast<BaseItem>().ToArray();
@@ -154,21 +141,6 @@ namespace MediaInfoKeeper.Web.Handler
                 }
                 return true;
             }
-        }
-
-        private static bool ShouldSkipExtraction(BaseItem item)
-        {
-            if (!Plugin.MediaInfoService.HasMediaInfo(item))
-            {
-                return false;
-            }
-
-            if (item is Audio && !Plugin.LibraryService.HasCover(item))
-            {
-                return false;
-            }
-
-            return true;
         }
     }
 }
