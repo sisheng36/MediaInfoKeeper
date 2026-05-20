@@ -8,29 +8,31 @@ using MediaBrowser.Model.Logging;
 namespace MediaInfoKeeper.Services
 {
     /// <summary>
-    /// 监听媒体库路径下的新入库 .strm 与视频文件，记录 Created 与 Changed 事件日志。
+    /// 监听媒体库路径下的新入库 .strm 文件，记录 Created 与 Changed 事件日志。
     /// </summary>
     public sealed class StrmFileWatcher : IDisposable
     {
-        private readonly ILibraryManager libraryManager;
         private readonly ILibraryMonitor libraryMonitor;
         private readonly LibraryService libraryService;
         private readonly ILogger logger;
         private readonly object syncRoot = new object();
+        private readonly TimeSpan modifiedEventDedupeWindow = TimeSpan.FromMilliseconds(100);
 
         private readonly Dictionary<string, FileSystemWatcher> watchers =
             new Dictionary<string, FileSystemWatcher>(StringComparer.OrdinalIgnoreCase);
+        private readonly Dictionary<string, DateTime> createdEvents =
+            new Dictionary<string, DateTime>(StringComparer.OrdinalIgnoreCase);
+        private readonly Dictionary<string, DateTime> lastModifiedEvents =
+            new Dictionary<string, DateTime>(StringComparer.OrdinalIgnoreCase);
 
         private volatile bool enabled;
         private volatile bool disposed;
 
         public StrmFileWatcher(
-            ILibraryManager libraryManager,
             ILibraryMonitor libraryMonitor,
             LibraryService libraryService,
             ILogger logger)
         {
-            this.libraryManager = libraryManager;
             this.libraryMonitor = libraryMonitor;
             this.libraryService = libraryService;
             this.logger = logger;
@@ -70,6 +72,8 @@ namespace MediaInfoKeeper.Services
                 }
 
                 this.watchers.Clear();
+                this.createdEvents.Clear();
+                this.lastModifiedEvents.Clear();
 
                 if (!isEnabled)
                 {
@@ -116,37 +120,21 @@ namespace MediaInfoKeeper.Services
         /// </summary>
         private void OnCreated(string path)
         {
-            if (!this.enabled || this.disposed || string.IsNullOrWhiteSpace(path))
+            if (!IsWatchedShortcut(path))
             {
                 return;
             }
 
+            RecordCreatedEvent(path);
+            this.logger?.Info($"新增媒体文件，{Path.GetFileName(path) ?? path}");
             try
             {
-                if (!this.libraryManager.IsVideoFile(path.AsSpan()) || !this.libraryManager.IsAudioFile(path.AsSpan()))
-                {
-                    return;
-                }
+                this.libraryMonitor?.ReportFileSystemChanged(path);
             }
             catch (Exception ex)
             {
-                this.logger?.Debug($"StrmFileWatcher 判断视频文件失败: {path}");
-                this.logger?.Debug(ex.Message);
-                return;
-            }
-
-            if (LibraryService.IsFileShortcut(path))
-            {
-                this.logger?.Info($"新增媒体文件，{Path.GetFileName(path) ?? path}");
-                try
-                {
-                    this.libraryMonitor?.ReportFileSystemChanged(path);
-                }
-                catch (Exception ex)
-                {
-                    this.logger?.Error("StrmFileWatcher 通知 Emby 入库扫描失败");
-                    this.logger?.Error(ex.Message);
-                }
+                this.logger?.Error("StrmFileWatcher 通知 Emby 入库扫描失败");
+                this.logger?.Error(ex.Message);
             }
         }
 
@@ -155,12 +143,81 @@ namespace MediaInfoKeeper.Services
         /// </summary>
         private void OnModified(string path)
         {
-            if (!this.enabled || this.disposed || string.IsNullOrWhiteSpace(path) || !LibraryService.IsFileShortcut(path))
+            if (!IsWatchedShortcut(path))
+            {
+                return;
+            }
+
+            if (ShouldSkipModifiedLog(path))
             {
                 return;
             }
 
             this.logger?.Info($"{Path.GetFileName(path) ?? path} 内容修改");
+        }
+
+        private bool IsWatchedShortcut(string path)
+        {
+            return this.enabled &&
+                   !this.disposed &&
+                   !string.IsNullOrWhiteSpace(path) &&
+                   LibraryService.IsFileShortcut(path);
+        }
+
+        private void RecordCreatedEvent(string path)
+        {
+            var now = DateTime.UtcNow;
+
+            lock (this.syncRoot)
+            {
+                this.createdEvents[path] = now;
+                this.lastModifiedEvents[path] = now;
+                PruneEventCache(this.createdEvents, now);
+                PruneEventCache(this.lastModifiedEvents, now);
+            }
+        }
+
+        private bool ShouldSkipModifiedLog(string path)
+        {
+            var now = DateTime.UtcNow;
+
+            lock (this.syncRoot)
+            {
+                if (this.createdEvents.TryGetValue(path, out var createdAt) &&
+                    now - createdAt < this.modifiedEventDedupeWindow)
+                {
+                    this.lastModifiedEvents[path] = now;
+                    PruneEventCache(this.createdEvents, now);
+                    PruneEventCache(this.lastModifiedEvents, now);
+                    return true;
+                }
+
+                if (this.lastModifiedEvents.TryGetValue(path, out var lastSeen) &&
+                    now - lastSeen < this.modifiedEventDedupeWindow)
+                {
+                    return true;
+                }
+
+                this.lastModifiedEvents[path] = now;
+                PruneEventCache(this.createdEvents, now);
+                PruneEventCache(this.lastModifiedEvents, now);
+
+                return false;
+            }
+        }
+
+        private void PruneEventCache(Dictionary<string, DateTime> events, DateTime now)
+        {
+            var staleBefore = now - this.modifiedEventDedupeWindow;
+            var stalePaths = events
+                .Where(pair => pair.Value < staleBefore)
+                .Select(pair => pair.Key)
+                .ToList();
+
+            foreach (var stalePath in stalePaths)
+            {
+                events.Remove(stalePath);
+            }
         }
 
         public void Dispose()
@@ -188,6 +245,8 @@ namespace MediaInfoKeeper.Services
                 }
 
                 this.watchers.Clear();
+                this.createdEvents.Clear();
+                this.lastModifiedEvents.Clear();
             }
         }
     }
