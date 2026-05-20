@@ -7,7 +7,6 @@ using System.Reflection;
 using HarmonyLib;
 using MediaBrowser.Model.Entities;
 using MediaBrowser.Model.Logging;
-
 namespace MediaInfoKeeper.Patch
 {
     /// <summary>
@@ -23,7 +22,7 @@ namespace MediaInfoKeeper.Patch
 
         private static Harmony harmony;
         private static ILogger logger;
-        private static MethodInfo normalizeResult;
+        private static MethodInfo getMediaInfo;
         private static bool isEnabled;
         private static bool isPatched;
 
@@ -45,24 +44,23 @@ namespace MediaInfoKeeper.Patch
                 var mediaEncodingAssembly = Assembly.Load("Emby.Server.MediaEncoding");
                 var probeResultNormalizerType = mediaEncodingAssembly?.GetType("Emby.Server.MediaEncoding.Probing.ProbeResultNormalizer");
                 var version = mediaEncodingAssembly?.GetName().Version;
-                var mediaInfoType = mediaEncodingAssembly?.GetType("Emby.Media.Model.MediaInfo.MediaInfo") ??
-                                    Assembly.Load("Emby.Media.Model")?.GetType("Emby.Media.Model.MediaInfo.MediaInfo");
                 var probeResultType = Assembly.Load("Emby.Media.Model")?.GetType("Emby.Media.Model.ProbeModel.ProbeResult");
 
-                normalizeResult = PatchMethodResolver.Resolve(
+                getMediaInfo = PatchMethodResolver.Resolve(
                     probeResultNormalizerType,
                     version,
                     new MethodSignatureProfile
                     {
-                        Name = "proberesultnormalizer-normalizeresult-exact",
-                        MethodName = "NormalizeResult",
+                        Name = "proberesultnormalizer-getmediainfo-exact",
+                        MethodName = "GetMediaInfo",
                         BindingFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic,
-                        ParameterTypes = new[] { mediaInfoType, probeResultType, typeof(bool) }
+                        ParameterTypes = new[] { probeResultType, typeof(bool), typeof(string), typeof(MediaBrowser.Model.MediaInfo.MediaProtocol) },
+                        ReturnType = typeof(MediaBrowser.Model.MediaInfo.MediaInfo)
                     },
                     logger,
-                    "EmbeddedChapterMarkerMap.NormalizeResult");
+                    "EmbeddedChapterMarkerMap.GetMediaInfo");
 
-                if (normalizeResult == null)
+                if (getMediaInfo == null)
                 {
                     PatchLog.InitFailed(logger, nameof(EmbeddedChapterMarkerMap), "目标方法缺失");
                     return;
@@ -112,8 +110,8 @@ namespace MediaInfoKeeper.Patch
             }
 
             harmony.Patch(
-                normalizeResult,
-                postfix: new HarmonyMethod(typeof(EmbeddedChapterMarkerMap), nameof(NormalizeResultPostfix)));
+                getMediaInfo,
+                postfix: new HarmonyMethod(typeof(EmbeddedChapterMarkerMap), nameof(GetMediaInfoPostfix)));
 
             isPatched = true;
         }
@@ -125,28 +123,29 @@ namespace MediaInfoKeeper.Patch
                 return;
             }
 
-            harmony.Unpatch(normalizeResult, HarmonyPatchType.Postfix, harmony.Id);
+            harmony.Unpatch(getMediaInfo, HarmonyPatchType.Postfix, harmony.Id);
             isPatched = false;
         }
 
         [HarmonyPostfix]
-        private static void NormalizeResultPostfix(object __0, object __1)
+        private static void GetMediaInfoPostfix(object __0, MediaBrowser.Model.MediaInfo.MediaInfo __result)
         {
-            if (!isEnabled || __0 == null || __1 == null)
+            if (!isEnabled || __0 == null || __result == null)
             {
                 return;
             }
 
             try
             {
-                var chapters = GetChapters(__0);
-                var probeChapters = GetProbeChapters(__1);
+                var chapters = __result.Chapters?.ToList();
+                var probeChapters = GetProbeChapters(__0);
                 if (chapters == null || probeChapters == null || chapters.Count == 0 || probeChapters.Count == 0)
                 {
                     return;
                 }
 
                 ApplyMarkerMapping(chapters, probeChapters);
+                __result.Chapters = chapters.ToArray();
             }
             catch (Exception ex)
             {
@@ -154,24 +153,6 @@ namespace MediaInfoKeeper.Patch
                 logger?.Error(ex.Message);
                 logger?.Debug(ex.StackTrace);
             }
-        }
-
-        private static List<ChapterInfo> GetChapters(object mediaInfo)
-        {
-            var property = mediaInfo.GetType().GetProperty("Chapters", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-            var value = property?.GetValue(mediaInfo);
-
-            if (value is IEnumerable<ChapterInfo> typed)
-            {
-                return typed.ToList();
-            }
-
-            if (value is IEnumerable enumerable)
-            {
-                return enumerable.Cast<object>().OfType<ChapterInfo>().ToList();
-            }
-
-            return null;
         }
 
         private static List<object> GetProbeChapters(object probeResult)
@@ -215,28 +196,33 @@ namespace MediaInfoKeeper.Patch
 
                 if (IntroNames.Contains(normalizedName, StringComparer.Ordinal))
                 {
+                    var hasIntroStart = pair.Chapter.MarkerType == MarkerType.IntroStart;
                     if (pair.Chapter.MarkerType == MarkerType.Chapter)
                     {
                         pair.Chapter.MarkerType = MarkerType.IntroStart;
                         addedMarkers++;
+                        hasIntroStart = true;
                         mappedMarkers.Add($"IntroStart={FormatTicks(pair.Chapter.StartPositionTicks)}");
                     }
 
-                    var introEndTicks = ResolveIntroEndTicks(orderedPairs, i, pair);
-                    if (introEndTicks.HasValue &&
-                        introEndTicks.Value > pair.Chapter.StartPositionTicks &&
-                        !chapters.Any(c => c != null &&
-                                           c.MarkerType == MarkerType.IntroEnd &&
-                                           c.StartPositionTicks == introEndTicks.Value))
+                    if (hasIntroStart)
                     {
-                        chapters.Add(new ChapterInfo
+                        var introEndTicks = ResolveIntroEndTicks(orderedPairs, i, pair);
+                        if (introEndTicks.HasValue &&
+                            introEndTicks.Value > pair.Chapter.StartPositionTicks &&
+                            !chapters.Any(c => c != null &&
+                                               c.MarkerType == MarkerType.IntroEnd &&
+                                               c.StartPositionTicks == introEndTicks.Value))
                         {
-                            Name = "IntroEnd",
-                            StartPositionTicks = introEndTicks.Value,
-                            MarkerType = MarkerType.IntroEnd
-                        });
-                        addedMarkers++;
-                        mappedMarkers.Add($"IntroEnd={FormatTicks(introEndTicks.Value)}");
+                            chapters.Add(new ChapterInfo
+                            {
+                                Name = "IntroEnd",
+                                StartPositionTicks = introEndTicks.Value,
+                                MarkerType = MarkerType.IntroEnd
+                            });
+                            addedMarkers++;
+                            mappedMarkers.Add($"IntroEnd={FormatTicks(introEndTicks.Value)}");
+                        }
                     }
 
                     continue;
