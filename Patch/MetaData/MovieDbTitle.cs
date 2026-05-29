@@ -23,15 +23,13 @@ namespace MediaInfoKeeper.Patch
     /// </summary>
     public static class MovieDbTitle
     {
-        // TMDB 回退写入文本字段规则：
-        // title 和 overview 分别回退；新值为空不写；当前字段已有值则停止回退；当前字段为空则写。
-        // TMDB 回退语言策略：
-        // 保留 Emby 当前语言和英文兜底，在英文前插入插件配置的中文备选语言；
-        // 剧集 alternative_titles 使用当前语言国家码、配置备选语言国家码，再用 CN 兜底。
         private static readonly object InitLock = new object();
         private static readonly AsyncLocal<string> CurrentLookupLanguageCountryCode = new AsyncLocal<string>();
 
         private static readonly Regex ChineseRegex = new Regex(@"[\u4E00-\u9FFF]", RegexOptions.Compiled);
+        private static readonly Regex DefaultChineseEpisodeNameRegex =
+            new Regex(@"^第\s*\d+\s*集$", RegexOptions.Compiled);
+
         private static readonly string[] SupportedFallbackLanguages =
         {
             "zh-CN",
@@ -39,8 +37,6 @@ namespace MediaInfoKeeper.Patch
             "zh-HK",
             "zh-TW"
         };
-
-        private const string DefaultFallbackLanguage = "zh-SG";
 
         private static Harmony harmony;
         private static ILogger logger;
@@ -360,18 +356,20 @@ namespace MediaInfoKeeper.Patch
                     preferredCountryCode ?? string.Empty,
                     item.Name ?? string.Empty);
 
-                var title = InvokeGetTitle(getTitleMovieData, movieData);
-                if (ShouldFillText(item.Name, title))
+                if (IsUpdateNeeded(item.Name))
                 {
-                    item.Name = title;
-                    logger?.Debug("TMDB Movie 标题更新: '{0}'", title);
+                    var title = InvokeGetTitle(getTitleMovieData, movieData);
+                    if (!string.IsNullOrWhiteSpace(title))
+                    {
+                        item.Name = title;
+                        logger?.Debug("TMDB Movie 标题更新: '{0}'", title);
+                    }
                 }
 
                 var overview = GetPropertyString(movieData, "overview");
-                var decodedOverview = DecodeOverview(overview);
-                if (ShouldFillText(item.Overview, decodedOverview))
+                if (IsUpdateNeeded(item.Overview) && !string.IsNullOrWhiteSpace(overview))
                 {
-                    item.Overview = decodedOverview;
+                    item.Overview = DecodeOverview(overview);
                     logger?.Debug("TMDB Movie 简介更新: len={0}", item.Overview?.Length ?? 0);
                 }
             }
@@ -396,12 +394,12 @@ namespace MediaInfoKeeper.Patch
             if (item is Movie || item is Series || item is Season)
             {
                 __state = true;
-                __result = HasValue(name) && HasValue(overview);
+                __result = IsChinese(name) && IsChinese(overview);
                 logger?.Debug(
-                    "TMDB IsComplete: type={0}, hasName={1}, hasOverview={2}, result={3}",
+                    "TMDB IsComplete: type={0}, nameZh={1}, overviewZh={2}, result={3}",
                     item.GetType().Name,
-                    HasValue(name),
-                    HasValue(overview),
+                    IsChinese(name),
+                    IsChinese(overview),
                     __result);
                 return false;
             }
@@ -409,13 +407,19 @@ namespace MediaInfoKeeper.Patch
             if (item is Episode)
             {
                 __state = true;
-                __result = HasValue(name) && HasValue(overview);
+                if (IsDefaultChineseEpisodeName(name))
+                {
+                    __result = false;
+                }
+                else
+                {
+                    __result = IsChinese(overview);
+                }
 
                 logger?.Debug(
-                    "TMDB IsComplete Episode: hasName={0}, hasOverview={1}, name='{2}', result={3}",
-                    HasValue(name),
-                    HasValue(overview),
+                    "TMDB IsComplete Episode: name='{0}', overviewLen={1}, result={2}",
                     name,
+                    overview.Length,
                     __result);
                 return false;
             }
@@ -461,17 +465,19 @@ namespace MediaInfoKeeper.Patch
             {
                 var item = seriesResult.Item;
 
-                var title = InvokeGetTitle(getTitleSeriesInfo, seriesInfo);
-                if (ShouldFillText(item.Name, title))
+                if (IsUpdateNeeded(item.Name))
                 {
-                    item.Name = title;
+                    var title = InvokeGetTitle(getTitleSeriesInfo, seriesInfo);
+                    if (!string.IsNullOrWhiteSpace(title))
+                    {
+                        item.Name = title;
+                    }
                 }
 
                 var overview = GetPropertyString(seriesInfo, "overview");
-                var decodedOverview = DecodeOverview(overview);
-                if (ShouldFillText(item.Overview, decodedOverview))
+                if (IsUpdateNeeded(item.Overview) && !string.IsNullOrWhiteSpace(overview))
                 {
-                    item.Overview = decodedOverview;
+                    item.Overview = DecodeOverview(overview);
                 }
 
                 if (isFirstLanguage &&
@@ -501,7 +507,10 @@ namespace MediaInfoKeeper.Patch
 
             try
             {
-                CurrentLookupLanguageCountryCode.Value = GetLanguageCountryCode(language);
+                CurrentLookupLanguageCountryCode.Value =
+                    !string.IsNullOrEmpty(language) && language.Contains("-")
+                        ? language.Split('-')[1]
+                        : null;
 
                 var seriesInfo = GetTaskResult(__result);
                 if (seriesInfo == null)
@@ -509,12 +518,26 @@ namespace MediaInfoKeeper.Patch
                     return;
                 }
 
-                var currentName = GetPropertyString(seriesInfo, "name");
-                if (!IsChinese(currentName) &&
-                    TrySelectAlternativeSeriesTitle(seriesInfo, language, out var selectedIso, out var selectedTitle))
+                var name = GetPropertyString(seriesInfo, "name");
+                if (!IsChinese(name))
                 {
-                    SetPropertyValue(seriesInfo, "name", selectedTitle);
-                    logger?.Debug("TMDB EnsureSeriesInfo: 命中备选标题 iso={0}, title='{1}'", selectedIso, selectedTitle);
+                    var alternativeTitlesRoot = GetPropertyValue(seriesInfo, "alternative_titles");
+                    var alternativeTitles = GetPropertyValue(alternativeTitlesRoot, "results") as IEnumerable;
+                    if (alternativeTitles == null)
+                    {
+                        return;
+                    }
+
+                    if (TrySelectAlternativeSeriesTitle(
+                            alternativeTitles,
+                            language,
+                            CurrentLookupLanguageCountryCode.Value,
+                            out var selectedIso,
+                            out var selectedTitle))
+                    {
+                        SetPropertyValue(seriesInfo, "name", selectedTitle);
+                        logger?.Debug("TMDB EnsureSeriesInfo: 命中备选标题 iso={0}, title='{1}'", selectedIso, selectedTitle);
+                    }
                 }
             }
             catch (Exception ex)
@@ -524,27 +547,20 @@ namespace MediaInfoKeeper.Patch
         }
 
         private static bool TrySelectAlternativeSeriesTitle(
-            object seriesInfo,
+            IEnumerable alternativeTitles,
             string language,
+            string countryCode,
             out string selectedIso,
             out string selectedTitle)
         {
             selectedIso = null;
             selectedTitle = null;
-            if (string.IsNullOrWhiteSpace(language) ||
-                !language.StartsWith("zh", StringComparison.OrdinalIgnoreCase))
-            {
-                return false;
-            }
-
-            var alternativeTitlesRoot = GetPropertyValue(seriesInfo, "alternative_titles");
-            var alternativeTitles = GetPropertyValue(alternativeTitlesRoot, "results") as IEnumerable;
             if (alternativeTitles == null)
             {
                 return false;
             }
 
-            var entries = new List<(string CountryCode, string Title)>();
+            var entries = new List<(string Iso, string Title)>();
             foreach (var altTitle in alternativeTitles)
             {
                 var iso = GetPropertyString(altTitle, "iso_3166_1");
@@ -562,15 +578,35 @@ namespace MediaInfoKeeper.Patch
                 return false;
             }
 
-            foreach (var countryCode in GetAlternativeTitleCountryPriority(language))
+            if (!string.IsNullOrWhiteSpace(countryCode))
             {
                 var exact = entries.FirstOrDefault(v =>
-                    string.Equals(v.CountryCode, countryCode, StringComparison.OrdinalIgnoreCase) &&
-                    IsChinese(v.Title));
+                    string.Equals(v.Iso, countryCode, StringComparison.OrdinalIgnoreCase));
                 if (!string.IsNullOrWhiteSpace(exact.Title))
                 {
-                    selectedIso = exact.CountryCode;
+                    selectedIso = exact.Iso;
                     selectedTitle = exact.Title;
+                    return true;
+                }
+            }
+
+            var isChineseLookup = !string.IsNullOrWhiteSpace(language) &&
+                                  language.StartsWith("zh", StringComparison.OrdinalIgnoreCase);
+            if (!isChineseLookup)
+            {
+                return false;
+            }
+
+            var priority = new[] { "CN", "SG", "HK", "TW" };
+            foreach (var iso in priority)
+            {
+                var hit = entries.FirstOrDefault(v =>
+                    string.Equals(v.Iso, iso, StringComparison.OrdinalIgnoreCase) &&
+                    IsChinese(v.Title));
+                if (!string.IsNullOrWhiteSpace(hit.Title))
+                {
+                    selectedIso = hit.Iso;
+                    selectedTitle = hit.Title;
                     return true;
                 }
             }
@@ -578,7 +614,7 @@ namespace MediaInfoKeeper.Patch
             var anyChinese = entries.FirstOrDefault(v => IsChinese(v.Title));
             if (!string.IsNullOrWhiteSpace(anyChinese.Title))
             {
-                selectedIso = anyChinese.CountryCode;
+                selectedIso = anyChinese.Iso;
                 selectedTitle = anyChinese.Title;
                 return true;
             }
@@ -607,19 +643,24 @@ namespace MediaInfoKeeper.Patch
                     seasonNumber,
                     isFirstLanguage,
                     item.Name ?? string.Empty);
-                var seasonName = GetPropertyString(seasonInfo, "name");
-                if (ShouldFillText(item.Name, seasonName))
+                if (IsUpdateNeeded(item.Name))
                 {
-                    item.Name = seasonName;
-                    logger?.Debug("TMDB Season 标题更新: '{0}'", seasonName);
+                    var seasonName = GetPropertyString(seasonInfo, "name");
+                    if (!string.IsNullOrWhiteSpace(seasonName))
+                    {
+                        item.Name = seasonName;
+                        logger?.Debug("TMDB Season 标题更新: '{0}'", seasonName);
+                    }
                 }
 
-                var overview = GetPropertyString(seasonInfo, "overview");
-                var decodedOverview = DecodeOverview(overview);
-                if (ShouldFillText(item.Overview, decodedOverview))
+                if (IsUpdateNeeded(item.Overview))
                 {
-                    item.Overview = decodedOverview;
-                    logger?.Debug("TMDB Season 简介更新: len={0}", item.Overview?.Length ?? 0);
+                    var overview = GetPropertyString(seasonInfo, "overview");
+                    if (!string.IsNullOrWhiteSpace(overview))
+                    {
+                        item.Overview = DecodeOverview(overview);
+                        logger?.Debug("TMDB Season 简介更新: len={0}", item.Overview?.Length ?? 0);
+                    }
                 }
             }
             catch (Exception ex)
@@ -661,7 +702,7 @@ namespace MediaInfoKeeper.Patch
 
 
                 var nameValue = GetPropertyString(response, "name");
-                if (ShouldFillText(item.Name, nameValue))
+                if (!string.IsNullOrWhiteSpace(nameValue))
                 {
                     item.Name = nameValue;
                 }
@@ -672,7 +713,7 @@ namespace MediaInfoKeeper.Patch
                 var decodedOverview = string.IsNullOrWhiteSpace(overview)
                     ? string.Empty
                     : DecodeOverview(overview);
-                if (ShouldFillText(item.Overview, decodedOverview))
+                if (!string.IsNullOrWhiteSpace(decodedOverview))
                 {
                     item.Overview = decodedOverview;
                 }
@@ -718,7 +759,8 @@ namespace MediaInfoKeeper.Patch
                     string.Equals(v, "en", StringComparison.OrdinalIgnoreCase) ||
                     string.Equals(v, "en-us", StringComparison.OrdinalIgnoreCase));
 
-                foreach (var fallbackLanguage in GetMovieDbFallbackLanguages())
+                var fallbackLanguages = GetMovieDbFallbackLanguages();
+                foreach (var fallbackLanguage in fallbackLanguages)
                 {
                     if (list.Contains(fallbackLanguage, StringComparer.OrdinalIgnoreCase))
                     {
@@ -857,10 +899,22 @@ namespace MediaInfoKeeper.Patch
             }
         }
 
-        private static bool ShouldFillText(string currentValue, string newValue)
+        private static bool IsUpdateNeeded(string currentValue, string newEpisodeName = null)
         {
-            return string.IsNullOrWhiteSpace(currentValue) &&
-                   !string.IsNullOrWhiteSpace(newValue);
+            if (string.IsNullOrEmpty(currentValue))
+            {
+                return true;
+            }
+
+            var isEpisodeName = newEpisodeName != null;
+            if (!isEpisodeName)
+            {
+                return !IsChinese(currentValue);
+            }
+
+            return IsDefaultChineseEpisodeName(currentValue) &&
+                   IsChinese(newEpisodeName) &&
+                   !IsDefaultChineseEpisodeName(newEpisodeName);
         }
 
         private static bool IsChinese(string input)
@@ -869,9 +923,9 @@ namespace MediaInfoKeeper.Patch
                    ChineseRegex.IsMatch(input);
         }
 
-        private static bool HasValue(string input)
+        private static bool IsDefaultChineseEpisodeName(string input)
         {
-            return !string.IsNullOrWhiteSpace(input);
+            return !string.IsNullOrEmpty(input) && DefaultChineseEpisodeNameRegex.IsMatch(input);
         }
 
         private static bool BlockMovieDbNonFallbackLanguage(string input)
@@ -891,7 +945,7 @@ namespace MediaInfoKeeper.Patch
             var configured = options.FallbackLanguages;
             if (string.IsNullOrWhiteSpace(configured))
             {
-                return new List<string> { DefaultFallbackLanguage.ToLowerInvariant() };
+                return new List<string> { "zh-sg" };
             }
 
             var selected = configured
@@ -907,48 +961,10 @@ namespace MediaInfoKeeper.Patch
 
             if (ordered.Count == 0)
             {
-                ordered.Add(DefaultFallbackLanguage.ToLowerInvariant());
+                ordered.Add("zh-sg");
             }
 
             return ordered;
-        }
-
-        private static IReadOnlyList<string> GetAlternativeTitleCountryPriority(string language)
-        {
-            var countries = new List<string>();
-            AddCountry(countries, GetLanguageCountryCode(language));
-            foreach (var countryCode in GetMovieDbFallbackLanguages().Select(GetLanguageCountryCode))
-            {
-                AddCountry(countries, countryCode);
-            }
-
-            AddCountry(countries, "CN");
-
-            return countries;
-        }
-
-        private static string GetLanguageCountryCode(string language)
-        {
-            if (string.IsNullOrWhiteSpace(language))
-            {
-                return null;
-            }
-
-            var parts = language.Split('-');
-            return parts.Length > 1 && !string.IsNullOrWhiteSpace(parts[1])
-                ? parts[1].Trim().ToUpperInvariant()
-                : null;
-        }
-
-        private static void AddCountry(ICollection<string> countries, string countryCode)
-        {
-            if (string.IsNullOrWhiteSpace(countryCode) ||
-                countries.Contains(countryCode, StringComparer.OrdinalIgnoreCase))
-            {
-                return;
-            }
-
-            countries.Add(countryCode.Trim().ToUpperInvariant());
         }
 
         private static MetaDataOptions GetTmdbOptions()
