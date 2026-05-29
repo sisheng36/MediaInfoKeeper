@@ -24,18 +24,14 @@ namespace MediaInfoKeeper.Patch
     public static class MovieDbTitle
     {
         // TMDB 回退写入文本字段规则：
-        // 按语言优先级顺序处理；空值不参与；首选语言的非空值可以覆盖已有值；
-        // 后续语言仅在当前字段为空，或新值质量更高时覆盖。
+        // title 和 overview 分别回退；新值为空不写；当前字段已有值则停止回退；当前字段为空则写。
         // TMDB 回退语言策略：
         // 保留 Emby 当前语言和英文兜底，在英文前插入插件配置的中文备选语言；
         // 剧集 alternative_titles 使用当前语言国家码、配置备选语言国家码，再用 CN 兜底。
         private static readonly object InitLock = new object();
         private static readonly AsyncLocal<string> CurrentLookupLanguageCountryCode = new AsyncLocal<string>();
-        private static readonly AsyncLocal<bool> CurrentLookupPrefersChinese = new AsyncLocal<bool>();
 
         private static readonly Regex ChineseRegex = new Regex(@"[\u4E00-\u9FFF]", RegexOptions.Compiled);
-        private static readonly Regex DefaultChineseEpisodeNameRegex =
-            new Regex(@"^第\s*\d+\s*集$", RegexOptions.Compiled);
         private static readonly string[] SupportedFallbackLanguages =
         {
             "zh-CN",
@@ -365,7 +361,7 @@ namespace MediaInfoKeeper.Patch
                     item.Name ?? string.Empty);
 
                 var title = InvokeGetTitle(getTitleMovieData, movieData);
-                if (ShouldApplyTextByLanguageOrder(item.Name, title))
+                if (ShouldFillText(item.Name, title))
                 {
                     item.Name = title;
                     logger?.Debug("TMDB Movie 标题更新: '{0}'", title);
@@ -373,7 +369,7 @@ namespace MediaInfoKeeper.Patch
 
                 var overview = GetPropertyString(movieData, "overview");
                 var decodedOverview = DecodeOverview(overview);
-                if (ShouldApplyTextByLanguageOrder(item.Overview, decodedOverview))
+                if (ShouldFillText(item.Overview, decodedOverview))
                 {
                     item.Overview = decodedOverview;
                     logger?.Debug("TMDB Movie 简介更新: len={0}", item.Overview?.Length ?? 0);
@@ -396,18 +392,16 @@ namespace MediaInfoKeeper.Patch
 
             var name = item.Name ?? string.Empty;
             var overview = item.Overview ?? string.Empty;
-            var prefersChinese = ShouldRequireChineseCompletion();
 
             if (item is Movie || item is Series || item is Season)
             {
                 __state = true;
-                __result = HasPreferredText(name, prefersChinese) && HasPreferredText(overview, prefersChinese);
+                __result = HasValue(name) && HasValue(overview);
                 logger?.Debug(
-                    "TMDB IsComplete: type={0}, prefersChinese={1}, hasName={2}, hasOverview={3}, result={4}",
+                    "TMDB IsComplete: type={0}, hasName={1}, hasOverview={2}, result={3}",
                     item.GetType().Name,
-                    prefersChinese,
-                    HasPreferredText(name, prefersChinese),
-                    HasPreferredText(overview, prefersChinese),
+                    HasValue(name),
+                    HasValue(overview),
                     __result);
                 return false;
             }
@@ -415,13 +409,12 @@ namespace MediaInfoKeeper.Patch
             if (item is Episode)
             {
                 __state = true;
-                __result = HasPreferredEpisodeName(name, prefersChinese) && HasPreferredText(overview, prefersChinese);
+                __result = HasValue(name) && HasValue(overview);
 
                 logger?.Debug(
-                    "TMDB IsComplete Episode: prefersChinese={0}, hasName={1}, hasOverview={2}, name='{3}', result={4}",
-                    prefersChinese,
-                    HasPreferredEpisodeName(name, prefersChinese),
-                    HasPreferredText(overview, prefersChinese),
+                    "TMDB IsComplete Episode: hasName={0}, hasOverview={1}, name='{2}', result={3}",
+                    HasValue(name),
+                    HasValue(overview),
                     name,
                     __result);
                 return false;
@@ -441,7 +434,6 @@ namespace MediaInfoKeeper.Patch
             if (BlockMovieDbNonFallbackLanguage(item.Overview))
             {
                 item.Overview = null;
-                __result = false;
                 logger?.Debug("TMDB IsCompletePostfix: 清空非回退语言简介 item={0}", item.FileName ?? item.Path ?? item.Id.ToString());
             }
 
@@ -470,14 +462,14 @@ namespace MediaInfoKeeper.Patch
                 var item = seriesResult.Item;
 
                 var title = InvokeGetTitle(getTitleSeriesInfo, seriesInfo);
-                if (ShouldApplyTextByLanguageOrder(item.Name, title))
+                if (ShouldFillText(item.Name, title))
                 {
                     item.Name = title;
                 }
 
                 var overview = GetPropertyString(seriesInfo, "overview");
                 var decodedOverview = DecodeOverview(overview);
-                if (ShouldApplyTextByLanguageOrder(item.Overview, decodedOverview))
+                if (ShouldFillText(item.Overview, decodedOverview))
                 {
                     item.Overview = decodedOverview;
                 }
@@ -616,7 +608,7 @@ namespace MediaInfoKeeper.Patch
                     isFirstLanguage,
                     item.Name ?? string.Empty);
                 var seasonName = GetPropertyString(seasonInfo, "name");
-                if (ShouldApplyTextByLanguageOrder(item.Name, seasonName))
+                if (ShouldFillText(item.Name, seasonName))
                 {
                     item.Name = seasonName;
                     logger?.Debug("TMDB Season 标题更新: '{0}'", seasonName);
@@ -624,7 +616,7 @@ namespace MediaInfoKeeper.Patch
 
                 var overview = GetPropertyString(seasonInfo, "overview");
                 var decodedOverview = DecodeOverview(overview);
-                if (ShouldApplyTextByLanguageOrder(item.Overview, decodedOverview))
+                if (ShouldFillText(item.Overview, decodedOverview))
                 {
                     item.Overview = decodedOverview;
                     logger?.Debug("TMDB Season 简介更新: len={0}", item.Overview?.Length ?? 0);
@@ -669,7 +661,7 @@ namespace MediaInfoKeeper.Patch
 
 
                 var nameValue = GetPropertyString(response, "name");
-                if (ShouldApplyEpisodeNameByLanguageOrder(item.Name, nameValue))
+                if (ShouldFillText(item.Name, nameValue))
                 {
                     item.Name = nameValue;
                 }
@@ -680,7 +672,7 @@ namespace MediaInfoKeeper.Patch
                 var decodedOverview = string.IsNullOrWhiteSpace(overview)
                     ? string.Empty
                     : DecodeOverview(overview);
-                if (ShouldApplyTextByLanguageOrder(item.Overview, decodedOverview))
+                if (ShouldFillText(item.Overview, decodedOverview))
                 {
                     item.Overview = decodedOverview;
                 }
@@ -712,7 +704,6 @@ namespace MediaInfoKeeper.Patch
             }
 
             var metadataLanguage = searchInfo.MetadataLanguage ?? string.Empty;
-            CurrentLookupPrefersChinese.Value = metadataLanguage.StartsWith("zh", StringComparison.OrdinalIgnoreCase);
             if (!metadataLanguage.StartsWith("zh", StringComparison.OrdinalIgnoreCase))
             {
                 logger?.Debug("TMDB MetadataLanguages: skip metadataLanguage={0}", metadataLanguage);
@@ -866,51 +857,10 @@ namespace MediaInfoKeeper.Patch
             }
         }
 
-        private static bool ShouldApplyTextByLanguageOrder(string currentValue, string newValue)
+        private static bool ShouldFillText(string currentValue, string newValue)
         {
-            if (string.IsNullOrWhiteSpace(newValue))
-            {
-                return false;
-            }
-
-            if (IsChinese(newValue))
-            {
-                return true;
-            }
-
-            if (string.IsNullOrWhiteSpace(currentValue))
-            {
-                return true;
-            }
-
-            return !IsChinese(currentValue);
-        }
-
-        private static bool ShouldApplyEpisodeNameByLanguageOrder(string currentValue, string newValue)
-        {
-            var newScore = GetEpisodeNameScore(newValue);
-            if (newScore == 0)
-            {
-                return false;
-            }
-
-            var currentScore = GetEpisodeNameScore(currentValue);
-            if (currentScore == 0)
-            {
-                return true;
-            }
-
-            if (IsChinese(newValue))
-            {
-                return true;
-            }
-
-            if (newScore > currentScore)
-            {
-                return true;
-            }
-
-            return !IsChinese(currentValue);
+            return string.IsNullOrWhiteSpace(currentValue) &&
+                   !string.IsNullOrWhiteSpace(newValue);
         }
 
         private static bool IsChinese(string input)
@@ -922,41 +872,6 @@ namespace MediaInfoKeeper.Patch
         private static bool HasValue(string input)
         {
             return !string.IsNullOrWhiteSpace(input);
-        }
-
-        private static bool HasUsableEpisodeName(string input)
-        {
-            return HasValue(input) && !IsDefaultChineseEpisodeName(input);
-        }
-
-        private static bool HasPreferredText(string input, bool prefersChinese)
-        {
-            return prefersChinese ? IsChinese(input) : HasValue(input);
-        }
-
-        private static bool HasPreferredEpisodeName(string input, bool prefersChinese)
-        {
-            return prefersChinese ? IsChinese(input) && HasUsableEpisodeName(input) : HasUsableEpisodeName(input);
-        }
-
-        private static bool IsDefaultChineseEpisodeName(string input)
-        {
-            return !string.IsNullOrEmpty(input) && DefaultChineseEpisodeNameRegex.IsMatch(input);
-        }
-
-        private static int GetEpisodeNameScore(string input)
-        {
-            if (string.IsNullOrWhiteSpace(input))
-            {
-                return 0;
-            }
-
-            return IsDefaultChineseEpisodeName(input) ? 1 : 2;
-        }
-
-        private static bool ShouldRequireChineseCompletion()
-        {
-            return CurrentLookupPrefersChinese.Value;
         }
 
         private static bool BlockMovieDbNonFallbackLanguage(string input)
