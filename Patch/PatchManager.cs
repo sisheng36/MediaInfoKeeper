@@ -262,6 +262,15 @@ namespace MediaInfoKeeper.Patch
 
             registrations.Add(new PatchRegistration
             {
+                Name = "TmdbPersonUpdate",
+                Initialize = _ => TmdbPersonUpdate.Initialize(logger, true),
+                Configure = _ => TmdbPersonUpdate.Configure(true),
+                IsEnabled = _ => true,
+                IsReady = () => TmdbPersonUpdate.IsReady
+            });
+
+            registrations.Add(new PatchRegistration
+            {
                 Name = "TvdbTitle",
                 Initialize = options => TvdbTitle.Initialize(logger, options.MetaData.EnableTvdbFallback),
                 Configure = options => TvdbTitle.Configure(IsPluginEnabled(options) && options.MetaData.EnableTvdbFallback),
