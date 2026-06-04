@@ -169,29 +169,34 @@ namespace MediaInfoKeeper.Options
         public bool EnableLibrayProviderSettings { get; set; } = true;
 
         [DisplayName("自动合并多版本")]
-        [Description("开启后自动检测相同电影的多个版本（如 1080p/4K）并合并显示，支持跨库操作。修改后保存即生效。")]
+        [Description("开启后自动合并相同电影/电视剧的多个版本（如 1080p / 4K），支持跨库操作。\n\n保存后会自动为所有电视剧库开启 Emby 的自动剧集分组，修改即生效。")]
         public bool MergeMultiVersion { get; set; } = false;
 
         public enum MergeMoviesScopeOption
         {
+            [Description("同文件夹（Emby 原生）")]
             FolderScope,
+            [Description("同媒体库内")]
             LibraryScope,
+            [Description("跨所有电影库")]
             GlobalScope
         }
 
         [DisplayName("电影合并范围")]
-        [Description("FolderScope：仅同文件夹（Emby 原生）；LibraryScope：同媒体库内；GlobalScope：跨所有电影库。")]
+        [Description("同文件夹（Emby 原生）：仅合并同文件夹下的多版本；同媒体库内：合并当前库内相同电影；跨所有电影库：在所有电影/混合库中查找并合并。")]
         [VisibleCondition(nameof(MergeMultiVersion), SimpleCondition.IsTrue)]
         public MergeMoviesScopeOption MergeMoviesPreference { get; set; } = MergeMoviesScopeOption.FolderScope;
 
         public enum MergeSeriesScopeOption
         {
+            [Description("同媒体库内")]
             LibraryScope,
+            [Description("跨所有电视剧库")]
             GlobalScope
         }
 
         [DisplayName("电视剧合并范围")]
-        [Description("LibraryScope：同媒体库内；GlobalScope：跨所有电视剧库（需开启自动剧集分组）。")]
+        [Description("同媒体库内：仅合并当前库内的相同剧集；跨所有电视剧库：在所有电视剧/混合库中查找并合并。\n\n选择跨所有电视剧库时，保存后插件会自动开启所有电视剧/混合库的 Emby 自动剧集分组选项，无需手动操作。")]
         [VisibleCondition(nameof(MergeMultiVersion), SimpleCondition.IsTrue)]
         public MergeSeriesScopeOption MergeSeriesPreference { get; set; } = MergeSeriesScopeOption.LibraryScope;
 
