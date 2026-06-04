@@ -1,0 +1,3536 @@
+DLL_NAME: Emby.M3UTuner.dll
+DLL_VERSION: 1.0.42.0
+
+====================================================
+TYPE: Emby.Api.ForgotPassword
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.ForgotPassword
+
+METHOD: get_EnteredUsername
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Api.ForgotPassword
+
+METHOD: set_EnteredUsername
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Api.ForgotPasswordPin
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.ForgotPasswordPin
+
+METHOD: get_Pin
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Api.ForgotPasswordPin
+
+METHOD: set_Pin
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Serialization.IJsonSerializer
+    MediaBrowser.Controller.Library.IUserDataManager
+    MediaBrowser.Controller.Session.ISessionManager
+    MediaBrowser.Controller.Configuration.IServerConfigurationManager
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService
+
+METHOD: Post
+
+PARAMETERS:
+    Emby.Api.ForgotPassword
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService
+
+METHOD: Post
+
+PARAMETERS:
+    Emby.Api.ForgotPasswordPin
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService+<Post>d__6
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService+<Post>d__6
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService+<Post>d__7
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Api.UserService+<Post>d__7
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UChannelInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UChannelInfo
+
+METHOD: get_EpgUrls
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UChannelInfo
+
+METHOD: get_HttpRequestHeaders
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Entities.ProviderIdDictionary
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UChannelInfo
+
+METHOD: get_TvgId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UChannelInfo
+
+METHOD: set_EpgUrls
+
+PARAMETERS:
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UChannelInfo
+
+METHOD: set_HttpRequestHeaders
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.ProviderIdDictionary
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UChannelInfo
+
+METHOD: set_TvgId
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Controller.IO.IIOManager
+    MediaBrowser.Controller.Library.IMediaSourceManager
+    MediaBrowser.Controller.IServerApplicationHost
+    MediaBrowser.Controller.Configuration.IServerConfigurationManager
+    MediaBrowser.Common.Net.IHttpClient
+    MediaBrowser.Model.IO.IFileSystem
+    MediaBrowser.Model.IO.IZipClient
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: ClearProgramCaches
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: CreateMediaSourceInfo
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    MediaBrowser.Controller.LiveTv.ChannelInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Model.Dto.MediaSourceInfo, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: GetChannelStreamMediaSources
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    MediaBrowser.Controller.Entities.BaseItem
+    MediaBrowser.Controller.LiveTv.ChannelInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Model.Dto.MediaSourceInfo, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: GetChannelsInternal
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Controller.LiveTv.ChannelInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: GetDefaultConfiguration
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.LiveTv.TunerHostInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: GetFullChannelIdPrefix
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: GetProgramsInternal
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    System.String
+    System.DateTimeOffset
+    System.DateTimeOffset
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Controller.LiveTv.ProgramInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: GetReferrer
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    MediaBrowser.Controller.LiveTv.ChannelInfo
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: GetUserAgent
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    MediaBrowser.Controller.LiveTv.ChannelInfo
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: ModifyChannelPath
+
+PARAMETERS:
+    System.String
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: OnSaved
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    System.Boolean
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: SupportsGuideData
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: ValdidateOptions
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: get_SetupUrl
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: get_Type
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost
+
+METHOD: get_UseTunerHostIdAsPrefix
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<>c__DisplayClass26_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<>c__DisplayClass26_0
+
+METHOD: <GetProgramsInternal>b__0
+
+PARAMETERS:
+    MediaBrowser.Controller.LiveTv.ChannelInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<>c__DisplayClass26_0
+
+METHOD: <GetProgramsInternal>b__1
+
+PARAMETERS:
+    MediaBrowser.Controller.LiveTv.ChannelInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<GetChannelStreamMediaSources>d__19
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<GetChannelStreamMediaSources>d__19
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<GetChannelsInternal>d__16
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<GetChannelsInternal>d__16
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<GetProgramsInternal>d__26
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<GetProgramsInternal>d__26
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<ValdidateOptions>d__18
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerHost+<ValdidateOptions>d__18
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: GetPages
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Plugins.PluginPageInfo, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: GetThumbImage
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IO.Stream
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: GetTranslations
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Plugins.TranslationInfo[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: get_Id
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Guid
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin
+
+METHOD: get_ThumbImageFormat
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Drawing.ImageFormat
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin+<>c__DisplayClass9_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin+<>c__DisplayClass9_0
+
+METHOD: <GetTranslations>b__0
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3UTunerPlugin+<>c__DisplayClass9_0
+
+METHOD: <GetTranslations>b__1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: MediaBrowser.Model.Plugins.TranslationInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+    MediaBrowser.Controller.IO.IIOManager
+    MediaBrowser.Controller.IServerApplicationHost
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: ContainsAny
+
+PARAMETERS:
+    System.String[]
+    System.String[]
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: GetChannelInfo
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    Emby.M3UTuner.M3uProviderOptions
+    Emby.M3UTuner.M3UInfo
+    System.String
+    System.String
+    System.String
+
+RETURN_TYPE: Emby.M3UTuner.M3UChannelInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: GetChannelNames
+
+PARAMETERS:
+    System.String
+    System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: GetChannelNumber
+
+PARAMETERS:
+    System.String
+    System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: GetListings
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Common.Net.HttpResponseInfo, MediaBrowser.Common, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: GetM3UInfo
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    Emby.M3UTuner.M3uProviderOptions
+    System.IO.TextReader
+    System.String
+    System.String
+    System.String
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[Emby.M3UTuner.M3UInfo, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: GetTags
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: IsValidChannelNumber
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: Parse
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.TunerHostInfo
+    System.String
+    System.String
+    System.String
+    System.String
+    Emby.M3UTuner.M3uProviderOptions
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[Emby.M3UTuner.M3UInfo, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: ParseExtGrp
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: ParseExtInf
+
+PARAMETERS:
+    System.String
+    System.String&
+
+RETURN_TYPE: System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: ParseExtM3U
+
+PARAMETERS:
+    System.String
+    Emby.M3UTuner.M3UInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: ParseTvgUrls
+
+PARAMETERS:
+    System.String[]
+    System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: ParseUrlLine
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser
+
+METHOD: ParseVlcOpts
+
+PARAMETERS:
+    System.String
+    MediaBrowser.Model.Entities.ProviderIdDictionary
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<>c
+
+METHOD: <GetTags>b__16_0
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<>c
+
+METHOD: <GetTags>b__16_1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<>c__DisplayClass6_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<>c__DisplayClass6_0
+
+METHOD: <Parse>b__0
+
+PARAMETERS:
+    Emby.M3UTuner.M3UChannelInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<GetM3UInfo>d__9
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<GetM3UInfo>d__9
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<Parse>d__6
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uParser+<Parse>d__6
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: get_AdditionalTags
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: get_ImportGuideData
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: get_RequiredTags
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: get_XmlOptions
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.LiveTv.ListingsProviderInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: set_AdditionalTags
+
+PARAMETERS:
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: set_ImportGuideData
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: set_RequiredTags
+
+PARAMETERS:
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.M3uProviderOptions
+
+METHOD: set_XmlOptions
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.StringCompatibility
+
+METHOD: Contains
+
+PARAMETERS:
+    System.String
+    System.Char
+    System.StringComparison
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.StringCompatibility
+
+METHOD: Contains
+
+PARAMETERS:
+    System.String
+    System.String
+    System.StringComparison
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.StringCompatibility
+
+METHOD: IndexOf
+
+PARAMETERS:
+    System.String
+    System.Char
+    System.StringComparison
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.StringCompatibility
+
+METHOD: Replace
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String
+    System.StringComparison
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.M3UTuner.StringCompatibility
+
+METHOD: StartsWith
+
+PARAMETERS:
+    System.String
+    System.Char
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlDataCache
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: Equals
+
+PARAMETERS:
+    Emby.XmlTV.XmlTvChannel
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: GetHashCode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: ToString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: get_AlternateNames
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: get_DisplayName
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: get_Icon
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: Emby.XmlTV.XmlTvIcon
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: get_Id
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: get_Number
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: get_Url
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: set_AlternateNames
+
+PARAMETERS:
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: set_DisplayName
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: set_Icon
+
+PARAMETERS:
+    Emby.XmlTV.XmlTvIcon
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: set_Id
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: set_Number
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvChannel
+
+METHOD: set_Url
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: get_Height
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: get_Source
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: get_Type
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Entities.ImageType
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: get_Width
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: set_Height
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: set_Source
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: set_Type
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.ImageType
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvIcon
+
+METHOD: set_Width
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Controller.Configuration.IServerConfigurationManager
+    MediaBrowser.Common.Net.IHttpClient
+    MediaBrowser.Model.Logging.ILogger
+    MediaBrowser.Model.IO.IFileSystem
+    MediaBrowser.Model.IO.IZipClient
+    MediaBrowser.Controller.Library.IMediaSourceManager
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: ClearProgramCaches
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: ExtractFirstFileFromGz
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: ExtractFirstFileFromXZ
+
+PARAMETERS:
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: ExtractGz
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: FindXmlFile
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetChannels
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Controller.LiveTv.ChannelInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetChannels
+
+PARAMETERS:
+    Emby.XmlTV.XmlDataCache
+
+RETURN_TYPE: System.Collections.Generic.List`1[[MediaBrowser.Controller.LiveTv.ChannelInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetLanguage
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetLineups
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.String
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Model.Dto.NameIdPair, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetPrograms
+
+PARAMETERS:
+    Emby.XmlTV.XmlDataCache
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.String
+    System.DateTimeOffset
+    System.DateTimeOffset
+    System.TimeSpan
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Collections.Generic.List`1[[MediaBrowser.Controller.LiveTv.ProgramInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetProgramsAsync
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.String
+    System.DateTimeOffset
+    System.DateTimeOffset
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Controller.LiveTv.ProgramInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetXml
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.String
+    MediaBrowser.Model.MediaInfo.MediaProtocol
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetXmlDataCache
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[Emby.XmlTV.XmlDataCache, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: GetXmlDataCacheInternal
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[Emby.XmlTV.XmlDataCache, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: UnzipIfNeeded
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: Validate
+
+PARAMETERS:
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: get_CachePathFolderName
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: get_Type
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider
+
+METHOD: set_CachePathFolderName
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<>c
+
+METHOD: <FindXmlFile>b__25_0
+
+PARAMETERS:
+    MediaBrowser.Model.IO.FileSystemMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<>c
+
+METHOD: <FindXmlFile>b__25_1
+
+PARAMETERS:
+    MediaBrowser.Model.IO.FileSystemMetadata
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<ExtractFirstFileFromXZ>d__22
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<ExtractFirstFileFromXZ>d__22
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetChannels>d__32
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetChannels>d__32
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetProgramsAsync>d__28
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetProgramsAsync>d__28
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetXml>d__20
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetXml>d__20
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetXmlDataCache>d__27
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetXmlDataCache>d__27
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetXmlDataCacheInternal>d__26
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<GetXmlDataCacheInternal>d__26
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<UnzipIfNeeded>d__21
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvProvider+<UnzipIfNeeded>d__21
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.IO.IFileSystem
+    MediaBrowser.Model.Logging.ILogger
+    System.String
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: AddValuesWithLanguage
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[Emby.XmlTV.XmlTvReader+ValueWithLanguage, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: CreateStreamReader
+
+PARAMETERS:
+    System.IO.Stream
+
+RETURN_TYPE: System.IO.StreamReader
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: CreateXmlTextReader
+
+PARAMETERS:
+    System.IO.StreamReader
+
+RETURN_TYPE: System.Xml.XmlReader
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: FillImages
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+    System.Collections.Generic.List`1[[Emby.XmlTV.XmlTvIcon, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+    MediaBrowser.Model.MediaInfo.MediaProtocol
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetAspectRatio
+
+PARAMETERS:
+    Emby.XmlTV.XmlTvIcon
+
+RETURN_TYPE: System.Double
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetChannel
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: Emby.XmlTV.XmlTvChannel
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetChannels
+
+PARAMETERS:
+    System.IO.Stream
+
+RETURN_TYPE: System.Collections.Generic.List`1[[Emby.XmlTV.XmlTvChannel, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetImage
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[Emby.XmlTV.XmlTvIcon, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+    MediaBrowser.Model.Entities.ImageType
+    System.Double
+
+RETURN_TYPE: Emby.XmlTV.XmlTvIcon
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetProgramme
+
+PARAMETERS:
+    System.Xml.XmlReader
+    System.String
+    System.DateTimeOffset
+    System.DateTimeOffset
+    System.TimeSpan
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    MediaBrowser.Model.MediaInfo.MediaProtocol
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+
+RETURN_TYPE: MediaBrowser.Controller.LiveTv.ProgramInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetProgrammes
+
+PARAMETERS:
+    System.IO.Stream
+    System.String
+    System.DateTimeOffset
+    System.DateTimeOffset
+    System.TimeSpan
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    MediaBrowser.Model.MediaInfo.MediaProtocol
+    MediaBrowser.Model.LiveTv.ListingsProviderInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Collections.Generic.List`1[[MediaBrowser.Controller.LiveTv.ProgramInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetValueWithLanguage
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[Emby.XmlTV.XmlTvReader+ValueWithLanguage, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: GetValuesWithLanguage
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[Emby.XmlTV.XmlTvReader+ValueWithLanguage, Emby.M3UTuner, Version=1.0.42.0, Culture=neutral, PublicKeyToken=null]]
+    System.String
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: MakeFullUrl
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.String
+    MediaBrowser.Model.MediaInfo.MediaProtocol
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseDate
+
+PARAMETERS:
+    System.String
+    System.TimeSpan
+
+RETURN_TYPE: System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseEpisodeDataForOnScreen
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseEpisodeDataForProgramId
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseEpisodeDataForXmlTvNs
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseImdbSystem
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseMovieDbSystem
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseSxxExxEpisodeNumberSystem
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseSxxExxEpisodeNumberSystem
+
+PARAMETERS:
+    System.String
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseTmsEpisodeSystem
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ParseTvdbSystem
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessCopyrightDate
+
+PARAMETERS:
+    System.Xml.XmlReader
+    System.TimeSpan
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessEpisodeNum
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessIconNode
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: Emby.XmlTV.XmlTvIcon
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessImageNode
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: Emby.XmlTV.XmlTvIcon
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessPreviouslyShown
+
+PARAMETERS:
+    System.Xml.XmlReader
+    System.TimeSpan
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessQuality
+
+PARAMETERS:
+    System.String
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessRating
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessSeriesId
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessStarRating
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: ProcessVideo
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.LiveTv.ProgramInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader
+
+METHOD: SetChannelNumber
+
+PARAMETERS:
+    Emby.XmlTV.XmlTvChannel
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+<>c
+
+METHOD: <GetChannel>b__7_0
+
+PARAMETERS:
+    Emby.XmlTV.XmlTvReader+ValueWithLanguage
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+ValueWithLanguage
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+ValueWithLanguage
+
+METHOD: get_Language
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+ValueWithLanguage
+
+METHOD: get_Value
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+ValueWithLanguage
+
+METHOD: set_Language
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.XmlTV.XmlTvReader+ValueWithLanguage
+
+METHOD: set_Value
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+

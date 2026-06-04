@@ -1,0 +1,2828 @@
+DLL_NAME: Emby.Sqlite.dll
+DLL_VERSION: 4.9.3.0
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+    Emby.Sqlite.DatabaseConnectionManager
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: AddColumn
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+    System.String
+    System.String
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: Append
+
+PARAMETERS:
+    System.Text.StringBuilder
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: Append
+
+PARAMETERS:
+    System.Text.StringBuilder
+    System.String[]
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: BackupToDirectory
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: BackupToFile
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: BackupToFile
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    System.String
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: BindParams
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: BindParams
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: CheckDisposed
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: CreateConnection
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: CreateConnection
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: CreateConnection
+
+PARAMETERS:
+    System.Boolean
+    System.Threading.CancellationToken
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: CreateException
+
+PARAMETERS:
+    SQLitePCL.pretty.ErrorCode
+    System.String
+
+RETURN_TYPE: System.Exception
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: CreateNewConnection
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: Db_Profile
+
+PARAMETERS:
+    SQLitePCL.pretty.DatabaseProfileEventArgs
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: DisableSharedCache
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: Dispose
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: DisposeConnection
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: EncodeUtf8
+
+PARAMETERS:
+    System.Text.StringBuilder
+    System.Span`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: ExecuteAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: ExecuteAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetCollationFunctions
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.delegate_collation, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetColumnNames
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetEquals
+
+PARAMETERS:
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int32[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Collections.Generic.List`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int64[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.String[]
+    System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetIndexesInTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetNotInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int32[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetNotInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int64[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedCachedStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+    System.String
+    System.String
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedCachedStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+    System.String
+    System.Collections.Generic.List`1[[System.Tuple`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedInOrEquals
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Int64[]
+    System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedInOrEquals
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String[]
+    System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedNotInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedNotInOrEquals
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Int64[]
+    System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetParameterizedNotInOrEquals
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String[]
+    System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetScalarFunctions
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Action`2[[System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.sqlite3_context, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetTableNames
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: GetTableNamesInTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: LogPrepareTime
+
+PARAMETERS:
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: LogQueryTime
+
+PARAMETERS:
+    System.String
+    System.Text.StringBuilder
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: LogQueryTime
+
+PARAMETERS:
+    System.String
+    System.String
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: OnClosingDbConnection
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: OnOptimizingDb
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: PrepareAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement[]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: PrepareAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Collections.Generic.List`1[[System.ReadOnlyMemory`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement[]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Text.StringBuilder
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: RunForeignKeyCheck
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: RunIntegrityCheck
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: SetForeignKeyConstraintsEnabled
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: SetQueryOnly
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: Vacuum
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_CacheSize
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_ConnectionManager
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: Emby.Sqlite.DatabaseConnectionManager
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_DbFilePath
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_EnableForeignKeyEnforcement
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_EnableProfiling
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_EnableSingleConnection
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_IsExternallyOwnedDatabase
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_Logger
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Logging.ILogger
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_MmioSize
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Nullable`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_OptimizeOnConnectionClose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_PragmaAnalysisLimit
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_ReadTransactionMode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.TransactionMode
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_SqliteThreadSafe
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_SqliteThreadingMode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: Emby.Sqlite.SqliteThreadingMode
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: get_TransactionMode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.TransactionMode
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: set_ConnectionManager
+
+PARAMETERS:
+    Emby.Sqlite.DatabaseConnectionManager
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: set_DbFilePath
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: set_EnableSingleConnection
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: set_Logger
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: set_SqliteThreadSafe
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository
+
+METHOD: set_SqliteThreadingMode
+
+PARAMETERS:
+    Emby.Sqlite.SqliteThreadingMode
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <DisableSharedCache>b__27_0
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetInOrEquals>b__64_0
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetInOrEquals>b__66_0
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetNotInOrEquals>b__67_0
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetNotInOrEquals>b__71_0
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetParameterizedCachedStatement>b__63_0
+
+PARAMETERS:
+    System.Tuple`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetParameterizedCachedStatement>b__63_1
+
+PARAMETERS:
+    System.Tuple`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetParameterizedInOrEquals>b__57_0
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetParameterizedInOrEquals>b__60_0
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetParameterizedNotInOrEquals>b__56_0
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.BaseSqliteRepository+<>c
+
+METHOD: <GetParameterizedNotInOrEquals>b__58_0
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.DatabaseConnectionManager
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Func`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.DatabaseConnectionManager
+
+METHOD: CheckDisposed
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.DatabaseConnectionManager
+
+METHOD: Close
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.DatabaseConnectionManager
+
+METHOD: CreateConnection
+
+PARAMETERS:
+    System.Boolean
+    System.Threading.CancellationToken
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.DatabaseConnectionManager
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.DatabaseConnectionManager
+
+METHOD: InitConnections
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Func`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    MediaBrowser.Model.Logging.ILogger
+    System.Int32
+    System.String
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: Clone
+
+PARAMETERS:
+    SQLitePCL.pretty.SqliteConnectionInfo
+    System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    System.Threading.CancellationToken
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: Close
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: CreateConnection
+
+PARAMETERS:
+    System.Boolean
+    System.Threading.CancellationToken
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: CreateConnectionInfo
+
+PARAMETERS:
+    System.Boolean
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: InitConnections
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: OnClosed
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: OnWriteConnectionClosed
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: RegisterCancellation
+
+PARAMETERS:
+    System.Threading.CancellationToken
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager
+
+METHOD: WaitForWriteAccess
+
+PARAMETERS:
+    System.Threading.CancellationToken
+
+RETURN_TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager+<>c__DisplayClass13_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.PooledDatabaseConnectionManager+<>c__DisplayClass13_0
+
+METHOD: <RegisterCancellation>b__0
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteDataContext
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: CheckName
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ExecuteQuery
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[SQLitePCL.pretty.IResultSet, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: GetDateTimeKindFormat
+
+PARAMETERS:
+    System.DateTimeKind
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: GetGuid
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+
+RETURN_TYPE: System.Guid
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ReadDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+
+RETURN_TYPE: System.DateTimeOffset
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ReadDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+    System.Boolean
+
+RETURN_TYPE: System.DateTimeOffset
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ReadNullableDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+
+RETURN_TYPE: System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ReadNullableDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+    System.Boolean
+
+RETURN_TYPE: System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: SerializeToBytes
+
+PARAMETERS:
+    MediaBrowser.Model.Serialization.IJsonSerializer
+    System.Object
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ToDateTimeParamValue
+
+PARAMETERS:
+    System.DateTime
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ToGuidBlob
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: ToGuidBlob
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Double
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Double
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Net.IPAddress
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.DateTimeOffset
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.DateTimeOffset
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Nullable`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBindNull
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions
+
+METHOD: TryBindNull
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: System.Collections.Generic.IEnumerable<SQLitePCL.pretty.IResultSet>.GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[[SQLitePCL.pretty.IResultSet, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: System.Collections.Generic.IEnumerator<SQLitePCL.pretty.IResultSet>.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.IResultSet
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: System.Collections.IEnumerable.GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.IEnumerator
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: System.Collections.IEnumerator.Reset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: System.Collections.IEnumerator.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.SqliteExtensions+<ExecuteQuery>d__39
+
+METHOD: System.IDisposable.Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.TransactionDataContext
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    SQLitePCL.pretty.TransactionMode
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.TransactionDataContext
+
+METHOD: BeginTransaction
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.TransactionDataContext
+
+METHOD: CommitTransaction
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.TransactionDataContext
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Sqlite.TransactionDataContext
+
+METHOD: RollbackTransaction
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+

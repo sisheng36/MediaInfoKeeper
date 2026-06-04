@@ -1,0 +1,514 @@
+DLL_NAME: Emby.Drawing.LibVips.dll
+DLL_VERSION: 4.9.3.0
+
+====================================================
+TYPE: Emby.Drawing.LibVips.IptcDecoder
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.IptcDecoder
+
+METHOD: Decode
+
+PARAMETERS:
+    NetVips.Image
+    MediaBrowser.Controller.Drawing.ImageData
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+    MediaBrowser.Controller.Drawing.IImageProcessor
+    MediaBrowser.Model.IO.IFileSystem
+    MediaBrowser.Common.Configuration.IApplicationPaths
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: CreateImageCollage
+
+PARAMETERS:
+    MediaBrowser.Controller.Drawing.ImageCollageOptions
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: EncodeImage
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+    System.Nullable`1[[MediaBrowser.Model.Drawing.ImageOrientation, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Int32
+    MediaBrowser.Controller.Drawing.ImageProcessingOptions
+    MediaBrowser.Model.Drawing.ImageFormat
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: GetField
+
+PARAMETERS:
+    NetVips.Image
+    System.String[]
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: GetImageData
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: MediaBrowser.Controller.Drawing.ImageData
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: GetImageOrientation
+
+PARAMETERS:
+    NetVips.Image
+
+RETURN_TYPE: System.Nullable`1[[MediaBrowser.Model.Drawing.ImageOrientation, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: GetImageSize
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.ValueTuple`2[[MediaBrowser.Model.Drawing.ImageSize, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null],[System.Nullable`1[[MediaBrowser.Model.Drawing.ImageOrientation, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: GetTempFile
+
+PARAMETERS:
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: GetVersion
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: LoadImage
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: NetVips.Image
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: LoadThumbnail
+
+PARAMETERS:
+    System.String
+    System.Boolean
+    System.Nullable`1[[MediaBrowser.Model.Drawing.ImageOrientation, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    MediaBrowser.Controller.Entities.ItemImageInfo
+    System.Int32
+    MediaBrowser.Controller.Drawing.ImageProcessingOptions
+
+RETURN_TYPE: System.Tuple`3[[NetVips.Image, NetVips, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null],[MediaBrowser.Model.Drawing.ImageSize, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null],[System.Nullable`1[[MediaBrowser.Model.Drawing.ImageOrientation, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: LoadThumbnail
+
+PARAMETERS:
+    System.String
+    System.Int32
+    System.Int32
+    NetVips.Enums+Size
+    System.Boolean
+
+RETURN_TYPE: NetVips.Image
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: LogVersion
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: SaveAnimatedGif
+
+PARAMETERS:
+    NetVips.Image
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: SaveGif
+
+PARAMETERS:
+    NetVips.Image
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: get_SupportedImageDataFormats
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: get_SupportedInputFormats
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: get_SupportedOutputFormats
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Drawing.ImageFormat[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: get_SupportsImageCollageCreation
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.LibVipsImageProcessor
+
+METHOD: get_SupportsImageEncoding
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.XmpDecoder
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.XmpDecoder
+
+METHOD: Decode
+
+PARAMETERS:
+    NetVips.Image
+    MediaBrowser.Controller.Drawing.ImageData
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.XmpDecoder
+
+METHOD: ParseListValue
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.XmpDecoder
+
+METHOD: ParseTextValue
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.XmpDecoder
+
+METHOD: ParseXmpDescriptionNode
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.Drawing.ImageData
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Drawing.LibVips.XmpDecoder
+
+METHOD: ParseXmpTopNode
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Controller.Drawing.ImageData
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+

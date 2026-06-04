@@ -1,0 +1,6376 @@
+DLL_NAME: SQLitePCL.pretty.dll
+DLL_VERSION: 1.2.2.0
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    SQLitePCL.pretty.IBindParameter
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_stmt
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Byte[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: Bind
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Double
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: Bind
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: Bind
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: BindNull
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: BindZeroBlob
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterImpl
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCL.pretty.StatementImpl
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: ContainsKey
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: GetBindParameterIndex
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.IBindParameter, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: System.Collections.IEnumerable.GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.IEnumerator
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: TryGetValue
+
+PARAMETERS:
+    System.String
+    SQLitePCL.pretty.IBindParameter&
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: get_Count
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: get_Item
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.IBindParameter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: get_Item
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IBindParameter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: get_Keys
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+
+METHOD: get_Values
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[SQLitePCL.pretty.IBindParameter, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<>c
+
+METHOD: <get_Keys>b__10_0
+
+PARAMETERS:
+    System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.IBindParameter, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<>c
+
+METHOD: <get_Values>b__12_0
+
+PARAMETERS:
+    System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.IBindParameter, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: SQLitePCL.pretty.IBindParameter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<GetEnumerator>d__14
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<GetEnumerator>d__14
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<GetEnumerator>d__14
+
+METHOD: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,SQLitePCL.pretty.IBindParameter>>.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.IBindParameter, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<GetEnumerator>d__14
+
+METHOD: System.Collections.IEnumerator.Reset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<GetEnumerator>d__14
+
+METHOD: System.Collections.IEnumerator.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary+<GetEnumerator>d__14
+
+METHOD: System.IDisposable.Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String
+    System.String
+    System.String
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: CompareTo
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: Create
+
+PARAMETERS:
+    SQLitePCL.pretty.StatementImpl
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.ColumnInfo
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: Equals
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: Equals
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: GetHashCode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: System.IComparable.CompareTo
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: TryOrDefault
+
+PARAMETERS:
+    System.Func`1[T]
+    T
+
+RETURN_TYPE: T
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: get_DatabaseName
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: get_DeclaredType
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: get_OriginName
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: get_TableName
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: op_Equality
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: op_GreaterThan
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: op_GreaterThanOrEqual
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: op_Inequality
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: op_LessThan
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo
+
+METHOD: op_LessThanOrEqual
+
+PARAMETERS:
+    SQLitePCL.pretty.ColumnInfo
+    SQLitePCL.pretty.ColumnInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo+<>c__DisplayClass7_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo+<>c__DisplayClass7_0
+
+METHOD: <Create>b__0
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo+<>c__DisplayClass7_0
+
+METHOD: <Create>b__1
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnInfo+<>c__DisplayClass7_0
+
+METHOD: <Create>b__2
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCL.pretty.StatementImpl
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl
+
+METHOD: GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[[SQLitePCL.pretty.ColumnInfo, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl
+
+METHOD: System.Collections.IEnumerable.GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.IEnumerator
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl
+
+METHOD: get_Count
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl
+
+METHOD: get_Item
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.ColumnInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl+<GetEnumerator>d__6
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl+<GetEnumerator>d__6
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl+<GetEnumerator>d__6
+
+METHOD: System.Collections.Generic.IEnumerator<SQLitePCL.pretty.ColumnInfo>.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.ColumnInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl+<GetEnumerator>d__6
+
+METHOD: System.Collections.IEnumerator.Reset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl+<GetEnumerator>d__6
+
+METHOD: System.Collections.IEnumerator.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ColumnsListImpl+<GetEnumerator>d__6
+
+METHOD: System.IDisposable.Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseBackupImpl
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_backup
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseBackupImpl
+
+METHOD: <.ctor>b__5_0
+
+PARAMETERS:
+    System.Object
+    System.EventArgs
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseBackupImpl
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseBackupImpl
+
+METHOD: Step
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseBackupImpl
+
+METHOD: get_PageCount
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseBackupImpl
+
+METHOD: get_RemainingPages
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: Backup
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: Backup
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    System.String
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: BeginTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    SQLitePCL.pretty.TransactionMode
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: CommitTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: Execute
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: Execute
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: ExecuteAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: ExecuteAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: ExecuteAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: GetFileName
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: PrepareAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[SQLitePCL.pretty.IStatement, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: PrepareAllEnumerator
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[[SQLitePCL.pretty.IStatement, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: ReleaseTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: RollbackTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: RollbackTransactionTo
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: RunInTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    SQLitePCL.pretty.TransactionMode
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: RunInTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: RunInTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Func`2[SQLitePCL.pretty.IDatabaseConnection,T]
+    SQLitePCL.pretty.TransactionMode
+
+RETURN_TYPE: T
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: SaveTransactionPoint
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: Vacuum
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection
+
+METHOD: WalCheckPoint
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<>c
+
+METHOD: <.cctor>b__24_0
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Random
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<>c__DisplayClass21_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<>c__DisplayClass21_0
+
+METHOD: <RunInTransaction>b__0
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<>c__DisplayClass9_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<>c__DisplayClass9_0
+
+METHOD: <PrepareAll>b__0
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[[SQLitePCL.pretty.IStatement, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<PrepareAllEnumerator>d__8
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<PrepareAllEnumerator>d__8
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<PrepareAllEnumerator>d__8
+
+METHOD: System.Collections.Generic.IEnumerator<SQLitePCL.pretty.IStatement>.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<PrepareAllEnumerator>d__8
+
+METHOD: System.Collections.IEnumerator.Reset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<PrepareAllEnumerator>d__8
+
+METHOD: System.Collections.IEnumerator.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseConnection+<PrepareAllEnumerator>d__8
+
+METHOD: System.IDisposable.Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseProfileEventArgs
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.String
+    System.TimeSpan
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseProfileEventArgs
+
+METHOD: Create
+
+PARAMETERS:
+    System.String
+    System.TimeSpan
+
+RETURN_TYPE: SQLitePCL.pretty.DatabaseProfileEventArgs
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseProfileEventArgs
+
+METHOD: get_ExecutionTime
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.TimeSpan
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseProfileEventArgs
+
+METHOD: get_Statement
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseTraceEventArgs
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseTraceEventArgs
+
+METHOD: Create
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.DatabaseTraceEventArgs
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseTraceEventArgs
+
+METHOD: get_Statement
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseUpdateEventArgs
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCL.pretty.ActionCode
+    System.String
+    System.String
+    System.Int64
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseUpdateEventArgs
+
+METHOD: Create
+
+PARAMETERS:
+    SQLitePCL.pretty.ActionCode
+    System.String
+    System.String
+    System.Int64
+
+RETURN_TYPE: SQLitePCL.pretty.DatabaseUpdateEventArgs
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseUpdateEventArgs
+
+METHOD: get_Action
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.ActionCode
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseUpdateEventArgs
+
+METHOD: get_Database
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseUpdateEventArgs
+
+METHOD: get_RowId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DatabaseUpdateEventArgs
+
+METHOD: get_Table
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DelegatingEnumerable`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Func`1[System.Collections.Generic.IEnumerator`1[T]]
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DelegatingEnumerable`1
+
+METHOD: GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[T]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.DelegatingEnumerable`1
+
+METHOD: System.Collections.IEnumerable.GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.IEnumerator
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Byte[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Double
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: Bind
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: BindNull
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: BindZeroBlob
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IBindParameter
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseBackup
+
+METHOD: Step
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseBackup
+
+METHOD: get_PageCount
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseBackup
+
+METHOD: get_RemainingPages
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: Clone
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: Close
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: GetCachedStatement
+
+PARAMETERS:
+    System.String
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: GetTableColumnMetadata
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.TableColumnMetadata
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: Interrupt
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: IsDatabaseReadOnly
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    System.String
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: Status
+
+PARAMETERS:
+    SQLitePCL.pretty.DatabaseConnectionStatusCode
+    System.Int32&
+    System.Int32&
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: WalCheckPoint
+
+PARAMETERS:
+    System.String
+    SQLitePCL.pretty.WalCheckPointMode
+    System.Int32&
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: get_Changes
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: get_IsAutoCommit
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: get_IsReadOnly
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: get_LastInsertedRowId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IDatabaseConnection
+
+METHOD: get_TotalChanges
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IReadOnlyOrderedDictionary`2
+
+METHOD: get_Item
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: TValue
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetBlob
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetBoolean
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetDouble
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Double
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetFloat
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Single
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetInt
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetInt64
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetReadOnlySpanChar
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetSQLiteType
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteType
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: GetString
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IResultSet
+
+METHOD: IsDBNull
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IStatement
+
+METHOD: ClearBindings
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IStatement
+
+METHOD: Status
+
+PARAMETERS:
+    SQLitePCL.pretty.StatementStatusCode
+    System.Boolean
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IStatement
+
+METHOD: get_BindParameters
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IStatement
+
+METHOD: get_Columns
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IReadOnlyList`1[[SQLitePCL.pretty.ColumnInfo, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IStatement
+
+METHOD: get_IsBusy
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IStatement
+
+METHOD: get_IsReadOnly
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.IStatement
+
+METHOD: get_SQL
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCL.pretty.StatementImpl
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetBlob
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetBoolean
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetColumnInfo
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.ColumnInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetDouble
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Double
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetFloat
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Single
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetInt
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetInt64
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetReadOnlySpanChar
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetSQLiteType
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteType
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: GetString
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: IsDBNull
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.ResultSetImpl
+
+METHOD: get_Count
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLBuilder
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLBuilder
+
+METHOD: BeginTransactionWithMode
+
+PARAMETERS:
+    SQLitePCL.pretty.TransactionMode
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLBuilder
+
+METHOD: GetBytes
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Byte[]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLBuilder
+
+METHOD: Release
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLBuilder
+
+METHOD: RollbackTransactionTo
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLBuilder
+
+METHOD: SavePoint
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: CompileOptionUsed
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: CompilerOptionsEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: IsCompleteStatement
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: Open
+
+PARAMETERS:
+    System.String
+    SQLitePCL.pretty.ConnectionFlags
+    System.String
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: Open
+
+PARAMETERS:
+    System.String
+    SQLitePCL.pretty.ConnectionFlags
+    System.String
+    System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.delegate_collation, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Action`2[[System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.sqlite3_context, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: Open
+
+PARAMETERS:
+    System.String
+    SQLitePCL.pretty.ConnectionFlags
+    System.String
+    System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.delegate_collation, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Action`2[[System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.sqlite3_context, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: ResetMemoryHighWater
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: Status
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteStatusCode
+    System.Int32&
+    System.Int32&
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: get_CompilerOptions
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: get_MemoryHighWater
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int64
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: get_MemoryUsed
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int64
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: get_SourceId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: get_Version
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteVersion
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3
+
+METHOD: set_EnableSharedCache
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3+<CompilerOptionsEnumerator>d__0
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3+<CompilerOptionsEnumerator>d__0
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3+<CompilerOptionsEnumerator>d__0
+
+METHOD: System.Collections.Generic.IEnumerator<System.String>.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3+<CompilerOptionsEnumerator>d__0
+
+METHOD: System.Collections.IEnumerator.Reset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3+<CompilerOptionsEnumerator>d__0
+
+METHOD: System.Collections.IEnumerator.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLite3+<CompilerOptionsEnumerator>d__0
+
+METHOD: System.IDisposable.Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: <EnableProfiling>b__35_0
+
+PARAMETERS:
+    System.Object
+    System.String
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: BackupInit
+
+PARAMETERS:
+    System.String
+    SQLitePCL.pretty.SQLiteDatabaseConnection
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseBackup
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Clone
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Close
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Dispose
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: DisposeCachedStatements
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: DisposeParentCachedStatements
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: EnableProfiling
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Finalize
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: GetCachedStatement
+
+PARAMETERS:
+    System.String
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: GetTableColumnMetadata
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.TableColumnMetadata
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Interrupt
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: IsDatabaseReadOnly
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Optimize
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: OptimizeBeforeClose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    System.String
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: Status
+
+PARAMETERS:
+    SQLitePCL.pretty.DatabaseConnectionStatusCode
+    System.Int32&
+    System.Int32&
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: TryGetFileName
+
+PARAMETERS:
+    System.String
+    System.String&
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: WalCheckPoint
+
+PARAMETERS:
+    System.String
+    SQLitePCL.pretty.WalCheckPointMode
+    System.Int32&
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: add_Disposing
+
+PARAMETERS:
+    System.EventHandler
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: add_Rollback
+
+PARAMETERS:
+    System.EventHandler
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: add_Trace
+
+PARAMETERS:
+    System.EventHandler`1[[SQLitePCL.pretty.DatabaseTraceEventArgs, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: add_Update
+
+PARAMETERS:
+    System.EventHandler`1[[SQLitePCL.pretty.DatabaseUpdateEventArgs, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_Changes
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_IsAutoCommit
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_IsDisposed
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_IsReadOnly
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_LastInsertedRowId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_OnClosed
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_OnClosing
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_OnDisposed
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_OnOptimizing
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_OptimizeOnClose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_ParentConnection
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_PragmaAnalysisLimit
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: get_TotalChanges
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: remove_Disposing
+
+PARAMETERS:
+    System.EventHandler
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: remove_Rollback
+
+PARAMETERS:
+    System.EventHandler
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: remove_Trace
+
+PARAMETERS:
+    System.EventHandler`1[[SQLitePCL.pretty.DatabaseTraceEventArgs, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: remove_Update
+
+PARAMETERS:
+    System.EventHandler`1[[SQLitePCL.pretty.DatabaseUpdateEventArgs, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_IsReadOnly
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_OnClosed
+
+PARAMETERS:
+    System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_OnClosing
+
+PARAMETERS:
+    System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_OnDisposed
+
+PARAMETERS:
+    System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_OnOptimizing
+
+PARAMETERS:
+    System.Action`1[[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_OptimizeOnClose
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_ParentConnection
+
+PARAMETERS:
+    SQLitePCL.pretty.SqliteConnectionInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: set_PragmaAnalysisLimit
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+
+METHOD: sqlite3_db_config
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+    System.Int32&
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection+<>c
+
+METHOD: <.ctor>b__34_0
+
+PARAMETERS:
+    System.Object
+    System.EventArgs
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection+<>c
+
+METHOD: <.ctor>b__34_1
+
+PARAMETERS:
+    System.Object
+    SQLitePCL.pretty.DatabaseTraceEventArgs
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection+<>c
+
+METHOD: <.ctor>b__34_2
+
+PARAMETERS:
+    System.Object
+    SQLitePCL.pretty.DatabaseUpdateEventArgs
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection+<>c
+
+METHOD: <.ctor>b__34_3
+
+PARAMETERS:
+    System.Object
+    System.EventArgs
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.String
+    System.Int32
+    System.Func`6[[SQLitePCL.pretty.ActionCode, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.AuthorizerReturnCode, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    System.TimeSpan
+    System.Func`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    SQLitePCL.pretty.ConnectionFlags
+    System.Func`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Int32
+    System.String
+    System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Tuple`2[[SQLitePCLEx.delegate_function_aggregate_step, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null],[SQLitePCLEx.delegate_function_aggregate_final, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Action`2[[System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.sqlite3_context, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.delegate_collation, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: <Build>b__17_0
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: <Build>b__17_1
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: <Build>b__17_2
+
+PARAMETERS:
+    System.Object
+    System.Int32
+    System.String
+    System.String
+    System.String
+    System.String
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: Build
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: Create
+
+PARAMETERS:
+    System.String
+    System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.delegate_collation, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Action`2[[System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.sqlite3_context, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Int32
+    System.Func`6[[SQLitePCL.pretty.ActionCode, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.AuthorizerReturnCode, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    System.TimeSpan
+    System.Func`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    SQLitePCL.pretty.ConnectionFlags
+    System.Func`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Int32
+    System.Boolean
+    System.Boolean
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: Create
+
+PARAMETERS:
+    System.String
+    System.Int32
+    System.Func`6[[SQLitePCL.pretty.ActionCode, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.AuthorizerReturnCode, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    System.TimeSpan
+    System.Func`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    SQLitePCL.pretty.ConnectionFlags
+    System.Func`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Int32
+    System.String
+    System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Tuple`2[[SQLitePCLEx.delegate_function_aggregate_step, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null],[SQLitePCLEx.delegate_function_aggregate_final, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Collections.Generic.IDictionary`2[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Action`2[[System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.sqlite3_context, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCLEx.delegate_collation, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    System.Int32
+    SQLitePCLEx.delegate_function_aggregate_step
+    SQLitePCLEx.delegate_function_aggregate_final
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    System.Int32
+    T
+    System.Func`3[T,System.Collections.Generic.IReadOnlyList`1[SQLitePCLEx.sqlite3_value],T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`3[T,System.Collections.Generic.IReadOnlyList`1[SQLitePCLEx.sqlite3_value],T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`2[T,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`3[T,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`4[T,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`5[T,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`6[T,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`7[T,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`8[T,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`9[T,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+
+METHOD: WithAggregateFunc
+
+PARAMETERS:
+    System.String
+    T
+    System.Func`10[T,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,SQLitePCLEx.sqlite3_value,T]
+    System.Action`2[T,SQLitePCLEx.sqlite3_context]
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass17_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass17_0
+
+METHOD: <Build>b__3
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.Object
+    SQLitePCLEx.sqlite3_value[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass20_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass20_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.Object
+    SQLitePCLEx.sqlite3_value[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass20_0`1
+
+METHOD: <WithAggregateFunc>b__1
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.Object
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass22_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass22_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass23_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass23_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass24_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass24_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass25_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass25_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass26_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass26_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass27_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass27_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass28_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass28_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass29_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass29_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass30_0`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+<>c__DisplayClass30_0`1
+
+METHOD: <WithAggregateFunc>b__0
+
+PARAMETERS:
+    T
+    System.Collections.Generic.IReadOnlyList`1[[SQLitePCLEx.sqlite3_value, SQLitePCLRawEx.core, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+CtxState`1
+
+METHOD: .ctor
+
+PARAMETERS:
+    T
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteDatabaseConnectionBuilder+CtxState`1
+
+METHOD: get_Value
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCL.pretty.ErrorCode
+    SQLitePCL.pretty.ErrorCode
+    System.String
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: CheckOk
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: CheckOk
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: CheckOk
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_stmt
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: Create
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+    System.String
+
+RETURN_TYPE: System.Exception
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: Create
+
+PARAMETERS:
+    SQLitePCL.pretty.ErrorCode
+    SQLitePCL.pretty.ErrorCode
+    System.String
+
+RETURN_TYPE: System.Exception
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: ToString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: get_ErrorCode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.ErrorCode
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteException
+
+METHOD: get_ExtendedErrorCode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.ErrorCode
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteValue
+
+METHOD: SetResult
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteValue
+
+METHOD: SetResult
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteValue
+
+METHOD: SetResult
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteValue
+
+METHOD: SetResult
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteValue
+
+METHOD: SetResult
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_context
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: CompareTo
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: CompareTo
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: Equals
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: Equals
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: GetHashCode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: Of
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SQLitePCL.pretty.SQLiteVersion
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: ToInt
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: ToString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: get_Major
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: get_Minor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: get_Release
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: op_Equality
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: op_GreaterThan
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: op_GreaterThanOrEqual
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: op_Inequality
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: op_LessThan
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SQLiteVersion
+
+METHOD: op_LessThanOrEqual
+
+PARAMETERS:
+    SQLitePCL.pretty.SQLiteVersion
+    SQLitePCL.pretty.SQLiteVersion
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Func`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SQLitePCL.pretty.IDatabaseConnection, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+    System.Boolean
+    System.String
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+
+METHOD: Clone
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+
+METHOD: Close
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+
+METHOD: DisposeCachedStatements
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.SqliteConnectionInfo
+
+METHOD: GetCachedStatement
+
+PARAMETERS:
+    System.String
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: .ctor
+
+PARAMETERS:
+    SQLitePCLEx.sqlite3_stmt
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: ClearBindings
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: Reset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: Status
+
+PARAMETERS:
+    SQLitePCL.pretty.StatementStatusCode
+    System.Boolean
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: System.Collections.IEnumerator.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: get_BindParameters
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.BindParameterOrderedDictionary
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: get_Columns
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IReadOnlyList`1[[SQLitePCL.pretty.ColumnInfo, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.IResultSet
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: get_IsBusy
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: get_IsReadOnly
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: get_SQL
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.StatementImpl
+
+METHOD: get_sqlite3_stmt
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCLEx.sqlite3_stmt
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: CompareTo
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: CompareTo
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: Equals
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: Equals
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: GetHashCode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: ToString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: get_CollationSequence
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: get_DeclaredType
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: get_HasNotNullConstraint
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: get_IsAutoIncrement
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: get_IsPrimaryKeyPart
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: op_Equality
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: op_GreaterThan
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: op_GreaterThanOrEqual
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: op_Inequality
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: op_LessThan
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SQLitePCL.pretty.TableColumnMetadata
+
+METHOD: op_LessThanOrEqual
+
+PARAMETERS:
+    SQLitePCL.pretty.TableColumnMetadata
+    SQLitePCL.pretty.TableColumnMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+

@@ -1,0 +1,9167 @@
+DLL_NAME: SharpDX.DXGI.dll
+DLL_VERSION: 4.2.0.0
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: CheckInterfaceSupport
+
+PARAMETERS:
+    System.Guid
+    System.Int64&
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: GetDescription
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: GetOutput
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SharpDX.DXGI.Output
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: GetOutput
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Output&
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: GetOutputCount
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: IsInterfaceSupported
+
+PARAMETERS:
+    System.Type
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: IsInterfaceSupported
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: IsInterfaceSupported
+
+PARAMETERS:
+    System.Int64&
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: IsInterfaceSupported
+
+PARAMETERS:
+    System.Type
+    System.Int64&
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.AdapterDescription
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: get_Outputs
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.Output[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Adapter
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter1
+
+METHOD: GetDescription1
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription1&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter1
+
+METHOD: get_Description1
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.AdapterDescription1
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Adapter1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter2
+
+METHOD: GetDescription2
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription2&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter2
+
+METHOD: get_Description2
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.AdapterDescription2
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter2
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Adapter2
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: QueryVideoMemoryInfo
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.MemorySegmentGroup
+
+RETURN_TYPE: SharpDX.DXGI.QueryVideoMemoryInformation
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: RegisterHardwareContentProtectionTeardownStatusEvent
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: RegisterVideoMemoryBudgetChangeNotificationEvent
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: SetVideoMemoryReservation
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.MemorySegmentGroup
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: UnregisterHardwareContentProtectionTeardownStatus
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: UnregisterVideoMemoryBudgetChangeNotification
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter3
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Adapter3
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter4
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter4
+
+METHOD: GetDesc3
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription3&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter4
+
+METHOD: get_Desc3
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.AdapterDescription3
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Adapter4
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Adapter4
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription1
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription1+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription1
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription1+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription1
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription1+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription2
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription2+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription2
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription2+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription2
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription2+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription3
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription3+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription3
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription3+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AdapterDescription3
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.AdapterDescription3+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.AssemblyDoc
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGI
+
+METHOD: CreateDXGIFactory1
+
+PARAMETERS:
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGI
+
+METHOD: CreateDXGIFactory1_
+
+PARAMETERS:
+    System.Void*
+    System.Void*
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGI
+
+METHOD: CreateDXGIFactory2
+
+PARAMETERS:
+    System.Int32
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGI
+
+METHOD: CreateDXGIFactory2_
+
+PARAMETERS:
+    System.Int32
+    System.Void*
+    System.Void*
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug
+
+METHOD: ReportLiveObjects
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.DebugRloFlags
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug
+
+METHOD: TryCreate
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.DXGIDebug
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.DXGIDebug
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug1
+
+METHOD: DisableLeakTrackingForThread
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug1
+
+METHOD: EnableLeakTrackingForThread
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug1
+
+METHOD: IsLeakTrackingEnabledForThread_
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug1
+
+METHOD: TryCreate
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.DXGIDebug1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug1
+
+METHOD: get_IsLeakTrackingEnabledForThread
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIDebug1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.DXGIDebug1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIObject
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIObject
+
+METHOD: GetParent
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIObject
+
+METHOD: GetParent
+
+PARAMETERS:
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIObject
+
+METHOD: GetPrivateData
+
+PARAMETERS:
+    System.Guid
+    System.Int32&
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIObject
+
+METHOD: SetPrivateData
+
+PARAMETERS:
+    System.Guid
+    System.Int32
+    System.IntPtr
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIObject
+
+METHOD: SetPrivateDataInterface
+
+PARAMETERS:
+    System.Guid
+    SharpDX.IUnknown
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DXGIObject
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.DXGIObject
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DebugId
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DebugInterface
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DebugInterface
+
+METHOD: TryCreateComPtr
+
+PARAMETERS:
+    System.IntPtr&
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DebugInterface+GetDebugInterface
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Object
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DebugInterface+GetDebugInterface
+
+METHOD: BeginInvoke
+
+PARAMETERS:
+    System.Guid&
+    System.IntPtr&
+    System.AsyncCallback
+    System.Object
+
+RETURN_TYPE: System.IAsyncResult
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DebugInterface+GetDebugInterface
+
+METHOD: EndInvoke
+
+PARAMETERS:
+    System.Guid&
+    System.IntPtr&
+    System.IAsyncResult
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DebugInterface+GetDebugInterface
+
+METHOD: Invoke
+
+PARAMETERS:
+    System.Guid&
+    System.IntPtr&
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: GetColorSpace
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.MultiplaneOverlayYCbCrFlags
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: GetDestSize
+
+PARAMETERS:
+    System.Int32&
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: GetSourceRect
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: GetTargetRect
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: PresentBuffer
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: SetColorSpace
+
+PARAMETERS:
+    SharpDX.DXGI.MultiplaneOverlayYCbCrFlags
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: SetDestSize
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: SetSourceRect
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: SetTargetRect
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: get_ColorSpace
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.MultiplaneOverlayYCbCrFlags
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: get_SourceRect
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawRectangle
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: get_TargetRect
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawRectangle
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.DecodeSwapChain
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: set_ColorSpace
+
+PARAMETERS:
+    SharpDX.DXGI.MultiplaneOverlayYCbCrFlags
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: set_SourceRect
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DecodeSwapChain
+
+METHOD: set_TargetRect
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: CreateSurface
+
+PARAMETERS:
+    SharpDX.DXGI.SurfaceDescription&
+    System.Int32
+    System.Int32
+    System.Nullable`1[[SharpDX.DXGI.SharedResource, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.DXGI.Surface&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: GetAdapter
+
+PARAMETERS:
+    SharpDX.DXGI.Adapter&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: GetGPUThreadPriority
+
+PARAMETERS:
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: QueryResourceResidency
+
+PARAMETERS:
+    SharpDX.ComObject[]
+
+RETURN_TYPE: SharpDX.DXGI.Residency[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: QueryResourceResidency
+
+PARAMETERS:
+    SharpDX.IUnknown[]
+    SharpDX.DXGI.Residency[]
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: SetGPUThreadPriority
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: get_Adapter
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.Adapter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: get_GPUThreadPriority
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Device
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device
+
+METHOD: set_GPUThreadPriority
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device1
+
+METHOD: GetMaximumFrameLatency
+
+PARAMETERS:
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device1
+
+METHOD: SetMaximumFrameLatency
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device1
+
+METHOD: get_MaximumFrameLatency
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Device1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device1
+
+METHOD: set_MaximumFrameLatency
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: EnqueueSetEvent
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: OfferResources
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Resource[]
+    SharpDX.DXGI.OfferResourcePriority
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: OfferResources
+
+PARAMETERS:
+    System.Int32
+    SharpDX.ComArray`1[[SharpDX.DXGI.Resource, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.DXGI.OfferResourcePriority
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: OfferResources
+
+PARAMETERS:
+    System.Int32
+    System.IntPtr
+    SharpDX.DXGI.OfferResourcePriority
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: ReclaimResources
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Resource[]
+    SharpDX.Mathematics.Interop.RawBool[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: ReclaimResources
+
+PARAMETERS:
+    System.Int32
+    SharpDX.ComArray`1[[SharpDX.DXGI.Resource, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.Mathematics.Interop.RawBool[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: ReclaimResources
+
+PARAMETERS:
+    System.Int32
+    System.IntPtr
+    System.IntPtr
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device2
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Device2
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device3
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device3
+
+METHOD: Trim
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device3
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Device3
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: OfferResources1
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Resource[]
+    SharpDX.DXGI.OfferResourcePriority
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: OfferResources1
+
+PARAMETERS:
+    System.Int32
+    SharpDX.ComArray`1[[SharpDX.DXGI.Resource, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.DXGI.OfferResourcePriority
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: OfferResources1
+
+PARAMETERS:
+    System.Int32
+    System.IntPtr
+    SharpDX.DXGI.OfferResourcePriority
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: ReclaimResources1
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Resource[]
+    SharpDX.DXGI.ReclaimResourceResults[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: ReclaimResources1
+
+PARAMETERS:
+    System.Int32
+    SharpDX.ComArray`1[[SharpDX.DXGI.Resource, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.DXGI.ReclaimResourceResults[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: ReclaimResources1
+
+PARAMETERS:
+    System.Int32
+    System.IntPtr
+    System.IntPtr
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Device4
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Device4
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DeviceChild
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DeviceChild
+
+METHOD: GetDevice
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DeviceChild
+
+METHOD: GetDevice
+
+PARAMETERS:
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DeviceChild
+
+METHOD: get_DebugName
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DeviceChild
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.DeviceChild
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DeviceChild
+
+METHOD: set_DebugName
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DisplayControl
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DisplayControl
+
+METHOD: IsStereoEnabled_
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DisplayControl
+
+METHOD: SetStereoEnabled
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DisplayControl
+
+METHOD: get_IsStereoEnabled
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DisplayControl
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.DisplayControl
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.DisplayControl
+
+METHOD: set_StereoEnabled
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: CreateSoftwareAdapter
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Adapter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: CreateSwapChain
+
+PARAMETERS:
+    SharpDX.IUnknown
+    SharpDX.DXGI.SwapChainDescription&
+    SharpDX.DXGI.SwapChain
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: GetAdapter
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SharpDX.DXGI.Adapter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: GetAdapter
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Adapter&
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: GetAdapterCount
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: GetWindowAssociation
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: MakeWindowAssociation
+
+PARAMETERS:
+    System.IntPtr
+    SharpDX.DXGI.WindowAssociationFlags
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: get_Adapters
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.Adapter[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Factory
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: GetAdapter1
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: SharpDX.DXGI.Adapter1
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: GetAdapter1
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Adapter1&
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: GetAdapterCount1
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: IsCurrent_
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: get_Adapters1
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.Adapter1[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: get_IsCurrent
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Factory1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: CreateSwapChainForComposition
+
+PARAMETERS:
+    SharpDX.IUnknown
+    SharpDX.DXGI.SwapChainDescription1&
+    SharpDX.DXGI.Output
+    SharpDX.DXGI.SwapChain1
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: CreateSwapChainForCoreWindow
+
+PARAMETERS:
+    SharpDX.IUnknown
+    SharpDX.IUnknown
+    SharpDX.DXGI.SwapChainDescription1&
+    SharpDX.DXGI.Output
+    SharpDX.DXGI.SwapChain1
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: CreateSwapChainForHwnd
+
+PARAMETERS:
+    SharpDX.IUnknown
+    System.IntPtr
+    SharpDX.DXGI.SwapChainDescription1&
+    System.Nullable`1[[SharpDX.DXGI.SwapChainFullScreenDescription, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.DXGI.Output
+    SharpDX.DXGI.SwapChain1
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: GetSharedResourceAdapterLuid
+
+PARAMETERS:
+    System.IntPtr
+    System.Int64&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: IsWindowedStereoEnabled_
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: RegisterOcclusionStatusEvent
+
+PARAMETERS:
+    System.IntPtr
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: RegisterOcclusionStatusWindow
+
+PARAMETERS:
+    System.IntPtr
+    System.Int32
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: RegisterStereoStatusEvent
+
+PARAMETERS:
+    System.IntPtr
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: RegisterStereoStatusWindow
+
+PARAMETERS:
+    System.IntPtr
+    System.Int32
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: UnregisterOcclusionStatus
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: UnregisterStereoStatus
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: get_IsWindowedStereoEnabled
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory2
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Factory2
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory3
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory3
+
+METHOD: GetCreationFlags
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory3
+
+METHOD: get_CreationFlags
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory3
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Factory3
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory4
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory4
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory4
+
+METHOD: EnumAdapterByLuid
+
+PARAMETERS:
+    System.Int64
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory4
+
+METHOD: EnumWarpAdapter
+
+PARAMETERS:
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory4
+
+METHOD: GetAdapterByLuid
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: SharpDX.DXGI.Adapter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory4
+
+METHOD: GetWarpAdapter
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.Adapter
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory4
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Factory4
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory5
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory5
+
+METHOD: CheckFeatureSupport
+
+PARAMETERS:
+    SharpDX.DXGI.Feature
+    System.IntPtr
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Factory5
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Factory5
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FactoryMedia
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FactoryMedia
+
+METHOD: CreateDecodeSwapChainForCompositionSurfaceHandle
+
+PARAMETERS:
+    SharpDX.IUnknown
+    System.IntPtr
+    SharpDX.DXGI.DecodeSwapChainDescription
+    SharpDX.DXGI.Resource
+    SharpDX.DXGI.Output
+    SharpDX.DXGI.DecodeSwapChain&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FactoryMedia
+
+METHOD: CreateSwapChainForCompositionSurfaceHandle
+
+PARAMETERS:
+    SharpDX.IUnknown
+    System.IntPtr
+    SharpDX.DXGI.SwapChainDescription1&
+    SharpDX.DXGI.Output
+    SharpDX.DXGI.SwapChain1&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FactoryMedia
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.FactoryMedia
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: ComputeScanlineCount
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+    System.Int32
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: InitDefaults
+
+PARAMETERS:
+    System.Collections.Generic.IEnumerable`1[[SharpDX.DXGI.Format, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    System.Boolean[]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: InitFormat
+
+PARAMETERS:
+    System.Collections.Generic.IEnumerable`1[[SharpDX.DXGI.Format, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: IsCompressed
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: IsPacked
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: IsSRgb
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: IsTypeless
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: IsValid
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: IsVideo
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: SizeOfInBits
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.FormatHelper
+
+METHOD: SizeOfInBytes
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControl
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControl+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControl
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControl+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControl
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControl+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControl
+
+METHOD: get_GammaCurve
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawColor4[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControl
+
+METHOD: set_GammaCurve
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawColor4[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControlCapabilities
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControlCapabilities+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControlCapabilities
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControlCapabilities+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControlCapabilities
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControlCapabilities+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControlCapabilities
+
+METHOD: get_ControlPoints
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Single[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.GammaControlCapabilities
+
+METHOD: set_ControlPoints
+
+PARAMETERS:
+    System.Single[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.HdrMetadataHdr10+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.HdrMetadataHdr10+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.HdrMetadataHdr10+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: get_BluePrimary
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int16[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: get_GreenPrimary
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int16[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: get_RedPrimary
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int16[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: get_WhitePoint
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int16[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: set_BluePrimary
+
+PARAMETERS:
+    System.Int16[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: set_GreenPrimary
+
+PARAMETERS:
+    System.Int16[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: set_RedPrimary
+
+PARAMETERS:
+    System.Int16[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.HdrMetadataHdr10
+
+METHOD: set_WhitePoint
+
+PARAMETERS:
+    System.Int16[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceManagerNative
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceManagerNative
+
+METHOD: FlushAllSurfacesWithDevice
+
+PARAMETERS:
+    SharpDX.IUnknown
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceManagerNative
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.ISurfaceImageSourceManagerNative
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNative
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNative
+
+METHOD: BeginDraw
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+    SharpDX.Mathematics.Interop.RawPoint&
+
+RETURN_TYPE: SharpDX.DXGI.Surface
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNative
+
+METHOD: EndDraw
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNative
+
+METHOD: SetDevice
+
+PARAMETERS:
+    SharpDX.DXGI.Device
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNative
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.ISurfaceImageSourceNative
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNative
+
+METHOD: set_Device
+
+PARAMETERS:
+    SharpDX.DXGI.Device
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: BeginDraw
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+    System.Guid
+    System.IntPtr&
+    SharpDX.Mathematics.Interop.RawPoint&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: EndDraw
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: ResumeDraw
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: SetDevice
+
+PARAMETERS:
+    SharpDX.IUnknown
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: SuspendDraw
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISurfaceImageSourceNativeWithD2D
+
+METHOD: set_Device
+
+PARAMETERS:
+    SharpDX.IUnknown
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainBackgroundPanelNative
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainBackgroundPanelNative
+
+METHOD: SetSwapChain
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChain
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainBackgroundPanelNative
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.ISwapChainBackgroundPanelNative
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainBackgroundPanelNative
+
+METHOD: set_SwapChain
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChain
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative
+
+METHOD: SetSwapChain
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChain
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.ISwapChainPanelNative
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative
+
+METHOD: set_SwapChain
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChain
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative2
+
+METHOD: SetSwapChainHandle
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative2
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.ISwapChainPanelNative2
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ISwapChainPanelNative2
+
+METHOD: set_SwapChainHandle
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: GetUpdateRectCount
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: GetUpdateRects
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle[]
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: GetVisibleBounds
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: Invalidate
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: OnUpdatesNeeded
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: RegisterForUpdatesNeeded
+
+PARAMETERS:
+    SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNative
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: Resize
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: add_UpdatesNeeded
+
+PARAMETERS:
+    System.EventHandler`1[[System.EventArgs, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: get_UpdateRectangles
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawRectangle[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: get_VisibleBounds
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawRectangle
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+METHOD: remove_UpdatesNeeded
+
+PARAMETERS:
+    System.EventHandler`1[[System.EventArgs, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative+VirtualSurfaceUpdatesCallbackNativeCallback
+
+METHOD: .ctor
+
+PARAMETERS:
+    SharpDX.DXGI.IVirtualSurfaceImageSourceNative
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceImageSourceNative+VirtualSurfaceUpdatesCallbackNativeCallback
+
+METHOD: UpdatesNeeded
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNative
+
+METHOD: UpdatesNeeded
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNativeNative
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNativeNative
+
+METHOD: UpdatesNeeded
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNativeNative
+
+METHOD: UpdatesNeeded_
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNativeNative
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNativeNative
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: AddApplicationMessage
+
+PARAMETERS:
+    SharpDX.DXGI.InformationQueueMessageSeverity
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: AddMessage
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InformationQueueMessageCategory
+    SharpDX.DXGI.InformationQueueMessageSeverity
+    System.Int32
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: AddRetrievalFilterEntries
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InfoQueueFilter&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: AddStorageFilterEntries
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InfoQueueFilter&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: ClearRetrievalFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: ClearStorageFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: ClearStoredMessages
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetBreakOnCategory
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InformationQueueMessageCategory
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetBreakOnID
+
+PARAMETERS:
+    System.Guid
+    System.Int32
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetBreakOnSeverity
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InformationQueueMessageSeverity
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetMessage
+
+PARAMETERS:
+    System.Guid
+    System.Int64
+    SharpDX.DXGI.InformationQueueMessage[]
+    SharpDX.PointerSize&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetMessageCountLimit
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetMuteDebugOutput
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetNumMessagesAllowedByStorageFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetNumMessagesDeniedByStorageFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetNumMessagesDiscardedByMessageCountLimit
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetNumStoredMessages
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetNumStoredMessagesAllowedByRetrievalFilters
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int64
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetRetrievalFilter
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InfoQueueFilter[]
+    SharpDX.PointerSize&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetRetrievalFilterStackSize
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetStorageFilter
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InfoQueueFilter[]
+    SharpDX.PointerSize&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: GetStorageFilterStackSize
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PopRetrievalFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PopStorageFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushCopyOfRetrievalFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushCopyOfStorageFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushDenyAllRetrievalFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushDenyAllStorageFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushEmptyRetrievalFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushEmptyStorageFilter
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushRetrievalFilter
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InfoQueueFilter&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: PushStorageFilter
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InfoQueueFilter&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: SetBreakOnCategory
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InformationQueueMessageCategory
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: SetBreakOnID
+
+PARAMETERS:
+    System.Guid
+    System.Int32
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: SetBreakOnSeverity
+
+PARAMETERS:
+    System.Guid
+    SharpDX.DXGI.InformationQueueMessageSeverity
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: SetMessageCountLimit
+
+PARAMETERS:
+    System.Guid
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: SetMuteDebugOutput
+
+PARAMETERS:
+    System.Guid
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: TryCreate
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.InfoQueue
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InfoQueue
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.InfoQueue
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InformationQueueMessage
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.InformationQueueMessage+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InformationQueueMessage
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.InformationQueueMessage+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.InformationQueueMessage
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.InformationQueueMessage+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegAcHuffmanTable
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.JpegAcHuffmanTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegAcHuffmanTable
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.JpegAcHuffmanTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegAcHuffmanTable
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.JpegAcHuffmanTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegAcHuffmanTable
+
+METHOD: get_CodeCounts
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Byte[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegAcHuffmanTable
+
+METHOD: get_CodeValues
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Byte[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegAcHuffmanTable
+
+METHOD: set_CodeCounts
+
+PARAMETERS:
+    System.Byte[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegAcHuffmanTable
+
+METHOD: set_CodeValues
+
+PARAMETERS:
+    System.Byte[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegDeviceContextHuffmanTable
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.JpegDeviceContextHuffmanTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegDeviceContextHuffmanTable
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.JpegDeviceContextHuffmanTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegDeviceContextHuffmanTable
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.JpegDeviceContextHuffmanTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegDeviceContextHuffmanTable
+
+METHOD: get_CodeCounts
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Byte[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegDeviceContextHuffmanTable
+
+METHOD: get_CodeValues
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Byte[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegDeviceContextHuffmanTable
+
+METHOD: set_CodeCounts
+
+PARAMETERS:
+    System.Byte[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegDeviceContextHuffmanTable
+
+METHOD: set_CodeValues
+
+PARAMETERS:
+    System.Byte[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegQuantizationTable
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.JpegQuantizationTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegQuantizationTable
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.JpegQuantizationTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegQuantizationTable
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.JpegQuantizationTable+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegQuantizationTable
+
+METHOD: get_Elements
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Byte[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.JpegQuantizationTable
+
+METHOD: set_Elements
+
+PARAMETERS:
+    System.Byte[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Kernel32
+
+METHOD: GetModuleHandle
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.IntPtr
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Kernel32
+
+METHOD: GetProcAddress
+
+PARAMETERS:
+    System.IntPtr
+    System.String
+
+RETURN_TYPE: System.IntPtr
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Kernel32
+
+METHOD: LoadLibraryEx
+
+PARAMETERS:
+    System.String
+    System.IntPtr
+    SharpDX.DXGI.Kernel32+LoadLibraryFlags
+
+RETURN_TYPE: System.IntPtr
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.KeyedMutex
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.KeyedMutex
+
+METHOD: Acquire
+
+PARAMETERS:
+    System.Int64
+    System.Int32
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.KeyedMutex
+
+METHOD: Release
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.KeyedMutex
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.KeyedMutex
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ModeDescription
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+    SharpDX.DXGI.Rational
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ModeDescription
+
+METHOD: .ctor
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ModuleInit
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ModuleInit
+
+METHOD: Setup
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.NamespaceDoc
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: CopyDisplaySurfaceTo
+
+PARAMETERS:
+    SharpDX.DXGI.Surface
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: FindClosestMatchingMode
+
+PARAMETERS:
+    SharpDX.DXGI.ModeDescription&
+    SharpDX.DXGI.ModeDescription&
+    SharpDX.IUnknown
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: GetClosestMatchingMode
+
+PARAMETERS:
+    SharpDX.ComObject
+    SharpDX.DXGI.ModeDescription
+    SharpDX.DXGI.ModeDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: GetDescription
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: GetDisplayModeList
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+    SharpDX.DXGI.DisplayModeEnumerationFlags
+
+RETURN_TYPE: SharpDX.DXGI.ModeDescription[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: GetDisplayModeList
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+    System.Int32
+    System.Int32&
+    SharpDX.DXGI.ModeDescription[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: GetFrameStatistics
+
+PARAMETERS:
+    SharpDX.DXGI.FrameStatistics&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: GetGammaControl
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControl&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: GetGammaControlCapabilities
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControlCapabilities&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: ReleaseOwnership
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: SetDisplaySurface
+
+PARAMETERS:
+    SharpDX.DXGI.Surface
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: SetGammaControl
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControl&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: TakeOwnership
+
+PARAMETERS:
+    SharpDX.IUnknown
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: WaitForVerticalBlank
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.OutputDescription
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: get_FrameStatistics
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.FrameStatistics
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: get_GammaControl
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.GammaControl
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: get_GammaControlCapabilities
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.GammaControlCapabilities
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Output
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output
+
+METHOD: set_GammaControl
+
+PARAMETERS:
+    SharpDX.DXGI.GammaControl
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output1
+
+METHOD: DuplicateOutput
+
+PARAMETERS:
+    SharpDX.IUnknown
+
+RETURN_TYPE: SharpDX.DXGI.OutputDuplication
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output1
+
+METHOD: FindClosestMatchingMode1
+
+PARAMETERS:
+    SharpDX.DXGI.ModeDescription1&
+    SharpDX.DXGI.ModeDescription1&
+    SharpDX.IUnknown
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output1
+
+METHOD: GetDisplayModeList1
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+    SharpDX.DXGI.DisplayModeEnumerationFlags
+
+RETURN_TYPE: SharpDX.DXGI.ModeDescription1[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output1
+
+METHOD: GetDisplayModeList1
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+    System.Int32
+    System.Int32&
+    SharpDX.DXGI.ModeDescription1[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output1
+
+METHOD: GetDisplaySurfaceData1
+
+PARAMETERS:
+    SharpDX.DXGI.Resource
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Output1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output2
+
+METHOD: SupportsOverlays_
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output2
+
+METHOD: get_SupportsOverlays
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output2
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Output2
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output3
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output3
+
+METHOD: CheckOverlaySupport
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+    SharpDX.IUnknown
+
+RETURN_TYPE: SharpDX.DXGI.OverlaySupportFlags
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output3
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Output3
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output4
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output4
+
+METHOD: CheckOverlayColorSpaceSupport
+
+PARAMETERS:
+    SharpDX.DXGI.Format
+    SharpDX.DXGI.ColorSpaceType
+    SharpDX.IUnknown
+
+RETURN_TYPE: SharpDX.DXGI.OverlayColorSpaceSupportFlags
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output4
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Output4
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output5
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output5
+
+METHOD: DuplicateOutput1
+
+PARAMETERS:
+    SharpDX.IUnknown
+    System.Int32
+    System.Int32
+    SharpDX.DXGI.Format[]
+
+RETURN_TYPE: SharpDX.DXGI.OutputDuplication
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output5
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Output5
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output6
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output6
+
+METHOD: CheckHardwareCompositionSupport
+
+PARAMETERS:
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output6
+
+METHOD: GetDescription1
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription1&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output6
+
+METHOD: get_Description1
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.OutputDescription1
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Output6
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Output6
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: __MarshalFree
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription1+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: __MarshalFrom
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription1+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: __MarshalTo
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDescription1+__Native&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: get_BluePrimary
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Single[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: get_GreenPrimary
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Single[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: get_RedPrimary
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Single[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: get_WhitePoint
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Single[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: set_BluePrimary
+
+PARAMETERS:
+    System.Single[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: set_GreenPrimary
+
+PARAMETERS:
+    System.Single[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: set_RedPrimary
+
+PARAMETERS:
+    System.Single[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDescription1
+
+METHOD: set_WhitePoint
+
+PARAMETERS:
+    System.Single[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: AcquireNextFrame
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.OutputDuplicateFrameInformation&
+    SharpDX.DXGI.Resource&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: GetDescription
+
+PARAMETERS:
+    SharpDX.DXGI.OutputDuplicateDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: GetFrameDirtyRects
+
+PARAMETERS:
+    System.Int32
+    SharpDX.Mathematics.Interop.RawRectangle[]
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: GetFrameMoveRects
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.OutputDuplicateMoveRectangle[]
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: GetFramePointerShape
+
+PARAMETERS:
+    System.Int32
+    System.IntPtr
+    System.Int32&
+    SharpDX.DXGI.OutputDuplicatePointerShapeInformation&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: MapDesktopSurface
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DataRectangle
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: MapDesktopSurface
+
+PARAMETERS:
+    SharpDX.DXGI.MappedRectangle&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: ReleaseFrame
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: TryAcquireNextFrame
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.OutputDuplicateFrameInformation&
+    SharpDX.DXGI.Resource&
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: UnMapDesktopSurface
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.OutputDuplicateDescription
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.OutputDuplication
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.OutputDuplication
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: Equals
+
+PARAMETERS:
+    SharpDX.DXGI.Rational
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: Equals
+
+PARAMETERS:
+    System.Object
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: GetHashCode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: ToString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: op_Equality
+
+PARAMETERS:
+    SharpDX.DXGI.Rational
+    SharpDX.DXGI.Rational
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Rational
+
+METHOD: op_Inequality
+
+PARAMETERS:
+    SharpDX.DXGI.Rational
+    SharpDX.DXGI.Rational
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: GetEvictionPriority
+
+PARAMETERS:
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: GetSharedHandle
+
+PARAMETERS:
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: GetUsage
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: SetEvictionPriority
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: get_EvictionPriority
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: get_SharedHandle
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Resource
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource
+
+METHOD: set_EvictionPriority
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource1
+
+METHOD: CreateSharedHandle
+
+PARAMETERS:
+    System.String
+    SharpDX.DXGI.SharedResourceFlags
+    System.Nullable`1[[SharpDX.Win32.SecurityAttributes, SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource1
+
+METHOD: CreateSharedHandle
+
+PARAMETERS:
+    System.Nullable`1[[SharpDX.Win32.SecurityAttributes, SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.DXGI.SharedResourceFlags
+    System.String
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource1
+
+METHOD: CreateSubresourceSurface
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.Surface2
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Resource1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Resource1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ResultCode
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.ResultCode
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SampleDescription
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SampleDescription
+
+METHOD: ToString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: FromSwapChain
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChain
+    System.Int32
+
+RETURN_TYPE: SharpDX.DXGI.Surface
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: GetDescription
+
+PARAMETERS:
+    SharpDX.DXGI.SurfaceDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: Map
+
+PARAMETERS:
+    SharpDX.DXGI.MapFlags
+
+RETURN_TYPE: SharpDX.DataRectangle
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: Map
+
+PARAMETERS:
+    SharpDX.DXGI.MapFlags
+    SharpDX.DataStream&
+
+RETURN_TYPE: SharpDX.DataRectangle
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: Map
+
+PARAMETERS:
+    SharpDX.DXGI.MappedRectangle&
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: Unmap
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.SurfaceDescription
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Surface
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface1
+
+METHOD: GetDC
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawBool
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface1
+
+METHOD: ReleaseDC
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface1
+
+METHOD: ReleaseDC
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawRectangle
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface1
+
+METHOD: ReleaseDC_
+
+PARAMETERS:
+    System.Nullable`1[[SharpDX.Mathematics.Interop.RawRectangle, SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Surface1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface2
+
+METHOD: .ctor
+
+PARAMETERS:
+    SharpDX.DXGI.Resource1
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface2
+
+METHOD: GetResource
+
+PARAMETERS:
+    System.Guid
+    System.IntPtr&
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.Surface2
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.Surface2
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: .ctor
+
+PARAMETERS:
+    SharpDX.DXGI.Factory
+    SharpDX.ComObject
+    SharpDX.DXGI.SwapChainDescription
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: GetBackBuffer
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: T
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 1
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: GetBuffer
+
+PARAMETERS:
+    System.Int32
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: GetContainingOutput
+
+PARAMETERS:
+    SharpDX.DXGI.Output&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: GetDescription
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChainDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: GetFullscreenState
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawBool&
+    SharpDX.DXGI.Output&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: GetLastPresentCount
+
+PARAMETERS:
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: Present
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.PresentFlags
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: ResizeBuffers
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+    System.Int32
+    SharpDX.DXGI.Format
+    SharpDX.DXGI.SwapChainFlags
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: ResizeTarget
+
+PARAMETERS:
+    SharpDX.DXGI.ModeDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: SetFullscreenState
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawBool
+    SharpDX.DXGI.Output
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: TryGetFrameStatistics
+
+PARAMETERS:
+    SharpDX.DXGI.FrameStatistics&
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: TryPresent
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.PresentFlags
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: get_ContainingOutput
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.Output
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.SwapChainDescription
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: get_FrameStatistics
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.FrameStatistics
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: get_IsFullScreen
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: get_LastPresentCount
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.SwapChain
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain
+
+METHOD: set_IsFullScreen
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: .ctor
+
+PARAMETERS:
+    SharpDX.DXGI.Factory2
+    SharpDX.ComObject
+    System.IntPtr
+    SharpDX.DXGI.SwapChainDescription1&
+    System.Nullable`1[[SharpDX.DXGI.SwapChainFullScreenDescription, SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null]]
+    SharpDX.DXGI.Output
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: .ctor
+
+PARAMETERS:
+    SharpDX.DXGI.Factory2
+    SharpDX.ComObject
+    SharpDX.ComObject
+    SharpDX.DXGI.SwapChainDescription1&
+    SharpDX.DXGI.Output
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: .ctor
+
+PARAMETERS:
+    SharpDX.DXGI.Factory2
+    SharpDX.ComObject
+    SharpDX.DXGI.SwapChainDescription1&
+    SharpDX.DXGI.Output
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: GetBackgroundColor
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawColor4&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: GetCoreWindow
+
+PARAMETERS:
+    System.Guid
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: GetDescription1
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChainDescription1&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: GetFullscreenDescription
+
+PARAMETERS:
+    SharpDX.DXGI.SwapChainFullScreenDescription&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: GetHwnd
+
+PARAMETERS:
+    System.IntPtr&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: GetRestrictToOutput
+
+PARAMETERS:
+    SharpDX.DXGI.Output&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: GetRotation
+
+PARAMETERS:
+    SharpDX.DXGI.DisplayModeRotation&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: IsTemporaryMonoSupported_
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: Present
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.PresentFlags
+    SharpDX.DXGI.PresentParameters
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: Present1
+
+PARAMETERS:
+    System.Int32
+    SharpDX.DXGI.PresentFlags
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.Result
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: SetBackgroundColor
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawColor4
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: SetRotation
+
+PARAMETERS:
+    SharpDX.DXGI.DisplayModeRotation
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: get_BackgroundColor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawColor4
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: get_Description1
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.SwapChainDescription1
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: get_FullscreenDescription
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.SwapChainFullScreenDescription
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: get_Hwnd
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: get_IsTemporaryMonoSupported
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawBool
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: get_RestrictToOutput
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.Output
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: get_Rotation
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.DisplayModeRotation
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.SwapChain1
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: set_BackgroundColor
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawColor4
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain1
+
+METHOD: set_Rotation
+
+PARAMETERS:
+    SharpDX.DXGI.DisplayModeRotation
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: GetFrameLatencyWaitableObject
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: GetMatrixTransform
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawMatrix3x2&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: GetMaximumFrameLatency
+
+PARAMETERS:
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: GetSourceSize
+
+PARAMETERS:
+    System.Int32&
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: SetMatrixTransform
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawMatrix3x2&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: SetMaximumFrameLatency
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: SetSourceSize
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: get_FrameLatencyWaitableObject
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IntPtr
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: get_MatrixTransform
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Mathematics.Interop.RawMatrix3x2
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: get_MaximumFrameLatency
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: get_SourceSize
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.Size2
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.SwapChain2
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: set_MatrixTransform
+
+PARAMETERS:
+    SharpDX.Mathematics.Interop.RawMatrix3x2
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: set_MaximumFrameLatency
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain2
+
+METHOD: set_SourceSize
+
+PARAMETERS:
+    SharpDX.Size2
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: CheckColorSpaceSupport
+
+PARAMETERS:
+    SharpDX.DXGI.ColorSpaceType
+
+RETURN_TYPE: SharpDX.DXGI.SwapChainColorSpaceSupportFlags
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: GetCurrentBackBufferIndex
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: ResizeBuffers1
+
+PARAMETERS:
+    System.Int32
+    System.Int32
+    System.Int32
+    SharpDX.DXGI.Format
+    SharpDX.DXGI.SwapChainFlags
+    System.Int32[]
+    SharpDX.IUnknown[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: SetColorSpace1
+
+PARAMETERS:
+    SharpDX.DXGI.ColorSpaceType
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: get_CurrentBackBufferIndex
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.SwapChain3
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain3
+
+METHOD: set_ColorSpace1
+
+PARAMETERS:
+    SharpDX.DXGI.ColorSpaceType
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain4
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain4
+
+METHOD: SetHDRMetaData
+
+PARAMETERS:
+    SharpDX.DXGI.HdrMetadataType
+    System.Int32
+    System.IntPtr
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChain4
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.SwapChain4
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChainMedia
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChainMedia
+
+METHOD: CheckPresentDurationSupport
+
+PARAMETERS:
+    System.Int32
+    System.Int32&
+    System.Int32&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChainMedia
+
+METHOD: GetFrameStatisticsMedia
+
+PARAMETERS:
+    SharpDX.DXGI.FrameStatisticsMedia&
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChainMedia
+
+METHOD: SetPresentDuration
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChainMedia
+
+METHOD: get_FrameStatisticsMedia
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.DXGI.FrameStatisticsMedia
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChainMedia
+
+METHOD: op_Explicit
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: SharpDX.DXGI.SwapChainMedia
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.SwapChainMedia
+
+METHOD: set_PresentDuration
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow
+
+METHOD: ToIntPtr
+
+PARAMETERS:
+    SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNative
+
+RETURN_TYPE: System.IntPtr
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow
+
+METHOD: get_GetVtbl
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SharpDX.CppObjectVtbl
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow+VirtualSurfaceUpdatesCallbackNativeVtbl
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow+VirtualSurfaceUpdatesCallbackNativeVtbl
+
+METHOD: UpdatesNeededImpl
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow+VirtualSurfaceUpdatesCallbackNativeVtbl+UpdatesNeededDelegate
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Object
+    System.IntPtr
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow+VirtualSurfaceUpdatesCallbackNativeVtbl+UpdatesNeededDelegate
+
+METHOD: BeginInvoke
+
+PARAMETERS:
+    System.IntPtr
+    System.AsyncCallback
+    System.Object
+
+RETURN_TYPE: System.IAsyncResult
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow+VirtualSurfaceUpdatesCallbackNativeVtbl+UpdatesNeededDelegate
+
+METHOD: EndInvoke
+
+PARAMETERS:
+    System.IAsyncResult
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: SharpDX.DXGI.VirtualSurfaceUpdatesCallbackNativeShadow+VirtualSurfaceUpdatesCallbackNativeVtbl+UpdatesNeededDelegate
+
+METHOD: Invoke
+
+PARAMETERS:
+    System.IntPtr
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+

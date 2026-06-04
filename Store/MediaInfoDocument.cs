@@ -1,0 +1,119 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+using MediaBrowser.Controller.Entities;
+using MediaBrowser.Controller.Entities.Audio;
+using MediaBrowser.Controller.Providers;
+using MediaBrowser.Model.Dto;
+using MediaBrowser.Model.Entities;
+
+namespace MediaInfoKeeper.Store
+{
+    public class MediaInfoDocument
+    {
+        [Flags]
+        public enum MediaInfoRestoreResult
+        {
+            // 恢复成功
+            Restored = 1,
+            // 已经存在，无需恢复
+            AlreadyExists = 0,
+            // 恢复失败
+            Failed = -1
+        }
+
+        private const string MediaInfoFileExtension = "-mediainfo.json";
+        public MediaSourceInfo MediaSourceInfo { get; set; }
+
+        public List<ChapterInfo> Chapters { get; set; } = new List<ChapterInfo>();
+
+        public string EmbeddedImage { get; set; }
+
+        public EmbeddedInfoSnapshot EmbeddedInfo { get; set; }
+
+        public bool HasPayload()
+        {
+            return MediaSourceInfo != null ||
+                   (Chapters?.Count ?? 0) > 0 ||
+                   !string.IsNullOrWhiteSpace(EmbeddedImage) ||
+                   EmbeddedInfo != null;
+        }
+
+        public static string GetMediaInfoJsonPath(BaseItem item)
+        {
+            return BuildSidecarPath(item, MediaInfoFileExtension);
+        }
+
+        private static string BuildSidecarPath(BaseItem item, string extension)
+        {
+            var jsonRootFolder = Plugin.Instance.Options.GetMediaInfoOptions().MediaInfoJsonRootFolder?.Trim();
+            var fileName = item.FileNameWithoutExtension + extension;
+
+            return !string.IsNullOrWhiteSpace(jsonRootFolder)
+                ? Path.Combine(GetConfiguredRootFolder(item, jsonRootFolder), fileName)
+                : Path.Combine(item.ContainingFolderPath, fileName);
+        }
+
+        private static string GetConfiguredRootFolder(BaseItem item, string jsonRootFolder)
+        {
+            if (item is Audio)
+            {
+                return Path.Combine(jsonRootFolder, "music");
+            }
+
+            return jsonRootFolder;
+        }
+
+        public static void DeleteMediaInfoJson(BaseItem item, IDirectoryService directoryService, string source)
+        {
+            DeleteSidecar(item, directoryService, GetMediaInfoJsonPath(item), "JSON", source);
+        }
+
+        private static void DeleteSidecar(BaseItem item, IDirectoryService directoryService, string path, string label, string source)
+        {
+            var logger = Plugin.SharedLogger;
+            var fileSystem = Plugin.FileSystem;
+            var file = directoryService.GetFile(path);
+
+            if (file?.Exists is not true)
+            {
+                logger?.Info($"MediaInfoKeeper {source} 未找到{label}: {item.FileName ?? item.Path} {path}");
+                return;
+            }
+
+            try
+            {
+                logger?.Info($"MediaInfoKeeper {source} 尝试删除{label}: {item.FileName ?? item.Path} {path}");
+                fileSystem.DeleteFile(path);
+            }
+            catch (Exception e)
+            {
+                logger?.Error(e.Message);
+                logger?.Debug(e.StackTrace);
+            }
+        }
+    }
+
+    public class EmbeddedInfoSnapshot
+    {
+        public string Name { get; set; }
+
+        public string Album { get; set; }
+
+        public string[] AlbumArtists { get; set; } = Array.Empty<string>();
+
+        public string[] Artists { get; set; } = Array.Empty<string>();
+
+        public string[] Genres { get; set; } = Array.Empty<string>();
+
+        public int? IndexNumber { get; set; }
+
+        public int? ParentIndexNumber { get; set; }
+
+        public int? ProductionYear { get; set; }
+
+        public Dictionary<string, string> ProviderIds { get; set; } =
+            new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+    }
+
+}

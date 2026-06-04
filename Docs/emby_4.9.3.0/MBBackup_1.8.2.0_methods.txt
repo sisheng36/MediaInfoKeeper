@@ -1,0 +1,4850 @@
+DLL_NAME: MBBackup.dll
+DLL_VERSION: 1.8.2.0
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: AddColumn
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+    System.String
+    System.String
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: CheckDisposed
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: CreateConnection
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: SQLitePCL.pretty.IDatabaseConnection
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: CreateException
+
+PARAMETERS:
+    SQLitePCL.pretty.ErrorCode
+    System.String
+
+RETURN_TYPE: System.Exception
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: Dispose
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: DisposeConnection
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetBytes
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.ReadOnlyMemory`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetColumnNames
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetEquals
+
+PARAMETERS:
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int32[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int64[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetIndexesInTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetNotInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int32[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetNotInOrEquals
+
+PARAMETERS:
+    System.String
+    System.Int64[]
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetScalarFunctions
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: Unknown
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetTableNames
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: GetTableNamesInTransaction
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: LogPrepareTime
+
+PARAMETERS:
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: OnClosing
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: PrepareAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement[]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: PrepareAll
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.Collections.Generic.List`1[[System.ReadOnlyMemory`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement[]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: PrepareStatement
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: SQLitePCL.pretty.IStatement
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: RunDefaultInitialization
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: Vacuum
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_CacheSize
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_DbFilePath
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_EnableForeignKeyEnforcement
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_EnableSingleConnection
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_EnableTempStoreMemory
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_IsExternallyOwnedDatabase
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_Logger
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Logging.ILogger
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_MmioSize
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Nullable`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_OptimizeOnConnectionClose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_PragmaAnalysisLimit
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_ReadTransactionMode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.TransactionMode
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_ThreadSafeMode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: get_TransactionMode
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.TransactionMode
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: set_DbFilePath
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: set_Logger
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository
+
+METHOD: set_ThreadSafeMode
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository+<>c
+
+METHOD: <GetInOrEquals>b__28_0
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository+<>c
+
+METHOD: <GetInOrEquals>b__29_0
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository+<>c
+
+METHOD: <GetNotInOrEquals>b__30_0
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.BaseSqliteRepository+<>c
+
+METHOD: <GetNotInOrEquals>b__31_0
+
+PARAMETERS:
+    System.Int64
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.ReaderWriterLockSlimExtensions
+
+METHOD: Read
+
+PARAMETERS:
+    System.Threading.ReaderWriterLockSlim
+
+RETURN_TYPE: System.IDisposable
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.ReaderWriterLockSlimExtensions
+
+METHOD: Write
+
+PARAMETERS:
+    System.Threading.ReaderWriterLockSlim
+
+RETURN_TYPE: System.IDisposable
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.ReaderWriterLockSlimExtensions+WriteLockToken
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Threading.ReaderWriterLockSlim
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.ReaderWriterLockSlimExtensions+WriteLockToken
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: CheckName
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ExecuteQuery
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[SQLitePCL.pretty.IResultSet, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: GetDateTimeKindFormat
+
+PARAMETERS:
+    System.DateTimeKind
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: GetGuid
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+
+RETURN_TYPE: System.Guid
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ReadDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+
+RETURN_TYPE: System.DateTimeOffset
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ReadDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+    System.Boolean
+
+RETURN_TYPE: System.DateTimeOffset
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ReadDateTimeOffset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: Unknown
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ReadDateTimeOffset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: Unknown
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ReadNullableDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+
+RETURN_TYPE: System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ReadNullableDateTimeOffset
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+    System.Int32
+    System.Boolean
+
+RETURN_TYPE: System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: RunQueries
+
+PARAMETERS:
+    SQLitePCL.pretty.IDatabaseConnection
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: SerializeToBytes
+
+PARAMETERS:
+    MediaBrowser.Model.Serialization.IJsonSerializer
+    System.Object
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ToDateTimeParamValue
+
+PARAMETERS:
+    System.DateTime
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ToGuidBlob
+
+PARAMETERS:
+    System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: ToGuidBlob
+
+PARAMETERS:
+    System.Guid
+
+RETURN_TYPE: System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Double
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Double
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Net.IPAddress
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Guid
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.DateTimeOffset
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.DateTimeOffset
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Int64
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.ReadOnlySpan`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+    System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBind
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+    System.Nullable`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBindNull
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions
+
+METHOD: TryBindNull
+
+PARAMETERS:
+    SQLitePCL.pretty.IStatement
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: System.Collections.Generic.IEnumerable<SQLitePCL.pretty.IResultSet>.GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerator`1[[SQLitePCL.pretty.IResultSet, SQLitePCL.pretty, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: System.Collections.Generic.IEnumerator<SQLitePCL.pretty.IResultSet>.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: SQLitePCL.pretty.IResultSet
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: System.Collections.IEnumerable.GetEnumerator
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.IEnumerator
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: System.Collections.IEnumerator.Reset
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: System.Collections.IEnumerator.get_Current
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: Emby.Data.SqliteExtensions+<ExecuteQuery>d__42
+
+METHOD: System.IDisposable.Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.AllBackupsInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.AllBackupsInfo
+
+METHOD: get_FullBackupInfo
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MBBackup.BackupInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.AllBackupsInfo
+
+METHOD: get_LightBackups
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MBBackup.BackupInfo[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.AllBackupsInfo
+
+METHOD: set_FullBackupInfo
+
+PARAMETERS:
+    MBBackup.BackupInfo
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.AllBackupsInfo
+
+METHOD: set_LightBackups
+
+PARAMETERS:
+    MBBackup.BackupInfo[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.BackupApi
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.BackupApi
+
+METHOD: Get
+
+PARAMETERS:
+    MBBackup.Api.GetBackupInfo
+
+RETURN_TYPE: System.Object
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.BackupApi
+
+METHOD: Post
+
+PARAMETERS:
+    MBBackup.Api.RestoreFromBackup
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.BackupApi
+
+METHOD: Post
+
+PARAMETERS:
+    MBBackup.Api.RestoreDataFromBackup
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.DataRestoreOptions
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.DataRestoreOptions
+
+METHOD: get_Users
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MBBackup.Api.UserRestoreInfo[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.DataRestoreOptions
+
+METHOD: set_Users
+
+PARAMETERS:
+    MBBackup.Api.UserRestoreInfo[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.GetBackupInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.RestoreDataFromBackup
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.RestoreFromBackup
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.RestoreOptions
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.RestoreOptions
+
+METHOD: get_RestoreServerId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.RestoreOptions
+
+METHOD: get_UseFiles
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.RestoreOptions
+
+METHOD: set_RestoreServerId
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.RestoreOptions
+
+METHOD: set_UseFiles
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.UserRestoreInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.UserRestoreInfo
+
+METHOD: get_SourceUserId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.UserRestoreInfo
+
+METHOD: get_TargetUserId
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.UserRestoreInfo
+
+METHOD: set_SourceUserId
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Api.UserRestoreInfo
+
+METHOD: set_TargetUserId
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: get_CanRestore
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: get_DateCreated
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.DateTimeOffset
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: get_IsFullBackup
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: get_PluginVersion
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: get_ServerVersion
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: get_Users
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Dto.NameIdPair[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: set_CanRestore
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: set_DateCreated
+
+PARAMETERS:
+    System.DateTimeOffset
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: set_IsFullBackup
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: set_Name
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: set_PluginVersion
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: set_ServerVersion
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupInfo
+
+METHOD: set_Users
+
+PARAMETERS:
+    MediaBrowser.Model.Dto.NameIdPair[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupNotificationTypeFactory
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Globalization.ILocalizationManager
+    MediaBrowser.Controller.IServerApplicationHost
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.BackupNotificationTypeFactory
+
+METHOD: GetNotificationTypes
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Collections.Generic.List`1[[Emby.Notifications.NotificationTypeInfo, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: get_BackupDirectory
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: get_BackupMetadataLibrary
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: get_BackupMetadataMusicAlbums
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: get_BackupMetadataMusicArtists
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: get_BackupMetadataPeople
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: get_BackupRetention
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: set_BackupDirectory
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: set_BackupMetadataLibrary
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: set_BackupMetadataMusicAlbums
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: set_BackupMetadataMusicArtists
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: set_BackupMetadataPeople
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Configuration.PluginConfiguration
+
+METHOD: set_BackupRetention
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Data.UserRepository
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Data.UserRepository
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+    MediaBrowser.Model.Serialization.IJsonSerializer
+    System.String
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Data.UserRepository
+
+METHOD: GetUser
+
+PARAMETERS:
+    SQLitePCL.pretty.IResultSet
+
+RETURN_TYPE: MediaBrowser.Controller.Entities.User
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Data.UserRepository
+
+METHOD: RetrieveAllUsers
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.List`1[[MediaBrowser.Controller.Entities.User, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Data.UserRepository
+
+METHOD: UpdateUser
+
+PARAMETERS:
+    MediaBrowser.Controller.Entities.User
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Data.UserRepository
+
+METHOD: get_EnableSingleConnection
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: Execute
+
+PARAMETERS:
+    System.Threading.CancellationToken
+    System.IProgress`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: GetDefaultTriggers
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Tasks.TaskTriggerInfo, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: get_Category
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: get_IsEnabled
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: get_IsHidden
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: get_IsLogged
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: get_Key
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Entities.ScheduledBackupTask
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Common.Configuration.IApplicationPaths
+    MediaBrowser.Model.Serialization.IXmlSerializer
+    MediaBrowser.Model.IO.IFileSystem
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: GetPages
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Plugins.PluginPageInfo, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: GetThumbImage
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IO.Stream
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: GetTranslations
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Plugins.TranslationInfo[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: UpdateConfiguration
+
+PARAMETERS:
+    MediaBrowser.Model.Plugins.BasePluginConfiguration
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: get_Id
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Guid
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: get_Instance
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MBBackup.Plugin
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: get_Logger
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Logging.ILogger
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: get_ThumbImageFormat
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Drawing.ImageFormat
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: set_Instance
+
+PARAMETERS:
+    MBBackup.Plugin
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin
+
+METHOD: set_Logger
+
+PARAMETERS:
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin+<>c__DisplayClass15_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin+<>c__DisplayClass15_0
+
+METHOD: <GetTranslations>b__0
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Plugin+<>c__DisplayClass15_0
+
+METHOD: <GetTranslations>b__1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: MediaBrowser.Model.Plugins.TranslationInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.Tasks.ITaskManager
+    MediaBrowser.Common.Security.ISecurityManager
+    MediaBrowser.Controller.Library.ILibraryManager
+    MediaBrowser.Controller.Library.IUserDataManager
+    MediaBrowser.Controller.Library.IUserManager
+    MediaBrowser.Model.IO.IFileSystem
+    MediaBrowser.Controller.IServerApplicationPaths
+    MediaBrowser.Model.Logging.ILogManager
+    MediaBrowser.Model.Serialization.IJsonSerializer
+    MediaBrowser.Controller.IServerApplicationHost
+    MediaBrowser.Model.Serialization.IXmlSerializer
+    MediaBrowser.Controller.Configuration.IServerConfigurationManager
+    MediaBrowser.Controller.Notifications.INotificationManager
+    MediaBrowser.Model.Globalization.ILocalizationManager
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: BackupExtraDatabases
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+    System.String
+    MBBackup.Sync.Sync
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: ClearEmbyConnectData
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: Dispose
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: ExecuteBackup
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+    System.Threading.CancellationToken
+    System.IProgress`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: ExecuteBackupInternal
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+    System.Threading.CancellationToken
+    System.IProgress`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: GetAllBackups
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+
+RETURN_TYPE: MBBackup.BackupInfo[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: GetBackupFolder
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: GetBackupInfo
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+
+RETURN_TYPE: MBBackup.BackupInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: GetLightBackups
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+
+RETURN_TYPE: MBBackup.BackupInfo[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: GetMetadataFolderFromBackup
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: OnAppHostDisposed
+
+PARAMETERS:
+    System.Object
+    System.EventArgs
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: Restore
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+    MBBackup.Api.RestoreOptions
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: RestoreData
+
+PARAMETERS:
+    MBBackup.Configuration.PluginConfiguration
+    MBBackup.Api.DataRestoreOptions
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: Run
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: SupportsNotifications
+
+PARAMETERS:
+    MediaBrowser.Controller.IServerApplicationHost
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: ThrowIfRestoreInProgress
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: ValidateBackupDirectory
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: ValidateBackupDirectory
+
+PARAMETERS:
+    System.String
+    MediaBrowser.Model.IO.IFileSystem
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_ApplicationHost
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Controller.IServerApplicationHost
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_ApplicationPaths
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Controller.IServerApplicationPaths
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_CurrentProgress
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_FileSystem
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.IO.IFileSystem
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_Instance
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MBBackup.ServerEntryPoint
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_JsonSerializer
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Serialization.IJsonSerializer
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_LibraryManager
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Controller.Library.ILibraryManager
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_LocalizationManager
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Globalization.ILocalizationManager
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_NotificationManager
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Controller.Notifications.INotificationManager
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_ServerConfigurationManager
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Controller.Configuration.IServerConfigurationManager
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_UserDataManager
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Controller.Library.IUserDataManager
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_UserManager
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Controller.Library.IUserManager
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: get_XmlSerializer
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Serialization.IXmlSerializer
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_ApplicationHost
+
+PARAMETERS:
+    MediaBrowser.Controller.IServerApplicationHost
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_ApplicationPaths
+
+PARAMETERS:
+    MediaBrowser.Controller.IServerApplicationPaths
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_CurrentProgress
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_FileSystem
+
+PARAMETERS:
+    MediaBrowser.Model.IO.IFileSystem
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_Instance
+
+PARAMETERS:
+    MBBackup.ServerEntryPoint
+
+RETURN_TYPE: System.Void
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_JsonSerializer
+
+PARAMETERS:
+    MediaBrowser.Model.Serialization.IJsonSerializer
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_LibraryManager
+
+PARAMETERS:
+    MediaBrowser.Controller.Library.ILibraryManager
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_LocalizationManager
+
+PARAMETERS:
+    MediaBrowser.Model.Globalization.ILocalizationManager
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_NotificationManager
+
+PARAMETERS:
+    MediaBrowser.Controller.Notifications.INotificationManager
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_ServerConfigurationManager
+
+PARAMETERS:
+    MediaBrowser.Controller.Configuration.IServerConfigurationManager
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_UserDataManager
+
+PARAMETERS:
+    MediaBrowser.Controller.Library.IUserDataManager
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_UserManager
+
+PARAMETERS:
+    MediaBrowser.Controller.Library.IUserManager
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint
+
+METHOD: set_XmlSerializer
+
+PARAMETERS:
+    MediaBrowser.Model.Serialization.IXmlSerializer
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c
+
+METHOD: <ExecuteBackupInternal>b__74_0
+
+PARAMETERS:
+    MediaBrowser.Controller.Entities.User
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c
+
+METHOD: <ExecuteBackupInternal>b__74_1
+
+PARAMETERS:
+    MediaBrowser.Controller.Entities.User
+
+RETURN_TYPE: MediaBrowser.Model.Dto.NameIdPair
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c
+
+METHOD: <GetBackupInfo>b__75_0
+
+PARAMETERS:
+    MBBackup.BackupInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c
+
+METHOD: <GetLightBackups>b__76_0
+
+PARAMETERS:
+    MBBackup.BackupInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c__DisplayClass78_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c__DisplayClass78_0
+
+METHOD: <BackupExtraDatabases>b__0
+
+PARAMETERS:
+    MediaBrowser.Model.IO.FileSystemMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c__DisplayClass80_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c__DisplayClass80_0
+
+METHOD: <GetBackupFolder>b__0
+
+PARAMETERS:
+    MBBackup.BackupInfo
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c__DisplayClass83_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<>c__DisplayClass83_0
+
+METHOD: <RestoreData>b__0
+
+PARAMETERS:
+    MediaBrowser.Controller.Entities.User
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<ExecuteBackup>d__71
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<ExecuteBackup>d__71
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<ExecuteBackupInternal>d__74
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<ExecuteBackupInternal>d__74
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<Restore>d__82
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.ServerEntryPoint+<Restore>d__82
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: .ctor
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Collections.Generic.List`1[[System.Tuple`2[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Collections.Generic.List`1[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Collections.Generic.List`1[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+    System.Collections.Generic.List`1[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: get_ChangedFiles
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.Tuple`2[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: get_LeftOnlyFiles
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: get_LeftOnlyFolders
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.List`1[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: get_RightOnlyFiles
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.List`1[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: get_RightOnlyFolders
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.List`1[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: set_ChangedFiles
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[System.Tuple`2[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: set_LeftOnlyFiles
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: set_LeftOnlyFolders
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: set_RightOnlyFiles
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.FolderDiffResults
+
+METHOD: set_RightOnlyFolders
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Folders
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.IO.IFileSystem
+    MediaBrowser.Model.Logging.ILogger
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Folders
+
+METHOD: DiffFolders
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+
+RETURN_TYPE: MBBackup.Sync.FolderDiffResults
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Folders
+
+METHOD: GetRelativePathsOfAllFiles
+
+PARAMETERS:
+    System.String
+    System.Boolean
+    System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+    System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Folders+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Folders+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Folders+<>c
+
+METHOD: <DiffFolders>b__3_0
+
+PARAMETERS:
+    System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Tuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[MediaBrowser.Model.IO.FileSystemMetadata, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Model.IO.IFileSystem
+    MediaBrowser.Model.Logging.ILogger
+    MediaBrowser.Model.Logging.LogSeverity
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: AreContentsIdentical
+
+PARAMETERS:
+    MediaBrowser.Model.IO.FileSystemMetadata
+    MediaBrowser.Model.IO.FileSystemMetadata
+
+RETURN_TYPE: System.Boolean
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: CopyAll
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String[]
+    System.String[]
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: IgnoreFile
+
+PARAMETERS:
+    System.String
+    System.String[]
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: MakeFullPath
+
+PARAMETERS:
+    System.String
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: SyncDirectories
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: SyncDirectories
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: SyncDirectories
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String[]
+    System.String[]
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: SyncDirectories
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+    System.String[]
+    System.String[]
+    System.String[]
+    System.Boolean
+    System.Boolean
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: TryCopyDirectory
+
+PARAMETERS:
+    System.String
+    System.String
+    System.String[]
+    System.String[]
+    System.Boolean
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: TryCopyFile
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: TryCopyFileIfChanged
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: TryCopyFileIfChanged
+
+PARAMETERS:
+    System.String
+    System.String
+    System.Boolean
+    System.Boolean
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: TryCreateDirectory
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: TryDeleteDirectory
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync
+
+METHOD: TryDeleteFile
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync+<>c
+
+METHOD: <.cctor>b__23_0
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MBBackup.Sync.Sync+<>c
+
+METHOD: <.cctor>b__23_1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+

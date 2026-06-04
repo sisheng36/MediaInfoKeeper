@@ -1,0 +1,2959 @@
+DLL_NAME: MusicBrainz.dll
+DLL_VERSION: 1.0.27.0
+
+====================================================
+TYPE: MusicBrainz.Extensions
+
+METHOD: GetAlbumArtist
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.AlbumInfo
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions
+
+METHOD: GetMusicBrainzArtistId
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.AlbumInfo
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions
+
+METHOD: GetMusicBrainzArtistId
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.ArtistInfo
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions
+
+METHOD: GetReleaseGroupId
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.AlbumInfo
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions
+
+METHOD: GetReleaseId
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.AlbumInfo
+
+RETURN_TYPE: System.String
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetAlbumArtist>b__0_0
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.SongInfo
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetAlbumArtist>b__0_1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetMusicBrainzArtistId>b__3_0
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.SongInfo
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetMusicBrainzArtistId>b__3_1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetReleaseGroupId>b__1_0
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.SongInfo
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetReleaseGroupId>b__1_1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetReleaseId>b__2_0
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.SongInfo
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Extensions+<>c
+
+METHOD: <GetReleaseId>b__2_1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_approved
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_back
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_comment
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_edit
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_front
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_id
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_image
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_thumbnails
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: get_types
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_approved
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_back
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_comment
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_edit
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_front
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_id
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_image
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_thumbnails
+
+PARAMETERS:
+    System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Image
+
+METHOD: set_types
+
+PARAMETERS:
+    System.String[]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.ImageResult
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.ImageResult
+
+METHOD: get_images
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.List`1[[MusicBrainz.Image, MusicBrainz, Version=1.0.27.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.ImageResult
+
+METHOD: set_images
+
+PARAMETERS:
+    System.Collections.Generic.List`1[[MusicBrainz.Image, MusicBrainz, Version=1.0.27.0, Culture=neutral, PublicKeyToken=null]]
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumArtistExternalId
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumArtistExternalId
+
+METHOD: Supports
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.IHasProviderIds
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumArtistExternalId
+
+METHOD: get_Key
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumArtistExternalId
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumArtistExternalId
+
+METHOD: get_UrlFormatString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumArtistExternalId
+
+METHOD: get_Website
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumExternalId
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumExternalId
+
+METHOD: Supports
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.IHasProviderIds
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumExternalId
+
+METHOD: get_Key
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumExternalId
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumExternalId
+
+METHOD: get_UrlFormatString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumExternalId
+
+METHOD: get_Website
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Controller.Configuration.IServerConfigurationManager
+    MediaBrowser.Common.Net.IHttpClient
+    MediaBrowser.Common.IApplicationHost
+    MediaBrowser.Model.Logging.ILogger
+    MediaBrowser.Model.Serialization.IJsonSerializer
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: EncodeName
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetImageResponse
+
+PARAMETERS:
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Common.Net.HttpResponseInfo, MediaBrowser.Common, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetMbzUrl
+
+PARAMETERS:
+    System.Boolean
+
+RETURN_TYPE: MusicBrainz.MusicBrainzAlbumProvider+MbzUrl
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetMetadata
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.AlbumInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Controller.Providers.MetadataResult`1[[MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetMusicBrainzOptions
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MusicBrainz.MusicBrainzOptions
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetMusicBrainzResponse
+
+PARAMETERS:
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Common.Net.HttpResponseInfo, MediaBrowser.Common, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetMusicBrainzResponse
+
+PARAMETERS:
+    System.String
+    System.Boolean
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Common.Net.HttpResponseInfo, MediaBrowser.Common, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetResultsFromResponse
+
+PARAMETERS:
+    System.IO.Stream
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetSearchResults
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.AlbumInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetSearchResultsByName
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.AlbumInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: GetSupportedExternalIdentifiers
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: ParseArtistArtistCredit
+
+PARAMETERS:
+    System.Xml.XmlReader
+    System.String
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.ValueTuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: ParseArtistCredit
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.ValueTuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: ParseArtistNameCredit
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.ValueTuple`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: ToMetadataResult
+
+PARAMETERS:
+    MediaBrowser.Model.Providers.RemoteSearchResult
+
+RETURN_TYPE: MediaBrowser.Controller.Providers.MetadataResult`1[[MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider
+
+METHOD: get_Order
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetMetadata>d__16
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetMetadata>d__16
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetMusicBrainzResponse>d__26
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetMusicBrainzResponse>d__26
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetResultsFromResponse>d__14
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetResultsFromResponse>d__14
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetSearchResults>d__12
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetSearchResults>d__12
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetSearchResultsByName>d__13
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<GetSearchResultsByName>d__13
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<ParseArtistArtistCredit>d__23
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<ParseArtistArtistCredit>d__23
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<ParseArtistCredit>d__21
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<ParseArtistCredit>d__21
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<ParseArtistNameCredit>d__22
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+<ParseArtistNameCredit>d__22
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+MbzUrl
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+MbzUrl
+
+METHOD: get_throttleMs
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Int32
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+MbzUrl
+
+METHOD: get_url
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+MbzUrl
+
+METHOD: set_throttleMs
+
+PARAMETERS:
+    System.Int32
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+MbzUrl
+
+METHOD: set_url
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult
+
+METHOD: Parse
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult
+
+METHOD: ParseRelation
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Model.Providers.RemoteSearchResult
+    System.String
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult
+
+METHOD: ParseRelationList
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Model.Providers.RemoteSearchResult
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult
+
+METHOD: ParseRelease
+
+PARAMETERS:
+    System.Xml.XmlReader
+    System.String
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult
+
+METHOD: ParseReleaseList
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: True
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<Parse>d__0
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<Parse>d__0
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseRelation>d__2
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseRelation>d__2
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseRelationList>d__3
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseRelationList>d__3
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseRelease>d__4
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseRelease>d__4
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseReleaseList>d__1
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzAlbumProvider+ReleaseResult+<ParseReleaseList>d__1
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistExternalId
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistExternalId
+
+METHOD: Supports
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.IHasProviderIds
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistExternalId
+
+METHOD: get_Key
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistExternalId
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistExternalId
+
+METHOD: get_UrlFormatString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistExternalId
+
+METHOD: get_Website
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: GetImageResponse
+
+PARAMETERS:
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Common.Net.HttpResponseInfo, MediaBrowser.Common, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: GetMetadata
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.ArtistInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Controller.Providers.MetadataResult`1[[MediaBrowser.Controller.Entities.Audio.MusicArtist, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: GetResultsFromResponse
+
+PARAMETERS:
+    System.IO.Stream
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: GetSearchResults
+
+PARAMETERS:
+    MediaBrowser.Controller.Providers.ArtistInfo
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: GetSupportedExternalIdentifiers
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: HasDiacritics
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: ParseArtist
+
+PARAMETERS:
+    System.Xml.XmlReader
+    System.String
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: ParseArtistList
+
+PARAMETERS:
+    System.Xml.XmlReader
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[MediaBrowser.Model.Providers.RemoteSearchResult, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: ParseRelation
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Model.Providers.RemoteSearchResult
+    System.String
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: ParseRelationList
+
+PARAMETERS:
+    System.Xml.XmlReader
+    MediaBrowser.Model.Providers.RemoteSearchResult
+
+RETURN_TYPE: System.Threading.Tasks.Task
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: ToMetadataResult
+
+PARAMETERS:
+    MediaBrowser.Model.Providers.RemoteSearchResult
+
+RETURN_TYPE: MediaBrowser.Controller.Providers.MetadataResult`1[[MediaBrowser.Controller.Entities.Audio.MusicArtist, MediaBrowser.Controller, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: UrlEncode
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<GetMetadata>d__9
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<GetMetadata>d__9
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<GetResultsFromResponse>d__5
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<GetResultsFromResponse>d__5
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<GetSearchResults>d__1
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<GetSearchResults>d__1
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseArtist>d__7
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseArtist>d__7
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseArtistList>d__6
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseArtistList>d__6
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseRelation>d__3
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseRelation>d__3
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseRelationList>d__4
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzArtistProvider+<ParseRelationList>d__4
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzConfigStore
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzConfigStore
+
+METHOD: GetConfigurations
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[MediaBrowser.Common.Configuration.ConfigurationStore, MediaBrowser.Common, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider
+
+METHOD: .ctor
+
+PARAMETERS:
+    MediaBrowser.Common.Net.IHttpClient
+    MediaBrowser.Model.Logging.ILogger
+    MediaBrowser.Model.Serialization.IJsonSerializer
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider
+
+METHOD: GetImageResponse
+
+PARAMETERS:
+    System.String
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[MediaBrowser.Common.Net.HttpResponseInfo, MediaBrowser.Common, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider
+
+METHOD: GetImages
+
+PARAMETERS:
+    MediaBrowser.Controller.Entities.BaseItem
+    MediaBrowser.Model.Configuration.LibraryOptions
+    System.Threading.CancellationToken
+
+RETURN_TYPE: System.Threading.Tasks.Task`1[[System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Providers.RemoteImageInfo, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: True
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider
+
+METHOD: GetSupportedImages
+
+PARAMETERS:
+    MediaBrowser.Controller.Entities.BaseItem
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Entities.ImageType, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider
+
+METHOD: MapImage
+
+PARAMETERS:
+    MusicBrainz.Image
+
+RETURN_TYPE: MediaBrowser.Model.Providers.RemoteImageInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider
+
+METHOD: Supports
+
+PARAMETERS:
+    MediaBrowser.Controller.Entities.BaseItem
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider+<GetImages>d__8
+
+METHOD: MoveNext
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzImageProvider+<GetImages>d__8
+
+METHOD: SetStateMachine
+
+PARAMETERS:
+    System.Runtime.CompilerServices.IAsyncStateMachine
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOptions
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOptions
+
+METHOD: get_MusicBrainzUrl
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOptions
+
+METHOD: set_MusicBrainzUrl
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Void
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOtherArtistExternalId
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOtherArtistExternalId
+
+METHOD: Supports
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.IHasProviderIds
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOtherArtistExternalId
+
+METHOD: get_Key
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOtherArtistExternalId
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOtherArtistExternalId
+
+METHOD: get_UrlFormatString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzOtherArtistExternalId
+
+METHOD: get_Website
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzReleaseGroupExternalId
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzReleaseGroupExternalId
+
+METHOD: Supports
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.IHasProviderIds
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzReleaseGroupExternalId
+
+METHOD: get_Key
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzReleaseGroupExternalId
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzReleaseGroupExternalId
+
+METHOD: get_UrlFormatString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzReleaseGroupExternalId
+
+METHOD: get_Website
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzTrackId
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzTrackId
+
+METHOD: Supports
+
+PARAMETERS:
+    MediaBrowser.Model.Entities.IHasProviderIds
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzTrackId
+
+METHOD: get_Key
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzTrackId
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzTrackId
+
+METHOD: get_UrlFormatString
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.MusicBrainzTrackId
+
+METHOD: get_Website
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: .cctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: True
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: GetPages
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Collections.Generic.IEnumerable`1[[MediaBrowser.Model.Plugins.PluginPageInfo, MediaBrowser.Model, Version=4.9.3.0, Culture=neutral, PublicKeyToken=null]]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: GetThumbImage
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.IO.Stream
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: GetTranslations
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Plugins.TranslationInfo[]
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: get_Description
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: get_Id
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.Guid
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: get_Name
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: System.String
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin
+
+METHOD: get_ThumbImageFormat
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: MediaBrowser.Model.Drawing.ImageFormat
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: True
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin+<>c__DisplayClass12_0
+
+METHOD: .ctor
+
+PARAMETERS:
+    (none)
+
+RETURN_TYPE: (constructor)
+STATIC: False
+CONSTRUCTOR: True
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin+<>c__DisplayClass12_0
+
+METHOD: <GetTranslations>b__0
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: System.Boolean
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
+====================================================
+TYPE: MusicBrainz.Plugin+<>c__DisplayClass12_0
+
+METHOD: <GetTranslations>b__1
+
+PARAMETERS:
+    System.String
+
+RETURN_TYPE: MediaBrowser.Model.Plugins.TranslationInfo
+STATIC: False
+CONSTRUCTOR: False
+GENERIC: 0
+ASYNC: False
+PROPERTY_ACCESSOR: False
+====================================================
+
