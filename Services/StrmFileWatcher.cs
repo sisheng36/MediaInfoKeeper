@@ -260,18 +260,19 @@ namespace MediaInfoKeeper.Services
             }
         }
 
-        private async Task TriggerPreciseFolderRefresh(string directoryPath)
+        private async Task TriggerPreciseFolderRefresh(string originalPath)
         {
+            var currentPath = originalPath;
             for (int i = 0; i < 4; i++)
             {
-                if (string.IsNullOrWhiteSpace(directoryPath))
+                if (string.IsNullOrWhiteSpace(currentPath))
                     break;
 
                 try
                 {
                     var query = new MediaBrowser.Controller.Entities.InternalItemsQuery
                     {
-                        PathStartsWithAny = new[] { directoryPath },
+                        PathStartsWithAny = new[] { currentPath },
                         IsFolder = true,
                         Limit = 1,
                         Recursive = false
@@ -281,6 +282,13 @@ namespace MediaInfoKeeper.Services
 
                     if (folder != null)
                     {
+                        if (folder is CollectionFolder)
+                        {
+                            this.logger?.Info($"StrmFileWatcher 新目录无法精准扫描，回退全库扫描: {originalPath}");
+                            this.libraryMonitor?.ReportFileSystemChanged(originalPath);
+                            return;
+                        }
+
                         var refreshOptions = new MetadataRefreshOptions(new DirectoryService(this.fileSystem))
                         {
                             EnableRemoteContentProbe = false,
@@ -294,7 +302,7 @@ namespace MediaInfoKeeper.Services
                         };
                         Traverse.Create(refreshOptions).Property("Recursive").SetValue(true);
 
-                        this.logger?.Info($"StrmFileWatcher 精准扫描目录: {directoryPath}");
+                        this.logger?.Info($"StrmFileWatcher 精准扫描目录: {currentPath}");
                         await this.providerManager.RefreshFullItem(folder, refreshOptions, CancellationToken.None)
                             .ConfigureAwait(false);
                         return;
@@ -302,17 +310,17 @@ namespace MediaInfoKeeper.Services
                 }
                 catch (Exception ex)
                 {
-                    this.logger?.Warn($"StrmFileWatcher 尝试精准扫描失败 ({directoryPath}): {ex.Message}");
+                    this.logger?.Warn($"StrmFileWatcher 尝试精准扫描失败 ({currentPath}): {ex.Message}");
                 }
 
-                var parent = Path.GetDirectoryName(directoryPath);
-                if (string.IsNullOrEmpty(parent) || parent == directoryPath)
+                var parent = Path.GetDirectoryName(currentPath);
+                if (string.IsNullOrEmpty(parent) || parent == currentPath)
                     break;
-                directoryPath = parent;
+                currentPath = parent;
             }
 
-            this.logger?.Info($"StrmFileWatcher 回退全库扫描: {directoryPath}");
-            this.libraryMonitor?.ReportFileSystemChanged(directoryPath);
+            this.logger?.Info($"StrmFileWatcher 未找到匹配目录，回退全库扫描: {originalPath}");
+            this.libraryMonitor?.ReportFileSystemChanged(originalPath);
         }
 
         public void Dispose()
