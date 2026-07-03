@@ -2,7 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using HarmonyLib;
+using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Library;
+using MediaBrowser.Controller.Providers;
+using MediaBrowser.Model.IO;
 using MediaBrowser.Model.Logging;
 
 namespace MediaInfoKeeper.Services
@@ -14,6 +20,8 @@ namespace MediaInfoKeeper.Services
     {
         private readonly ILibraryMonitor libraryMonitor;
         private readonly ILibraryManager libraryManager;
+        private readonly IProviderManager providerManager;
+        private readonly IFileSystem fileSystem;
         private readonly LibraryService libraryService;
         private readonly ILogger logger;
         private readonly object syncRoot = new object();
@@ -33,11 +41,15 @@ namespace MediaInfoKeeper.Services
         public StrmFileWatcher(
             ILibraryMonitor libraryMonitor,
             ILibraryManager libraryManager,
+            IProviderManager providerManager,
+            IFileSystem fileSystem,
             LibraryService libraryService,
             ILogger logger)
         {
             this.libraryMonitor = libraryMonitor;
             this.libraryManager = libraryManager;
+            this.providerManager = providerManager;
+            this.fileSystem = fileSystem;
             this.libraryService = libraryService;
             this.logger = logger;
         }
@@ -144,7 +156,7 @@ namespace MediaInfoKeeper.Services
 
             try
             {
-                this.libraryMonitor?.ReportFileSystemChanged(directoryPath);
+                Task.Run(async () => await TriggerPreciseFolderRefresh(directoryPath).ConfigureAwait(false));
             }
             catch (Exception ex)
             {
@@ -246,6 +258,61 @@ namespace MediaInfoKeeper.Services
             {
                 events.Remove(stalePath);
             }
+        }
+
+        private async Task TriggerPreciseFolderRefresh(string directoryPath)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                if (string.IsNullOrWhiteSpace(directoryPath))
+                    break;
+
+                try
+                {
+                    var query = new MediaBrowser.Controller.Entities.InternalItemsQuery
+                    {
+                        PathStartsWithAny = new[] { directoryPath },
+                        IsFolder = true,
+                        Limit = 1,
+                        Recursive = false
+                    };
+                    var folders = this.libraryManager.GetItemList(query);
+                    var folder = folders?.FirstOrDefault();
+
+                    if (folder != null)
+                    {
+                        var refreshOptions = new MetadataRefreshOptions(new DirectoryService(this.fileSystem))
+                        {
+                            EnableRemoteContentProbe = false,
+                            MetadataRefreshMode = MetadataRefreshMode.ValidationOnly,
+                            ImageRefreshMode = MetadataRefreshMode.ValidationOnly,
+                            ReplaceAllImages = false,
+                            ReplaceAllMetadata = false,
+                            EnableThumbnailImageExtraction = false,
+                            EnableSubtitleDownloading = false,
+                            IsAutomated = true
+                        };
+                        Traverse.Create(refreshOptions).Property("Recursive").SetValue(true);
+
+                        this.logger?.Info($"StrmFileWatcher 精准扫描目录: {directoryPath}");
+                        await this.providerManager.RefreshFullItem(folder, refreshOptions, CancellationToken.None)
+                            .ConfigureAwait(false);
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.logger?.Warn($"StrmFileWatcher 尝试精准扫描失败 ({directoryPath}): {ex.Message}");
+                }
+
+                var parent = Path.GetDirectoryName(directoryPath);
+                if (string.IsNullOrEmpty(parent) || parent == directoryPath)
+                    break;
+                directoryPath = parent;
+            }
+
+            this.logger?.Info($"StrmFileWatcher 回退全库扫描: {directoryPath}");
+            this.libraryMonitor?.ReportFileSystemChanged(directoryPath);
         }
 
         public void Dispose()

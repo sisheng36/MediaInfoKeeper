@@ -198,7 +198,7 @@ namespace MediaInfoKeeper
                 libraryManager, userManager, sessionManager, this.logger);
             PrefetchService = new PrefetchService(
                 libraryManager, sessionManager, this.logger);
-            StrmFileWatcher = new StrmFileWatcher(libraryMonitor, libraryManager, LibraryService, this.logger);
+            StrmFileWatcher = new StrmFileWatcher(libraryMonitor, libraryManager, providerManager, fileSystem, LibraryService, this.logger);
             PluginWebResourceLoader.Initialize(serverConfigurationManager);
             PrefetchService.Initialize();
             this.releaseInfoService.Start();
