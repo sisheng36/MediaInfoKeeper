@@ -2,20 +2,22 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using MediaBrowser.Common.Net;
+using MediaBrowser.Controller.Configuration;
 using MediaBrowser.Controller.Library;
 using MediaBrowser.Model.Logging;
 
 namespace MediaInfoKeeper.Services
 {
-    /// <summary>
-    /// 监听媒体库路径下的新入库 .strm 文件，记录 Created 与 Changed 事件日志。
-    /// </summary>
     public sealed class StrmFileWatcher : IDisposable
     {
+        private readonly IHttpClient httpClient;
         private readonly ILibraryMonitor libraryMonitor;
-        private readonly ILibraryManager libraryManager;
         private readonly LibraryService libraryService;
         private readonly ILogger logger;
+        private readonly string baseUrl;
         private readonly object syncRoot = new object();
         private readonly TimeSpan directoryReportDedupeWindow = TimeSpan.FromSeconds(2);
         private readonly TimeSpan modifiedEventDedupeWindow = TimeSpan.FromMilliseconds(100);
@@ -31,34 +33,31 @@ namespace MediaInfoKeeper.Services
         private volatile bool disposed;
 
         public StrmFileWatcher(
+            IHttpClient httpClient,
             ILibraryMonitor libraryMonitor,
-            ILibraryManager libraryManager,
+            IServerConfigurationManager serverConfig,
             LibraryService libraryService,
             ILogger logger)
         {
+            this.httpClient = httpClient;
             this.libraryMonitor = libraryMonitor;
-            this.libraryManager = libraryManager;
             this.libraryService = libraryService;
             this.logger = logger;
+
+            var cfg = serverConfig.Configuration;
+            var port = cfg.PublicPort > 0 ? cfg.PublicPort : cfg.HttpServerPort;
+            this.baseUrl = $"http://localhost:{port}";
         }
 
-        /// <summary>
-        /// 配置监听开关。
-        /// </summary>
         public void Configure(bool isEnabled, int delaySeconds)
         {
             if (this.disposed)
-            {
                 return;
-            }
 
             this.enabled = isEnabled;
             RebuildWatchers(isEnabled);
         }
 
-        /// <summary>
-        /// 根据当前配置重建文件监听器。
-        /// </summary>
         private void RebuildWatchers(bool isEnabled)
         {
             lock (this.syncRoot)
@@ -70,9 +69,7 @@ namespace MediaInfoKeeper.Services
                         existing.EnableRaisingEvents = false;
                         existing.Dispose();
                     }
-                    catch
-                    {
-                    }
+                    catch { }
                 }
 
                 this.watchers.Clear();
@@ -119,32 +116,23 @@ namespace MediaInfoKeeper.Services
             }
         }
 
-        /// <summary>
-        /// 记录新增文件事件。
-        /// </summary>
         private void OnCreated(string path)
         {
             if (!IsWatchedMediaFile(path))
-            {
                 return;
-            }
 
             var directoryPath = Path.GetDirectoryName(path);
             if (string.IsNullOrWhiteSpace(directoryPath))
-            {
                 return;
-            }
 
             var shouldReportDirectory = RecordCreatedEvent(directoryPath, path);
             this.logger?.Info($"新增媒体文件，{Path.GetFileName(path) ?? path}");
             if (!shouldReportDirectory)
-            {
                 return;
-            }
 
             try
             {
-                this.libraryMonitor?.ReportFileSystemChanged(directoryPath);
+                Task.Run(async () => await NotifyMediaUpdated(directoryPath).ConfigureAwait(false));
             }
             catch (Exception ex)
             {
@@ -153,22 +141,45 @@ namespace MediaInfoKeeper.Services
             }
         }
 
-        /// <summary>
-        /// 记录文件内容修改事件。
-        /// </summary>
         private void OnModified(string path)
         {
             if (!IsWatchedShortcut(path))
-            {
                 return;
-            }
 
             if (ShouldSkipModifiedLog(path))
-            {
                 return;
-            }
 
             this.logger?.Info($"{Path.GetFileName(path) ?? path} 内容修改");
+        }
+
+        private async Task NotifyMediaUpdated(string directoryPath)
+        {
+            try
+            {
+                var url = $"{this.baseUrl}/Library/Media/Updated?path={Uri.EscapeDataString(directoryPath)}";
+                var options = new HttpRequestOptions
+                {
+                    Url = url,
+                    LogRequest = false,
+                    LogResponse = false,
+                    TimeoutMs = 30000
+                };
+                using var response = await this.httpClient.Post(options).ConfigureAwait(false);
+                if (response.StatusCode == HttpStatusCode.OK || response.StatusCode == HttpStatusCode.NoContent)
+                {
+                    this.logger?.Info($"StrmFileWatcher 精准扫描目录: {directoryPath}");
+                }
+                else
+                {
+                    this.logger?.Warn($"StrmFileWatcher /Library/Media/Updated 返回异常: {response.StatusCode}");
+                    this.libraryMonitor?.ReportFileSystemChanged(directoryPath);
+                }
+            }
+            catch (Exception ex)
+            {
+                this.logger?.Warn($"StrmFileWatcher /Library/Media/Updated 调用失败: {ex.Message}");
+                this.libraryMonitor?.ReportFileSystemChanged(directoryPath);
+            }
         }
 
         private bool IsWatchedShortcut(string path)
@@ -184,8 +195,8 @@ namespace MediaInfoKeeper.Services
             return this.enabled &&
                    !this.disposed &&
                    !string.IsNullOrWhiteSpace(path) &&
-                   (this.libraryManager.IsVideoFile(path.AsSpan()) ||
-                    this.libraryManager.IsAudioFile(path.AsSpan()));
+                   (Plugin.LibraryManager.IsVideoFile(path.AsSpan()) ||
+                    Plugin.LibraryManager.IsAudioFile(path.AsSpan()));
         }
 
         private bool RecordCreatedEvent(string directoryPath, string path)
@@ -251,9 +262,7 @@ namespace MediaInfoKeeper.Services
         public void Dispose()
         {
             if (this.disposed)
-            {
                 return;
-            }
 
             this.disposed = true;
             this.enabled = false;
@@ -267,9 +276,7 @@ namespace MediaInfoKeeper.Services
                         watcher.EnableRaisingEvents = false;
                         watcher.Dispose();
                     }
-                    catch
-                    {
-                    }
+                    catch { }
                 }
 
                 this.watchers.Clear();
